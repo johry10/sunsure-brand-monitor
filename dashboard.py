@@ -11,6 +11,37 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
+# Domain-specific lexicon tuning for renewable energy news.
+# Stock VADER misses that "signs PPA" / "commissions plant" / "secures funding" are positive events.
+RENEWABLE_LEXICON_BOOST = {
+    "ppa": 1.5, "ppas": 1.5,
+    "signs": 1.5, "signed": 1.5,
+    "secures": 2.0, "secured": 2.0,
+    "commissions": 2.5, "commissioned": 2.5, "commissioning": 2.0,
+    "inaugurates": 2.0, "inaugurated": 2.0,
+    "launches": 1.5, "launched": 1.5,
+    "completes": 2.0, "completed": 2.0,
+    "raises": 1.5, "raised": 1.5,
+    "wins": 2.5, "won": 2.0,
+    "awarded": 2.5,
+    "expansion": 1.5, "expands": 1.5,
+    "deal": 1.0,
+    "partnership": 1.5,
+    "milestone": 2.0,
+    "record": 1.5,
+    "operational": 1.5,
+    "delays": -2.0, "delayed": -2.0,
+    "fails": -2.5, "failed": -2.5,
+    "cancels": -2.0, "cancelled": -2.0, "canceled": -2.0,
+    "fines": -2.0, "fined": -2.0,
+    "lawsuit": -2.5,
+    "default": -2.0, "defaults": -2.0,
+    "bankruptcy": -3.0,
+    "drops": -1.5, "dropped": -1.5,
+    "exits": -1.0, "exited": -1.0,
+}
 
 ROOT = Path(__file__).parent
 DATA_PATH = ROOT / "sov_data.json"
@@ -39,6 +70,35 @@ def load_data():
     return json.loads(DATA_PATH.read_text())
 
 
+@st.cache_resource
+def get_sentiment_analyzer():
+    a = SentimentIntensityAnalyzer()
+    a.lexicon.update(RENEWABLE_LEXICON_BOOST)
+    return a
+
+
+def sentiment_label(score: float) -> str:
+    if score >= 0.05:
+        return "positive"
+    if score <= -0.05:
+        return "negative"
+    return "neutral"
+
+
+@st.cache_data
+def compute_sentiments(_data):
+    """Score every article. Keyed by URL → {score, label}."""
+    a = get_sentiment_analyzer()
+    out = {}
+    for company in _data["companies"]:
+        for arts in _data["data"][company].values():
+            for art in arts:
+                text = art["title"] + " " + (art.get("snippet") or "")
+                score = a.polarity_scores(text)["compound"]
+                out[art["url"]] = {"score": score, "label": sentiment_label(score)}
+    return out
+
+
 def categorize(title: str) -> str:
     t = title.lower()
     if any(k in t for k in ["ppa", "power purchase", "signs", "supply agreement"]):
@@ -59,10 +119,18 @@ def categorize(title: str) -> str:
 
 
 data = load_data()
+sentiments = compute_sentiments(data)
 months = data["months"]
 month_labels = [m["label"] for m in months]
 month_display = {m["label"]: m["display"] for m in months}
 all_companies = data["companies"]
+
+
+def sent_for(url: str) -> dict:
+    return sentiments.get(url, {"score": 0.0, "label": "neutral"})
+
+
+SENTIMENT_EMOJI = {"positive": "🟢", "neutral": "⚪", "negative": "🔴"}
 
 # ─────────────── Sidebar ───────────────
 with st.sidebar:
@@ -171,13 +239,14 @@ st.markdown("---")
 
 
 # ─────────────── Tabs ───────────────
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
     "📈 SOV Trend",
     "📊 Monthly Composition",
     "📰 Highlights",
     "🗂️ Article Browser",
     "🏷️ Categories",
     "🎯 KRA Metrics",
+    "💚 Sentiment",
 ])
 
 # ── Tab 1: SOV Trend (line)
@@ -304,8 +373,10 @@ with tab4:
     if articles:
         rows_a = []
         for a in sorted(articles, key=lambda x: x.get("published") or "", reverse=True):
+            s = sent_for(a["url"])
             rows_a.append({
                 "Date": (a["published"][:10] if a.get("published") else "—"),
+                "Sentiment": f"{SENTIMENT_EMOJI[s['label']]} {s['score']:+.2f}",
                 "Source": a.get("source") or "—",
                 "Title": a["title"],
                 "Category": categorize(a["title"]),
@@ -320,6 +391,7 @@ with tab4:
             column_config={
                 "URL": st.column_config.LinkColumn("Open"),
                 "Title": st.column_config.TextColumn("Title", width="large"),
+                "Sentiment": st.column_config.TextColumn("Sentiment", width="small"),
             },
         )
     else:
@@ -420,6 +492,132 @@ with tab6:
             "(e.g., 'Suzlon secures order from Sunsure'). For a stricter 'PR put out by Sunsure' count, filter to titles where "
             "Sunsure is the grammatical subject — typically ~50–55."
         )
+
+
+# ── Tab 7: Sentiment
+with tab7:
+    st.subheader("💚 Sentiment Analysis (VADER + renewable-tuned lexicon)")
+    st.caption(
+        "Compound scores: -1 (very negative) to +1 (very positive). "
+        "Threshold: ≥ +0.05 positive · ≤ -0.05 negative · else neutral. "
+        "VADER lexicon boosted with industry terms (signs/secures/commissions/PPA = positive)."
+    )
+
+    # Build per-article sentiment dataframe
+    sent_rows = []
+    for c in selected_companies:
+        for m in month_labels:
+            for art in data["data"][c][m]:
+                s = sent_for(art["url"])
+                sent_rows.append({
+                    "Company": c,
+                    "Month": m,
+                    "Display": month_display[m],
+                    "Score": s["score"],
+                    "Label": s["label"],
+                })
+    sent_df = pd.DataFrame(sent_rows)
+
+    if sent_df.empty:
+        st.warning("No articles in current selection.")
+    else:
+        # ── Avg sentiment trend per company
+        st.markdown("##### Average sentiment by month")
+        avg_by_month = sent_df.groupby(["Display", "Company"])["Score"].mean().reset_index()
+        fig = go.Figure()
+        for c in selected_companies:
+            d = avg_by_month[avg_by_month["Company"] == c]
+            d = d.set_index("Display").reindex([month_display[m] for m in month_labels]).reset_index()
+            is_sunsure = c == "Sunsure"
+            fig.add_trace(go.Scatter(
+                x=d["Display"],
+                y=d["Score"],
+                mode="lines+markers",
+                name=c,
+                line=dict(width=4 if is_sunsure else 2, color=COMPANY_COLORS.get(c)),
+                marker=dict(size=10 if is_sunsure else 6, color=COMPANY_COLORS.get(c)),
+            ))
+        fig.add_hline(y=0, line_dash="dash", line_color="gray", annotation_text="Neutral")
+        fig.update_layout(
+            height=480,
+            yaxis_title="Avg compound sentiment",
+            hovermode="x unified",
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        )
+        st.plotly_chart(fig, width="stretch")
+
+        # ── Sunsure FY26 breakdown
+        st.markdown("##### Sunsure FY26 — Sentiment Distribution")
+        sunsure_sent = sent_df[sent_df["Company"] == "Sunsure"]
+        if not sunsure_sent.empty:
+            total = len(sunsure_sent)
+            pos = (sunsure_sent["Label"] == "positive").sum()
+            neu = (sunsure_sent["Label"] == "neutral").sum()
+            neg = (sunsure_sent["Label"] == "negative").sum()
+            avg = sunsure_sent["Score"].mean()
+
+            c1, c2, c3, c4 = st.columns(4)
+            c1.metric("🟢 Positive", f"{pos}", f"{pos/total*100:.0f}% of {total}", delta_color="off")
+            c2.metric("⚪ Neutral", f"{neu}", f"{neu/total*100:.0f}% of {total}", delta_color="off")
+            c3.metric("🔴 Negative", f"{neg}", f"{neg/total*100:.0f}% of {total}", delta_color="off")
+            c4.metric("Avg score", f"{avg:+.3f}", "(higher is better)", delta_color="off")
+
+        # ── Competitor comparison (avg sentiment FY)
+        st.markdown("##### Average FY26 sentiment by company")
+        avg_by_co = sent_df.groupby("Company")["Score"].agg(["mean", "count"]).reset_index()
+        avg_by_co.columns = ["Company", "Avg score", "Articles"]
+        avg_by_co = avg_by_co.sort_values("Avg score", ascending=False)
+        fig_bar = px.bar(
+            avg_by_co, x="Company", y="Avg score",
+            color="Company", color_discrete_map=COMPANY_COLORS,
+            text="Avg score",
+        )
+        fig_bar.update_traces(texttemplate="%{text:+.2f}", textposition="outside")
+        fig_bar.update_layout(height=400, showlegend=False)
+        st.plotly_chart(fig_bar, width="stretch")
+
+        # ── Most positive / most negative for Sunsure
+        st.markdown("##### 🟢 Most positive Sunsure articles (top 10)")
+        sunsure_articles = []
+        for m in month_labels:
+            for art in data["data"]["Sunsure"][m]:
+                sunsure_articles.append((art, sent_for(art["url"])["score"]))
+
+        top_pos = sorted(sunsure_articles, key=lambda x: -x[1])[:10]
+        for art, score in top_pos:
+            d = (art.get("published") or "")[:10]
+            src = art.get("source") or "—"
+            st.markdown(f"`{score:+.2f}` · `{d}` · **[{src}]** [{art['title']}]({art['url']})")
+
+        st.markdown("##### 🔴 Most negative Sunsure articles (top 10)")
+        top_neg = sorted(sunsure_articles, key=lambda x: x[1])[:10]
+        if not top_neg or top_neg[0][1] >= 0:
+            st.success("No negative-scoring Sunsure articles found in FY26 — your coverage is uniformly positive or neutral.")
+        else:
+            for art, score in top_neg:
+                if score >= 0:
+                    break
+                d = (art.get("published") or "")[:10]
+                src = art.get("source") or "—"
+                st.markdown(f"`{score:+.2f}` · `{d}` · **[{src}]** [{art['title']}]({art['url']})")
+
+    with st.expander("ℹ️ How this works + caveats"):
+        st.markdown("""
+**Methodology**
+
+- **VADER** (Valence Aware Dictionary and sEntiment Reasoner) — rules-based lexicon with ~7,500 words scored for sentiment, plus heuristics for negation/intensifiers.
+- **Custom boost**: VADER doesn't know that "signs PPA" or "commissions plant" are positive in renewable-energy context. The lexicon has been augmented with ~30 domain terms (signs, secures, commissions, PPA, awarded, milestone, etc.).
+- **Score**: compound score from -1 to +1 across the title + snippet.
+- **Label**: positive ≥ +0.05 · neutral · negative ≤ -0.05.
+
+**Caveats**
+
+- Lexicon-based sentiment is ~75-80% accurate on news headlines vs human raters
+- Misses sarcasm, complex negation ("not bad" → still positive), and ironic framing
+- Snippets from Google News are short (~200 chars), so longer-context cues are missed
+- A piece can score "negative" because of negative *industry* news while being neutral *for Sunsure* (e.g., "Industry concerned about new tax — Sunsure CEO comments")
+- For nuanced / strategic sentiment, an LLM would do better — but VADER is free, fast, and offline.
+""")
 
 
 # ─────────────── Footer ───────────────

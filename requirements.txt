@@ -4,3 +4,4 @@ PyYAML>=6.0
 streamlit>=1.50.0
 pandas>=2.0.0
 plotly>=5.20.0
+vaderSentiment>=3.3.2
