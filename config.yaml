@@ -1,0 +1,56 @@
+# Brand monitor config — edit freely.
+
+company: "Sunsure Energy"
+company_desc: >
+  Indian Independent Power Producer (IPP) founded 2014, providing round-the-clock
+  renewable energy (RE-RTC) solutions — solar, wind, and battery storage (BESS) —
+  to commercial & industrial (C&I) clients via open access PPAs. 700+ MW
+  commissioned, 7.1+ GW pipeline. Target customers: steel, cement, data centers,
+  pharma, automotive.
+
+# Terms the LLM should match as "about us". Google News search wraps each in quotes.
+keywords:
+  - "Sunsure Energy"
+  - "Sunsure Solar"
+  - "sunsure-energy.com"
+  # Add founder / leadership names here:
+  # - "Shashank Sharma"
+
+# Competitors tracked for share-of-voice. Shown in a separate section in the digest.
+competitors:
+  - "ReNew Power"
+  - "Ampin Energy"
+  - "AMPIN"
+  - "Cleanmax Solar"
+  - "Cleanmax Enviro"
+  - "Gentari"
+
+# Extra RSS feeds to pull from (industry publications). These are already filtered to
+# your topic area, so we keyword-prefilter them before sending to the LLM.
+# All 8 below were validated working as of 2026-04-25.
+extra_feeds:
+  - name: "Mercom India"
+    url: "https://www.mercomindia.com/feed"
+  - name: "PV Magazine India"
+    url: "https://www.pv-magazine-india.com/feed/"
+  - name: "ET EnergyWorld"
+    url: "https://energy.economictimes.indiatimes.com/rss/topstories"
+  - name: "SolarQuarter"
+    url: "https://solarquarter.com/feed/"
+  - name: "PV Tech"
+    url: "https://www.pv-tech.org/feed/"
+  - name: "Mint - Companies"
+    url: "https://www.livemint.com/rss/companies"
+  - name: "ET Auto"
+    url: "https://auto.economictimes.indiatimes.com/rss/topstories"
+  - name: "ET Manufacturing"
+    url: "https://manufacturing.economictimes.indiatimes.com/rss/topstories"
+
+email:
+  from: "monitor@yourdomain.com"
+  to:
+    - "you@yourdomain.com"
+  smtp_host: "smtp.gmail.com"
+  smtp_port: 587
+  smtp_user: "your.gmail.address@gmail.com"
+  smtp_password_env: "SMTP_PASSWORD"   # set this in the environment (Gmail App Password)

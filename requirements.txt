@@ -1,0 +1,6 @@
+anthropic>=0.40.0
+feedparser>=6.0.10
+PyYAML>=6.0
+streamlit>=1.50.0
+pandas>=2.0.0
+plotly>=5.20.0

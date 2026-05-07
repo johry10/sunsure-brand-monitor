@@ -1,0 +1,8 @@
+.env
+seen.db
+__pycache__/
+*.pyc
+venv/
+.venv/
+streamlit.log
+run.log
