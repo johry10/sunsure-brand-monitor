@@ -3,6 +3,7 @@ Run with: streamlit run dashboard.py"""
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
@@ -45,6 +46,7 @@ RENEWABLE_LEXICON_BOOST = {
 
 ROOT = Path(__file__).parent
 DATA_PATH = ROOT / "sov_data.json"
+DATA_PATH_FY25 = ROOT / "sov_data_fy25.json"
 
 # Sunsure brand color: RGB(253, 58, 32) → #FD3A20
 SUNSURE_COLOR = "#FD3A20"
@@ -68,6 +70,13 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     return json.loads(DATA_PATH.read_text())
+
+
+@st.cache_data
+def load_fy25_data():
+    if DATA_PATH_FY25.exists():
+        return json.loads(DATA_PATH_FY25.read_text())
+    return None
 
 
 @st.cache_resource
@@ -118,7 +127,18 @@ def categorize(title: str) -> str:
     return "Other"
 
 
+def is_industry_quote(article: dict) -> bool:
+    """True if Sunsure appears to be quoted/cited as a source in the snippet."""
+    text = ((article.get("snippet") or "") + " " + (article.get("title") or "")).lower()
+    if re.search(r"sunsure.{0,40}(said|says|told|commented|noted|added|highlighted|stated)", text):
+        return True
+    if re.search(r"(said|says|told|according to|commented|per).{0,40}sunsure", text):
+        return True
+    return False
+
+
 data = load_data()
+data_fy25 = load_fy25_data()
 sentiments = compute_sentiments(data)
 months = data["months"]
 month_labels = [m["label"] for m in months]
@@ -239,7 +259,7 @@ st.markdown("---")
 
 
 # ─────────────── Tabs ───────────────
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
     "📈 SOV Trend",
     "📊 Monthly Composition",
     "📰 Highlights",
@@ -247,6 +267,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
     "🏷️ Categories",
     "🎯 KRA Metrics",
     "💚 Sentiment",
+    "📅 FY25 vs FY26",
 ])
 
 # ── Tab 1: SOV Trend (line)
@@ -618,6 +639,265 @@ with tab7:
 - A piece can score "negative" because of negative *industry* news while being neutral *for Sunsure* (e.g., "Industry concerned about new tax — Sunsure CEO comments")
 - For nuanced / strategic sentiment, an LLM would do better — but VADER is free, fast, and offline.
 """)
+
+
+# ── Tab 8: FY25 vs FY26 Comparison
+with tab8:
+    st.subheader("FY25 vs FY26 — Year-on-Year Comparison")
+    st.caption("FY25 = Apr 2024 – Mar 2025  ·  FY26 = Apr 2025 – Mar 2026")
+
+    if data_fy25 is None:
+        st.error("`sov_data_fy25.json` not found. Run `python collect_data_fy25.py` first.")
+    else:
+        fy25_months = [m["label"] for m in data_fy25["months"]]
+        fy26_months = month_labels  # already loaded
+
+        # ── Helper: compute SOV summary for a given dataset
+        def fy_sov_summary(d: dict, months: list[str], companies: list[str]) -> dict:
+            """Returns {company: {total_articles, avg_sov, monthly_sov[]}} for all companies."""
+            result = {}
+            for c in companies:
+                monthly_counts = [len(d["data"][c].get(m, [])) for m in months]
+                monthly_totals = [
+                    sum(len(d["data"][cc].get(m, [])) for cc in companies)
+                    for m in months
+                ]
+                monthly_sov = [
+                    round(cnt / tot * 100, 1) if tot else 0.0
+                    for cnt, tot in zip(monthly_counts, monthly_totals)
+                ]
+                total_pool = sum(monthly_totals)
+                total_articles = sum(monthly_counts)
+                avg_sov = round(total_articles / total_pool * 100, 1) if total_pool else 0.0
+                result[c] = {
+                    "total_articles": total_articles,
+                    "avg_sov": avg_sov,
+                    "monthly_sov": monthly_sov,
+                    "monthly_counts": monthly_counts,
+                }
+            return result
+
+        fy25_summary = fy_sov_summary(data_fy25, fy25_months, all_companies)
+        fy26_summary = fy_sov_summary(data, fy26_months, all_companies)
+
+        # ── 1. KPI cards for Sunsure
+        st.markdown("### 1. Overall SOV — Sunsure Energy")
+        s25 = fy25_summary["Sunsure"]
+        s26 = fy26_summary["Sunsure"]
+        delta_sov = round(s26["avg_sov"] - s25["avg_sov"], 1)
+        delta_articles = s26["total_articles"] - s25["total_articles"]
+
+        kc1, kc2, kc3, kc4 = st.columns(4)
+        kc1.metric("FY25 avg SOV", f"{s25['avg_sov']:.1f}%",
+                   f"{s25['total_articles']} articles", delta_color="off")
+        kc2.metric("FY26 avg SOV", f"{s26['avg_sov']:.1f}%",
+                   f"{s26['total_articles']} articles", delta_color="off")
+        kc3.metric("SOV change (pp)", f"{delta_sov:+.1f}pp",
+                   "FY25 → FY26", delta_color="normal")
+        kc4.metric("Article volume change", f"{delta_articles:+d}",
+                   "FY25 → FY26", delta_color="normal")
+
+        # ── SOV comparison bar chart (all companies, FY25 vs FY26)
+        st.markdown("##### FY25 vs FY26 SOV — all companies")
+        compare_rows = []
+        for c in all_companies:
+            compare_rows.append({"Company": c, "FY": "FY25", "SOV %": fy25_summary[c]["avg_sov"],
+                                  "Articles": fy25_summary[c]["total_articles"]})
+            compare_rows.append({"Company": c, "FY": "FY26", "SOV %": fy26_summary[c]["avg_sov"],
+                                  "Articles": fy26_summary[c]["total_articles"]})
+        df_compare = pd.DataFrame(compare_rows)
+
+        fig_sov = px.bar(
+            df_compare, x="Company", y="SOV %", color="FY",
+            barmode="group",
+            color_discrete_map={"FY25": "#AAAAAA", "FY26": SUNSURE_COLOR},
+            text="SOV %",
+        )
+        fig_sov.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
+        fig_sov.update_layout(height=430, yaxis_title="Avg SOV (%)", xaxis_title=None,
+                               legend_title=None)
+        st.plotly_chart(fig_sov, width="stretch")
+
+        # Sunsure SOV trend comparison (FY25 line vs FY26 line on same chart)
+        st.markdown("##### Sunsure: monthly SOV trajectory — FY25 vs FY26")
+        fy25_disp = [data_fy25["months"][i]["display"] for i in range(12)]
+        fy26_disp = [month_display[m] for m in fy26_months]
+        month_labels_short = ["Apr", "May", "Jun", "Jul", "Aug", "Sep",
+                               "Oct", "Nov", "Dec", "Jan", "Feb", "Mar"]
+        fig_trend = go.Figure()
+        fig_trend.add_trace(go.Scatter(
+            x=month_labels_short,
+            y=s25["monthly_sov"],
+            mode="lines+markers",
+            name="FY25",
+            line=dict(width=2, color="#AAAAAA", dash="dash"),
+            marker=dict(size=7),
+            customdata=fy25_disp,
+            hovertemplate="%{customdata}: %{y:.1f}%<extra>FY25</extra>",
+        ))
+        fig_trend.add_trace(go.Scatter(
+            x=month_labels_short,
+            y=s26["monthly_sov"],
+            mode="lines+markers",
+            name="FY26",
+            line=dict(width=3, color=SUNSURE_COLOR),
+            marker=dict(size=9, color=SUNSURE_COLOR),
+            customdata=fy26_disp,
+            hovertemplate="%{customdata}: %{y:.1f}%<extra>FY26</extra>",
+        ))
+        fig_trend.update_layout(
+            height=400,
+            yaxis_title="Sunsure SOV (%)",
+            xaxis_title="Month (Apr → Mar)",
+            hovermode="x unified",
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        )
+        st.plotly_chart(fig_trend, width="stretch")
+
+        # Summary table
+        with st.expander("Full SOV table — FY25 vs FY26 (all companies)"):
+            tbl_rows = []
+            for c in all_companies:
+                s25c = fy25_summary[c]
+                s26c = fy26_summary[c]
+                tbl_rows.append({
+                    "Company": c,
+                    "FY25 Articles": s25c["total_articles"],
+                    "FY25 SOV %": f"{s25c['avg_sov']:.1f}%",
+                    "FY26 Articles": s26c["total_articles"],
+                    "FY26 SOV %": f"{s26c['avg_sov']:.1f}%",
+                    "SOV Δ (pp)": f"{s26c['avg_sov'] - s25c['avg_sov']:+.1f}",
+                    "Volume Δ": f"{s26c['total_articles'] - s25c['total_articles']:+d}",
+                })
+            st.dataframe(pd.DataFrame(tbl_rows), hide_index=True, width="stretch")
+
+        st.markdown("---")
+
+        # ── 2. Industry stories quoting/tagging Sunsure
+        st.markdown("### 2. Industry Stories Tagging Sunsure as a Source")
+        st.caption(
+            "Detected by scanning snippets for patterns like "
+            '"Sunsure said / told / commented / according to Sunsure". '
+            "Benchmark: ~2 per month."
+        )
+
+        def count_quotes(d: dict, months: list[str]) -> list[int]:
+            return [
+                sum(1 for a in d["data"]["Sunsure"].get(m, []) if is_industry_quote(a))
+                for m in months
+            ]
+
+        fy25_quotes = count_quotes(data_fy25, fy25_months)
+        fy26_quotes = count_quotes(data, fy26_months)
+        total_fy25_quotes = sum(fy25_quotes)
+        total_fy26_quotes = sum(fy26_quotes)
+        avg_fy25_q = total_fy25_quotes / 12
+        avg_fy26_q = total_fy26_quotes / 12
+
+        qc1, qc2, qc3 = st.columns(3)
+        qc1.metric("FY25 quote detections", total_fy25_quotes,
+                   f"{avg_fy25_q:.1f}/month avg", delta_color="off")
+        qc2.metric("FY26 quote detections", total_fy26_quotes,
+                   f"{avg_fy26_q:.1f}/month avg", delta_color="off")
+        qc3.metric("Change", f"{total_fy26_quotes - total_fy25_quotes:+d}",
+                   "FY25 → FY26", delta_color="normal")
+
+        fig_q = go.Figure()
+        fig_q.add_trace(go.Bar(
+            x=month_labels_short, y=fy25_quotes, name="FY25",
+            marker_color="#AAAAAA",
+        ))
+        fig_q.add_trace(go.Bar(
+            x=month_labels_short, y=fy26_quotes, name="FY26",
+            marker_color=SUNSURE_COLOR,
+        ))
+        fig_q.add_hline(y=2, line_dash="dot", line_color="#555555",
+                        annotation_text="2/month target", annotation_position="top left")
+        fig_q.update_layout(
+            height=380,
+            barmode="group",
+            yaxis_title="Articles with Sunsure as source",
+            xaxis_title="Month (Apr → Mar)",
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        )
+        st.plotly_chart(fig_q, width="stretch")
+
+        with st.expander("ℹ️ Methodology note on quote detection"):
+            st.markdown("""
+**How quotes are detected**: The scanner looks for proximity patterns in the 300-character snippet:
+- *"Sunsure said / told / commented / noted / highlighted"* — company cited after a verb
+- *"said / told / according to ... Sunsure"* — company cited before the verb phrase
+
+**Caveats**: Google News snippets are short (~200–300 chars). Many quotes will be missed because
+the relevant text appears beyond the snippet. Treat this as a **lower bound**. The actual number
+of articles where Sunsure is quoted will be higher. Manual review of the Media Features list
+(KRA Metrics tab) will give the definitive count.
+""")
+
+        st.markdown("---")
+
+        # ── 3. Website traffic
+        st.markdown("### 3. Website Traffic — FY25 vs FY26")
+        st.info(
+            "**Website traffic data is not available via RSS or Google News.** "
+            "This requires Google Analytics (GA4) or a SimilarWeb export. "
+            "Enter your monthly session data below to generate the comparison chart.",
+            icon="ℹ️",
+        )
+
+        with st.expander("Enter website traffic data (optional)", expanded=False):
+            st.caption("Paste monthly sessions from Google Analytics → Reports → Traffic → Sessions. "
+                       "Leave blank if unavailable.")
+            col_fy25, col_fy26 = st.columns(2)
+
+            with col_fy25:
+                st.markdown("**FY25 — monthly sessions**")
+                traffic_fy25 = {}
+                for short, label in zip(month_labels_short, fy25_disp):
+                    v = st.number_input(label, min_value=0, value=0,
+                                        key=f"t25_{short}", step=100)
+                    traffic_fy25[short] = v
+
+            with col_fy26:
+                st.markdown("**FY26 — monthly sessions**")
+                traffic_fy26 = {}
+                for short, label in zip(month_labels_short, fy26_disp):
+                    v = st.number_input(label, min_value=0, value=0,
+                                        key=f"t26_{short}", step=100)
+                    traffic_fy26[short] = v
+
+        t25_vals = [traffic_fy25.get(s, 0) for s in month_labels_short]
+        t26_vals = [traffic_fy26.get(s, 0) for s in month_labels_short]
+        has_traffic = any(v > 0 for v in t25_vals + t26_vals)
+
+        if has_traffic:
+            total_t25 = sum(t25_vals)
+            total_t26 = sum(t26_vals)
+            delta_t = ((total_t26 - total_t25) / total_t25 * 100) if total_t25 else 0
+
+            tc1, tc2, tc3 = st.columns(3)
+            tc1.metric("FY25 total sessions", f"{total_t25:,}")
+            tc2.metric("FY26 total sessions", f"{total_t26:,}")
+            tc3.metric("YoY change", f"{delta_t:+.1f}%", delta_color="normal")
+
+            fig_t = go.Figure()
+            fig_t.add_trace(go.Bar(
+                x=month_labels_short, y=t25_vals, name="FY25",
+                marker_color="#AAAAAA",
+            ))
+            fig_t.add_trace(go.Bar(
+                x=month_labels_short, y=t26_vals, name="FY26",
+                marker_color=SUNSURE_COLOR,
+            ))
+            fig_t.update_layout(
+                height=380, barmode="group",
+                yaxis_title="Monthly sessions",
+                xaxis_title="Month (Apr → Mar)",
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+            )
+            st.plotly_chart(fig_t, width="stretch")
+        else:
+            st.caption("Charts will appear once you enter traffic data above.")
 
 
 # ─────────────── Footer ───────────────
