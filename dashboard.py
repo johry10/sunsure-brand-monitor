@@ -45,8 +45,9 @@ RENEWABLE_LEXICON_BOOST = {
 }
 
 ROOT = Path(__file__).parent
-DATA_PATH = ROOT / "sov_data.json"
-DATA_PATH_FY25 = ROOT / "sov_data_fy25.json"
+# Prefer cleaned versions (noise-filtered). Fall back to raw if not present.
+DATA_PATH = ROOT / "sov_data_clean.json" if (ROOT / "sov_data_clean.json").exists() else ROOT / "sov_data.json"
+DATA_PATH_FY25 = ROOT / "sov_data_fy25_clean.json" if (ROOT / "sov_data_fy25_clean.json").exists() else ROOT / "sov_data_fy25.json"
 
 # Sunsure brand color: RGB(253, 58, 32) → #FD3A20
 SUNSURE_COLOR = "#FD3A20"
@@ -914,6 +915,7 @@ with st.expander("ℹ️ Methodology & caveats"):
 
 **Caveats**
 
+- **Noise filter applied**: articles are kept only if the company's name appears in the title or snippet. Raw Google News RSS returns loosely related articles (e.g., "KSL Cleantech" triggering for "Cleantech Solar") — the filter removes these. Noise rates ranged from 16% (Cleanmax) to 91% (Hexa Climate) in raw data.
 - Google News RSS deprioritizes older content — coverage estimates for FY-early months may be undercounted
 - Industry RSS feeds (Mercom, PV Tech, etc.) only return ~10-50 most recent items, so they can't backfill history
 - Paywalled coverage (Bloomberg, FT, Mint Premium) is not included
