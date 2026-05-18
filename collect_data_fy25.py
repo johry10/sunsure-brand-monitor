@@ -23,7 +23,6 @@ COMPANIES: dict[str, list[str]] = {
     "Ampin":           ["Ampin Energy", "AMPIN Solar"],
     "Gentari/Amplus":  ["Gentari", "Amplus Solar", "Amplus Energy"],
     "Hexa Climate":    ["Hexa Climate"],
-    "Cleantech Solar": ["Cleantech Solar"],
 }
 
 # FY 2024-25: Apr 2024 to Mar 2025

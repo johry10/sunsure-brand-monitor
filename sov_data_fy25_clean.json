@@ -57,8 +57,7 @@
     "Cleanmax",
     "Ampin",
     "Gentari/Amplus",
-    "Hexa Climate",
-    "Cleantech Solar"
+    "Hexa Climate"
   ],
   "data": {
     "Sunsure": {
@@ -1867,66 +1866,6 @@
       "2025-01": [],
       "2025-02": [],
       "2025-03": []
-    },
-    "Cleantech Solar": {
-      "2024-04": [],
-      "2024-05": [],
-      "2024-06": [
-        {
-          "title": "Cleantech Solar Secures $103 Million for Renewable Energy Projects in India - Mercomindia.com",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhazAtdlhXaGpRWWd3SHk3UjM1LWRrM0l0Z0RjMFIyOG94UVdScWkwLXRXbG1GbXc2dnI5SnF5Rk1rWkRTODdfRTU5ZWRtNVJuT0c1RzNYdnFsTkpHRG9WekZPSzNldExwWHpWMkMwRk1Vd2pEcjZna2NzcXNWV28?oc=5",
-          "source": "Mercomindia.com",
-          "published": "2024-06-25T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhazAtdlhXaGpRWWd3SHk3UjM1LWRrM0l0Z0RjMFIyOG94UVdScWkwLXRXbG1GbXc2dnI5SnF5Rk1rWkRTODdfRTU5ZWRtNVJuT0c1RzNYdnFsTkpHRG9WekZPSzNldExwWHpWMkMwRk1Vd2pEcjZna2NzcXNWV28?oc=5\" target=\"_blank\">Cleantech Solar Secures $103 Million for Renewable Energ"
-        },
-        {
-          "title": "Cleantech Solar Secures INR 855 Crore Loan from Aseem Infrastructure for Renewable Energy Expansion in India - SolarQuarter",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPZWgyUU04RUNiR3piSkE0RkttQWFHdHMzNmFCaHp6NG01ZGVlNkNWRTRuSmtfZW1kMi1LamFRZU5sY041Wjh2S0xZelJ0X2dyaEk5QTYxUktXV0F3aE1NWkhPS21MQXAyczlpRzZzV1RQU0FuQ3BhNE5jMG12V2NKQTBvbldEYWYzRU1YSEpqSGtXbmdqWmV2Wm44VnJPeGh3UGhtQ3UtSUQ4NU1rbXE5bUtpOHFrVkNsNFExR0ViV0pfXy1nMmYzVWh3bXB5bTNJbnByaWlIdWpvazl6M0E?oc=5",
-          "source": "SolarQuarter",
-          "published": "2024-06-26T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxPZWgyUU04RUNiR3piSkE0RkttQWFHdHMzNmFCaHp6NG01ZGVlNkNWRTRuSmtfZW1kMi1LamFRZU5sY041Wjh2S0xZelJ0X2dyaEk5QTYxUktXV0F3aE1NWkhPS21MQXAyczlpRzZzV1RQU0FuQ3BhNE5jMG12V2NKQTBvbldEYWYzRU1YSEpqSGtXbmdqWmV2Wm44VnJPeGh3UGhtQ3UtSUQ4NU1rbXE5bUtpOHFrVkNsNF"
-        }
-      ],
-      "2024-07": [],
-      "2024-08": [],
-      "2024-09": [],
-      "2024-10": [],
-      "2024-11": [],
-      "2024-12": [
-        {
-          "title": "Cleantech Solar Appoints Sanjay Gupta as CEO - Energetica India Magazine",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOLTdJOFZFcUlxUmZIYXk3dnlxVEVXTlFIc0dOVTBkdWY4RmVqOGZNN1dWZWtvV2x6b2JVX2MyZ2ZPaGE0VmhST3hrUVM1aVNoUEFKZklMMERhNkI5SDk4M01ZeldadUJRSlEteVJkRk9pNTRmdmJCYUpsSmlCMFFBdkp2YzI2dUpFSUE?oc=5",
-          "source": "Energetica India Magazine",
-          "published": "2024-12-26T08:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOLTdJOFZFcUlxUmZIYXk3dnlxVEVXTlFIc0dOVTBkdWY4RmVqOGZNN1dWZWtvV2x6b2JVX2MyZ2ZPaGE0VmhST3hrUVM1aVNoUEFKZklMMERhNkI5SDk4M01ZeldadUJRSlEteVJkRk9pNTRmdmJCYUpsSmlCMFFBdkp2YzI2dUpFSUE?oc=5\" target=\"_blank\">Cleantech Solar Appoints Sanjay Gupta as"
-        },
-        {
-          "title": "Cleantech Solar Launches 150 MWp Open Access Solar Park Project In Maharashtra - Saur Energy",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNS05LRUxnblFiQl9LWGV5OUxwZkNIN19jTjh5WjJackhIUEVSQUZEN2I0UWtiNEt6bGxObm5za1ctVnY4Y2E2NGZIMjNBUm03SlpGSml1N0diN2xDMHItaXJWZHRYNjVqMUpHZVJFN2UzdTYtVXAxNkppanVhYVRzRmdrWTlPZXlKVDFHNE8yUjhFWERCR00xdm0tYVFaMWk1TmRWRGkzeFFTMHg0ZFhOT2cwaGg3ci1PQ2xxdFVtSjY?oc=5",
-          "source": "Saur Energy",
-          "published": "2024-12-30T08:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNS05LRUxnblFiQl9LWGV5OUxwZkNIN19jTjh5WjJackhIUEVSQUZEN2I0UWtiNEt6bGxObm5za1ctVnY4Y2E2NGZIMjNBUm03SlpGSml1N0diN2xDMHItaXJWZHRYNjVqMUpHZVJFN2UzdTYtVXAxNkppanVhYVRzRmdrWTlPZXlKVDFHNE8yUjhFWERCR00xdm0tYVFaMWk1TmRWRGkzeFFTMHg0ZFhOT2cwaGg3ci1PQ2"
-        }
-      ],
-      "2025-01": [
-        {
-          "title": "Cleantech Solar Names Sanjay Gupta As New CEO In Leadership Transition - SolarQuarter",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenZGel9BQkZiekxCWmxrNVY3Q2ZRVGUwNkhoMUt2RHN0WF9OYnRYZHFKQmdkZlltZmZJdDhqeVphTkxlVDZTWmtUeHVWTnNRWWJ2VHNuX0ZNUW9aclpUd1JnTktqLW9RQjJZNURKRlk5WVVaQmxuY1ZzVjFOSFlfWDJHRjkxdFV4NXQ2NkRLbTFIVUlzNl9zRi10VC1oVEtIcUlTb2RiQ0k4NHc?oc=5",
-          "source": "SolarQuarter",
-          "published": "2025-01-02T08:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenZGel9BQkZiekxCWmxrNVY3Q2ZRVGUwNkhoMUt2RHN0WF9OYnRYZHFKQmdkZlltZmZJdDhqeVphTkxlVDZTWmtUeHVWTnNRWWJ2VHNuX0ZNUW9aclpUd1JnTktqLW9RQjJZNURKRlk5WVVaQmxuY1ZzVjFOSFlfWDJHRjkxdFV4NXQ2NkRLbTFIVUlzNl9zRi10VC1oVEtIcUlTb2RiQ0k4NHc?oc=5\" target=\"_bla"
-        }
-      ],
-      "2025-02": [
-        {
-          "title": "\u201cSolar cell manufacturing in India will require substantial engineering and R&D\u201d: Cleantech Solar's Akshat Nagpal - Renewable Watch Magazine",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPb2tpeEpmZVdBQU5vSUw3U1NDTlNqRllEUnpFeWJBV1NPaGQ1eGM2VUpIUTAwSnYtYVpzWjQ2QXhRcE43d2R1a20tc2ZUMWZEN1RHWjRhU2xIWjZEejRsYnBqUU5Lc055dWRsaTkzcFR0MW51d0N0UWtIYWdMUGlhQXdEaUNqVGpwNS04cXVFODBRQ0dKbV9QTkliSXJFQjNEX0NyZlloYWZfVkVHYUNOeGdvdDZUZzlvMXUyNHNPV2F5RjlJdWZlT2tfcVN3R2ltbmU0NmZzT09Nb0RZN0Fj?oc=5",
-          "source": "Renewable Watch Magazine",
-          "published": "2025-02-06T08:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxPb2tpeEpmZVdBQU5vSUw3U1NDTlNqRllEUnpFeWJBV1NPaGQ1eGM2VUpIUTAwSnYtYVpzWjQ2QXhRcE43d2R1a20tc2ZUMWZEN1RHWjRhU2xIWjZEejRsYnBqUU5Lc055dWRsaTkzcFR0MW51d0N0UWtIYWdMUGlhQXdEaUNqVGpwNS04cXVFODBRQ0dKbV9QTkliSXJFQjNEX0NyZlloYWZfVkVHYUNOeGdvdDZUZzlvMX"
-        }
-      ],
-      "2025-03": []
     }
   },
   "highlights": {
@@ -2312,44 +2251,6 @@
       "2024-12": null,
       "2025-01": null,
       "2025-02": null,
-      "2025-03": null
-    },
-    "Cleantech Solar": {
-      "2024-04": null,
-      "2024-05": null,
-      "2024-06": {
-        "title": "Cleantech Solar Secures $103 Million for Renewable Energy Projects in India - Mercomindia.com",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhazAtdlhXaGpRWWd3SHk3UjM1LWRrM0l0Z0RjMFIyOG94UVdScWkwLXRXbG1GbXc2dnI5SnF5Rk1rWkRTODdfRTU5ZWRtNVJuT0c1RzNYdnFsTkpHRG9WekZPSzNldExwWHpWMkMwRk1Vd2pEcjZna2NzcXNWV28?oc=5",
-        "source": "Mercomindia.com",
-        "published": "2024-06-25T07:00:00",
-        "snippet": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBhazAtdlhXaGpRWWd3SHk3UjM1LWRrM0l0Z0RjMFIyOG94UVdScWkwLXRXbG1GbXc2dnI5SnF5Rk1rWkRTODdfRTU5ZWRtNVJuT0c1RzNYdnFsTkpHRG9WekZPSzNldExwWHpWMkMwRk1Vd2pEcjZna2NzcXNWV28?oc=5\" target=\"_blank\">Cleantech Solar Secures $103 Million for Renewable Energ"
-      },
-      "2024-07": null,
-      "2024-08": null,
-      "2024-09": null,
-      "2024-10": null,
-      "2024-11": null,
-      "2024-12": {
-        "title": "Cleantech Solar Appoints Sanjay Gupta as CEO - Energetica India Magazine",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOLTdJOFZFcUlxUmZIYXk3dnlxVEVXTlFIc0dOVTBkdWY4RmVqOGZNN1dWZWtvV2x6b2JVX2MyZ2ZPaGE0VmhST3hrUVM1aVNoUEFKZklMMERhNkI5SDk4M01ZeldadUJRSlEteVJkRk9pNTRmdmJCYUpsSmlCMFFBdkp2YzI2dUpFSUE?oc=5",
-        "source": "Energetica India Magazine",
-        "published": "2024-12-26T08:00:00",
-        "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOLTdJOFZFcUlxUmZIYXk3dnlxVEVXTlFIc0dOVTBkdWY4RmVqOGZNN1dWZWtvV2x6b2JVX2MyZ2ZPaGE0VmhST3hrUVM1aVNoUEFKZklMMERhNkI5SDk4M01ZeldadUJRSlEteVJkRk9pNTRmdmJCYUpsSmlCMFFBdkp2YzI2dUpFSUE?oc=5\" target=\"_blank\">Cleantech Solar Appoints Sanjay Gupta as"
-      },
-      "2025-01": {
-        "title": "Cleantech Solar Names Sanjay Gupta As New CEO In Leadership Transition - SolarQuarter",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenZGel9BQkZiekxCWmxrNVY3Q2ZRVGUwNkhoMUt2RHN0WF9OYnRYZHFKQmdkZlltZmZJdDhqeVphTkxlVDZTWmtUeHVWTnNRWWJ2VHNuX0ZNUW9aclpUd1JnTktqLW9RQjJZNURKRlk5WVVaQmxuY1ZzVjFOSFlfWDJHRjkxdFV4NXQ2NkRLbTFIVUlzNl9zRi10VC1oVEtIcUlTb2RiQ0k4NHc?oc=5",
-        "source": "SolarQuarter",
-        "published": "2025-01-02T08:00:00",
-        "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenZGel9BQkZiekxCWmxrNVY3Q2ZRVGUwNkhoMUt2RHN0WF9OYnRYZHFKQmdkZlltZmZJdDhqeVphTkxlVDZTWmtUeHVWTnNRWWJ2VHNuX0ZNUW9aclpUd1JnTktqLW9RQjJZNURKRlk5WVVaQmxuY1ZzVjFOSFlfWDJHRjkxdFV4NXQ2NkRLbTFIVUlzNl9zRi10VC1oVEtIcUlTb2RiQ0k4NHc?oc=5\" target=\"_bla"
-      },
-      "2025-02": {
-        "title": "\u201cSolar cell manufacturing in India will require substantial engineering and R&D\u201d: Cleantech Solar's Akshat Nagpal - Renewable Watch Magazine",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPb2tpeEpmZVdBQU5vSUw3U1NDTlNqRllEUnpFeWJBV1NPaGQ1eGM2VUpIUTAwSnYtYVpzWjQ2QXhRcE43d2R1a20tc2ZUMWZEN1RHWjRhU2xIWjZEejRsYnBqUU5Lc055dWRsaTkzcFR0MW51d0N0UWtIYWdMUGlhQXdEaUNqVGpwNS04cXVFODBRQ0dKbV9QTkliSXJFQjNEX0NyZlloYWZfVkVHYUNOeGdvdDZUZzlvMXUyNHNPV2F5RjlJdWZlT2tfcVN3R2ltbmU0NmZzT09Nb0RZN0Fj?oc=5",
-        "source": "Renewable Watch Magazine",
-        "published": "2025-02-06T08:00:00",
-        "snippet": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxPb2tpeEpmZVdBQU5vSUw3U1NDTlNqRllEUnpFeWJBV1NPaGQ1eGM2VUpIUTAwSnYtYVpzWjQ2QXhRcE43d2R1a20tc2ZUMWZEN1RHWjRhU2xIWjZEejRsYnBqUU5Lc055dWRsaTkzcFR0MW51d0N0UWtIYWdMUGlhQXdEaUNqVGpwNS04cXVFODBRQ0dKbV9QTkliSXJFQjNEX0NyZlloYWZfVkVHYUNOeGdvdDZUZzlvMX"
-      },
       "2025-03": null
     }
   }

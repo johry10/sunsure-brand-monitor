@@ -56,8 +56,7 @@
     "Cleanmax",
     "Ampin",
     "Gentari/Amplus",
-    "Hexa Climate",
-    "Cleantech Solar"
+    "Hexa Climate"
   ],
   "data": {
     "Sunsure": {
@@ -4351,96 +4350,6 @@
           "snippet": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1NVFNZenVqSlZUSU9JMUQ3NkRDWFMxMC1QRmpma3IwQ1BLZlNwS2tLSUlwTjNIcVJXQWZXU3RGZFVWWUVyQ0t2cnVwdlp5ZFAxQnp5TFFUTEFXSW9RdmM4aFpSUEpxa040Qm14RzhQMEZyMUROLUtEbi16Slk3NGvSAYwBQVVfeXFMTmhpRFBjTVBzSlB6RnkwZ1RIdXRrNW5vclFRT0MzNldPQXNuNkpPZVVieC02MDVfak"
         }
       ]
-    },
-    "Cleantech Solar": {
-      "2025-04": [
-        {
-          "title": "Cleantech Solar Commissions 100 MWp Solar Park in Maharashtra - Energetica India Magazine",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMnRrdkd2WWFrZnAycWxDTjJKSlJQOG00RmIzVC1MRUF5ejZhQUJMVnVXNk9RdkJrYndjWnRsZjJXYnpXaWdIYU9yTVNiTHo4MnpjOEhLckhDYno4LWhsV25FZ1hjUVlJeTNKV2pldkxZQ3BEdnFWb3dnd1B4RmJSY2NZeW1OaGx3VjhWQXQ1WlNtOEtIWjlPWmUxdURqSjJi?oc=5",
-          "source": "Energetica India Magazine",
-          "published": "2025-04-24T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOMnRrdkd2WWFrZnAycWxDTjJKSlJQOG00RmIzVC1MRUF5ejZhQUJMVnVXNk9RdkJrYndjWnRsZjJXYnpXaWdIYU9yTVNiTHo4MnpjOEhLckhDYno4LWhsV25FZ1hjUVlJeTNKV2pldkxZQ3BEdnFWb3dnd1B4RmJSY2NZeW1OaGx3VjhWQXQ1WlNtOEtIWjlPWmUxdURqSjJi?oc=5\" target=\"_blank\">Cleantech S"
-        }
-      ],
-      "2025-05": [
-        {
-          "title": "Dentons Link Legal advises Tata Capital on financing of cleantech solar - ETLegalWorld.com",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRFctX1NoN0psWUljYVkxeTRYdEM3RmdDZDZoQjdZX2VEYWJFOUozZnVSUkpXaEllMzJKbWJFNzhHV3hYdW5NY2FsSXpzaTNDSlhrZk5qenFQY1hFcExDMzM4OFJYb2I2MUJSMWxIZnFIR3pWc3I2Z1ZNUUdOUmRuZXRLeEhBek9fTk9PYVQ0R3lWZXBOVndxMVdjX0FyWGtKQWFVTlpMVUdyYXVZWk5YdkY1enRUMzNtR0ZYTnpKYnRiemRhcF9HeXpxc0Z3N1Ns0gHWAUFVX3lxTFBIYjFzTk1uUjJFZG9LLUEweFIzRUpkRGw5cXBqNDU3YXpyeENMOW41ZFA4ZzdiQjhNTms4ZkpSQTZjTzdyRVFOdnJ4VHZUdnZ2VHgwcHJRNlVQWFg3azhvV2wwejJ4T3JyQ1lvOXZjNm0tLXJZRXZpUDdBemQyU19LZXd4VmwwcHBDMjNNUFFvbkFBQXRlR0tRbldqeERpYWZWc19wMGtUOXRtVkZ4TlVXSlI3WHNNX3hCOWxkcG5fejRtVGU4Z09NcGN2S0g4Q1lhQ2djbFE?oc=5",
-          "source": "ETLegalWorld.com",
-          "published": "2025-05-27T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRFctX1NoN0psWUljYVkxeTRYdEM3RmdDZDZoQjdZX2VEYWJFOUozZnVSUkpXaEllMzJKbWJFNzhHV3hYdW5NY2FsSXpzaTNDSlhrZk5qenFQY1hFcExDMzM4OFJYb2I2MUJSMWxIZnFIR3pWc3I2Z1ZNUUdOUmRuZXRLeEhBek9fTk9PYVQ0R3lWZXBOVndxMVdjX0FyWGtKQWFVTlpMVUdyYXVZWk5YdkY1enRUMzNtR0"
-        },
-        {
-          "title": "Cleantech Solar switches on 80 MWp of open-access PV projects in Tamil Nadu - pv magazine India",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcmFGcDJrOXp4NXlGVzVrdlJ5bkd4UWpsTWY4VDdfNkhvS09nTmlIQ1REYk5LNUpMeUZVWVZsRHJlS254cjZhNm1LUlJ0SnlySC1jZEE1a2xyWk9HS1M2bmlLb2QweUNmU1hHeG9qZjJaQ0dCY3lNVkN6dnBZTTUwaThHaFZPSkhrZGs3TWRGd3NoQjNXN2xMbWdlTWNNN21ma3dHM0FJM29BT2Jlck1nWFp0SWtOSXVjRERJektR?oc=5",
-          "source": "pv magazine India",
-          "published": "2025-05-08T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNcmFGcDJrOXp4NXlGVzVrdlJ5bkd4UWpsTWY4VDdfNkhvS09nTmlIQ1REYk5LNUpMeUZVWVZsRHJlS254cjZhNm1LUlJ0SnlySC1jZEE1a2xyWk9HS1M2bmlLb2QweUNmU1hHeG9qZjJaQ0dCY3lNVkN6dnBZTTUwaThHaFZPSkhrZGs3TWRGd3NoQjNXN2xMbWdlTWNNN21ma3dHM0FJM29BT2Jlck1nWFp0SWtOSXVjRE"
-        },
-        {
-          "title": "Cleantech Solar Commissions 80 MWp Open Access Solar Projects at 275 MWp Tamil Nadu Park - Energetica India Magazine",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOG5CRFloRk1odGNJMElHUXdoRWxtRTI0U3EwVXpjMXBsUFdKVzJVMnhVMk41V0otVjlwYVlKbTFfOUR6LW9ZU2tUYlpzRlZzRVRnU01KWkRGbFhSbUEzQUtlYktLVGIwR3ctQjY3MUZlTVpBeENiZk9NYWx4VHhDMVBCOXd4NGYzd0RISm05cjV4cEZ6dENUUG1KVzdBSlladW1FOXlVN21MQU1wZF83NTEwUXFqZGR6M0hkX0hveGVBZkVo?oc=5",
-          "source": "Energetica India Magazine",
-          "published": "2025-05-08T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxNOG5CRFloRk1odGNJMElHUXdoRWxtRTI0U3EwVXpjMXBsUFdKVzJVMnhVMk41V0otVjlwYVlKbTFfOUR6LW9ZU2tUYlpzRlZzRVRnU01KWkRGbFhSbUEzQUtlYktLVGIwR3ctQjY3MUZlTVpBeENiZk9NYWx4VHhDMVBCOXd4NGYzd0RISm05cjV4cEZ6dENUUG1KVzdBSlladW1FOXlVN21MQU1wZF83NTEwUXFqZGR6M0"
-        }
-      ],
-      "2025-06": [],
-      "2025-07": [
-        {
-          "title": "SG\u2019s Cleantech Solar secures $140m green loan from ING - Tech in Asia",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPejRSMzZ3M3lPSDRWblYwS3dHd1dwYXB0Z0FzVkN4N0FLeEtrd2JxZEVxeE5BTFZwdjh4NHVVUHhSNlg4LUhMZmVKd2ZnRlBxeFcwa0p1RTNhVEpMNFFUcmE2NmlQWXVGS2Z1N3V2VklkQU41Q1cyQkRrSkloaDJkZ0Y1bk5sZw?oc=5",
-          "source": "Tech in Asia",
-          "published": "2025-07-16T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxPejRSMzZ3M3lPSDRWblYwS3dHd1dwYXB0Z0FzVkN4N0FLeEtrd2JxZEVxeE5BTFZwdjh4NHVVUHhSNlg4LUhMZmVKd2ZnRlBxeFcwa0p1RTNhVEpMNFFUcmE2NmlQWXVGS2Z1N3V2VklkQU41Q1cyQkRrSkloaDJkZ0Y1bk5sZw?oc=5\" target=\"_blank\">SG\u2019s Cleantech Solar secures $140m green loan"
-        },
-        {
-          "title": "Clifford Capital, ING sign US$70 million loan for Cleantech Solar - Asset Publishing and Research",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSXNEMXVEbVBlcHZ1Q0hRU3Z5emxTNk95M1hwNUw1c3NYQTZWZHU1WTVvMHRfWEg4X3FPVVA4eWhqYTJNVmQ3WWF3WGEwcWlnM05TVlhuOVNmTWx5c2pHa3M3UEgzbFAzV3dkejdfb0xHeVotSmgtLTN0VHhXelN1WkRCTndYOUpGbFVvcER3aHlQRkp5aU5RWkZ1eUtuam1qWmYyeg?oc=5",
-          "source": "Asset Publishing and Research",
-          "published": "2025-07-21T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPSXNEMXVEbVBlcHZ1Q0hRU3Z5emxTNk95M1hwNUw1c3NYQTZWZHU1WTVvMHRfWEg4X3FPVVA4eWhqYTJNVmQ3WWF3WGEwcWlnM05TVlhuOVNmTWx5c2pHa3M3UEgzbFAzV3dkejdfb0xHeVotSmgtLTN0VHhXelN1WkRCTndYOUpGbFVvcER3aHlQRkp5aU5RWkZ1eUtuam1qWmYyeg?oc=5\" target=\"_blank\">Cliff"
-        }
-      ],
-      "2025-08": [],
-      "2025-09": [],
-      "2025-10": [
-        {
-          "title": "Keppel takes full control of Cleantech Solar after buying Shell\u2019s 49% stake - Mint",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdGdEZmdlbzBsNU8tdnF6UHJjWWluTmotN1lULS1LZU9TWkM1ZFJXZ1BQbFBGdU1ncjEzUWsyNGphY2x2N3NycTJVT1VBS2NfdS1JVmpoN2VFV2JNUndld1RWazFJWFpKZWhaRnpXeUt5Qmloa20wR0NBV2NfUU0wMm5XcUNtY25mVkFMajhfWlZ2TXYzTmczVDJHbGFXVGs1dU5PQkltc083YUhTdTdYSldleUluUdIBuwFBVV95cUxQMi1pVXhKUEFzT0VVdkhwamN2Tk9oTjhxRHBmQUNYRGdYLVE2TEoxUUdULWRzRWFkUUJocExjakgyd0pTeF9KWjdZLVpIeGsxMGxKNjM0QThDMV91OVBLWUdUY2RldlYyNExqQktSdElwQ256cGNvNlZnZl90bVRaek1ZWnNaNzM0eXZZVGdvQkxQTnlKN2lFT3UxYVdjUmtjRHRYTFc0am9OUGhuX1F1R1MzNFZVazRER05V?oc=5",
-          "source": "Mint",
-          "published": "2025-10-21T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxOdGdEZmdlbzBsNU8tdnF6UHJjWWluTmotN1lULS1LZU9TWkM1ZFJXZ1BQbFBGdU1ncjEzUWsyNGphY2x2N3NycTJVT1VBS2NfdS1JVmpoN2VFV2JNUndld1RWazFJWFpKZWhaRnpXeUt5Qmloa20wR0NBV2NfUU0wMm5XcUNtY25mVkFMajhfWlZ2TXYzTmczVDJHbGFXVGs1dU5PQkltc083YUhTdTdYSldleUluUdIBuw"
-        }
-      ],
-      "2025-11": [
-        {
-          "title": "Keppel buys final 49% of Cleantech Solar from Shell Singapore - IPE Real Assets",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNLUlYb0lGZmc4M1dXcXVTOWRMUHpDMzdBS291Z2YxUGx2c2Zyem0wU2tOaEdteFR0RlppOWJyUDk4VE11ek1KQ0E2VDRhU0dwUm1jOEUzS2RiU241SDB1ckFFS0g5dDdaWjdYWlZiV0o5bGRFVDB2Rkh5eEZVbUVpdUVBYVpHcVhOWDhWLU9EeGRpenMyNEpXdUZ4VkpwbG1pS24tLTBhYnBnbjBWd0E?oc=5",
-          "source": "IPE Real Assets",
-          "published": "2025-11-04T08:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxNLUlYb0lGZmc4M1dXcXVTOWRMUHpDMzdBS291Z2YxUGx2c2Zyem0wU2tOaEdteFR0RlppOWJyUDk4VE11ek1KQ0E2VDRhU0dwUm1jOEUzS2RiU241SDB1ckFFS0g5dDdaWjdYWlZiV0o5bGRFVDB2Rkh5eEZVbUVpdUVBYVpHcVhOWDhWLU9EeGRpenMyNEpXdUZ4VkpwbG1pS24tLTBhYnBnbjBWd0E?oc=5\" target=\""
-        }
-      ],
-      "2025-12": [],
-      "2026-01": [],
-      "2026-02": [],
-      "2026-03": [
-        {
-          "title": "Cleantech Solar deepens collaboration with Coats Group plc on second renewable energy project Indonesia - renewableenergymagazine.com",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdGdtWEY0eExFN2RBeFd2amVaWHFYMGJvbWVTbDJjRlpmSTlXNHM5LXZ6YjNWMTVyTzZrMzZTU2Jlc2ZQNk45R1A0WVNFdGQ0NDNPWEUtd1JzRnlxc2xVaUZFVklrQjVhOTFESTNvQWdTOUhzWGNZWHA1VE1FRmtFajJrWS1UdFFjYmUtNDJZNjBLaW1Nb2piVnJEYzY1SmN5TlFsV1kzZ09jcl9ENTN6VzFR?oc=5",
-          "source": "renewableenergymagazine.com",
-          "published": "2026-03-24T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNdGdtWEY0eExFN2RBeFd2amVaWHFYMGJvbWVTbDJjRlpmSTlXNHM5LXZ6YjNWMTVyTzZrMzZTU2Jlc2ZQNk45R1A0WVNFdGQ0NDNPWEUtd1JzRnlxc2xVaUZFVklrQjVhOTFESTNvQWdTOUhzWGNZWHA1VE1FRmtFajJrWS1UdFFjYmUtNDJZNjBLaW1Nb2piVnJEYzY1SmN5TlFsV1kzZ09jcl9ENTN6VzFR?oc=5\" tar"
-        },
-        {
-          "title": "Cleantech Solar Deepens Collaboration With Coats Group plc, Signing a Second Renewable Energy Project in Indonesia - SolarQuarter",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQdGVaZklvNHdDakZLS1J0eVJlT1lGaHd1eWtabFEzdlZHbS1OWG03Z2IwRk1CUE1oNFB6S2lWa3lQbkVHMXJEVjdSVk1BdmJMWjZvaEc4VXA3WTY2ZEduQjVVY2pQbEFqOXh2NG1kVlhiRVoyLTRUMl9xSGFGUGVDSWtTRWs4bVdGalAzYkdFOXV0SWF3cG5XeDFQTUN3Q0ZBTExKWHM3ZGV6N0RqLU1wUmprZmVRY1hXcENDRVhQdkE3RlU5T2czQVdiYUg4M2h5ZzZqT2FTOVVqb2EzWFNZS2R4VHE?oc=5",
-          "source": "SolarQuarter",
-          "published": "2026-03-24T07:00:00",
-          "snippet": "<a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxQdGVaZklvNHdDakZLS1J0eVJlT1lGaHd1eWtabFEzdlZHbS1OWG03Z2IwRk1CUE1oNFB6S2lWa3lQbkVHMXJEVjdSVk1BdmJMWjZvaEc4VXA3WTY2ZEduQjVVY2pQbEFqOXh2NG1kVlhiRVoyLTRUMl9xSGFGUGVDSWtTRWs4bVdGalAzYkdFOXV0SWF3cG5XeDFQTUN3Q0ZBTExKWHM3ZGV6N0RqLU1wUmprZmVRY1hXcE"
-        }
-      ]
     }
   },
   "highlights": {
@@ -4868,56 +4777,6 @@
         "source": "Energetica India Magazine",
         "published": "2026-03-02T08:00:00",
         "snippet": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQNkRVakJLcS1iWWVzV19zVWJONzN6MUZkYmdJeEd4VXJpX19aUFZyaHBzempCZUtuQWJfLU9MRkVxWDhOQzNQSE55ZWl4U0dHbjFfQlljcklweXFwWkpSaUdfN1BWc1lhYTdiRVRaT1lDbHJMeVJueXJFM2RCSjBlYkVsTEFvN3FpcGlaZzRFbDUyUUppdDRYX0dVMkNfNlRwUi1IeU5PMjVFMlMzbFdiT18tZFlHZFR5d3"
-      }
-    },
-    "Cleantech Solar": {
-      "2025-04": {
-        "title": "Cleantech Solar Commissions 100 MWp Solar Park in Maharashtra - Energetica India Magazine",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMnRrdkd2WWFrZnAycWxDTjJKSlJQOG00RmIzVC1MRUF5ejZhQUJMVnVXNk9RdkJrYndjWnRsZjJXYnpXaWdIYU9yTVNiTHo4MnpjOEhLckhDYno4LWhsV25FZ1hjUVlJeTNKV2pldkxZQ3BEdnFWb3dnd1B4RmJSY2NZeW1OaGx3VjhWQXQ1WlNtOEtIWjlPWmUxdURqSjJi?oc=5",
-        "source": "Energetica India Magazine",
-        "published": "2025-04-24T07:00:00",
-        "snippet": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOMnRrdkd2WWFrZnAycWxDTjJKSlJQOG00RmIzVC1MRUF5ejZhQUJMVnVXNk9RdkJrYndjWnRsZjJXYnpXaWdIYU9yTVNiTHo4MnpjOEhLckhDYno4LWhsV25FZ1hjUVlJeTNKV2pldkxZQ3BEdnFWb3dnd1B4RmJSY2NZeW1OaGx3VjhWQXQ1WlNtOEtIWjlPWmUxdURqSjJi?oc=5\" target=\"_blank\">Cleantech S"
-      },
-      "2025-05": {
-        "title": "Dentons Link Legal advises Tata Capital on financing of cleantech solar - ETLegalWorld.com",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRFctX1NoN0psWUljYVkxeTRYdEM3RmdDZDZoQjdZX2VEYWJFOUozZnVSUkpXaEllMzJKbWJFNzhHV3hYdW5NY2FsSXpzaTNDSlhrZk5qenFQY1hFcExDMzM4OFJYb2I2MUJSMWxIZnFIR3pWc3I2Z1ZNUUdOUmRuZXRLeEhBek9fTk9PYVQ0R3lWZXBOVndxMVdjX0FyWGtKQWFVTlpMVUdyYXVZWk5YdkY1enRUMzNtR0ZYTnpKYnRiemRhcF9HeXpxc0Z3N1Ns0gHWAUFVX3lxTFBIYjFzTk1uUjJFZG9LLUEweFIzRUpkRGw5cXBqNDU3YXpyeENMOW41ZFA4ZzdiQjhNTms4ZkpSQTZjTzdyRVFOdnJ4VHZUdnZ2VHgwcHJRNlVQWFg3azhvV2wwejJ4T3JyQ1lvOXZjNm0tLXJZRXZpUDdBemQyU19LZXd4VmwwcHBDMjNNUFFvbkFBQXRlR0tRbldqeERpYWZWc19wMGtUOXRtVkZ4TlVXSlI3WHNNX3hCOWxkcG5fejRtVGU4Z09NcGN2S0g4Q1lhQ2djbFE?oc=5",
-        "source": "ETLegalWorld.com",
-        "published": "2025-05-27T07:00:00",
-        "snippet": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRFctX1NoN0psWUljYVkxeTRYdEM3RmdDZDZoQjdZX2VEYWJFOUozZnVSUkpXaEllMzJKbWJFNzhHV3hYdW5NY2FsSXpzaTNDSlhrZk5qenFQY1hFcExDMzM4OFJYb2I2MUJSMWxIZnFIR3pWc3I2Z1ZNUUdOUmRuZXRLeEhBek9fTk9PYVQ0R3lWZXBOVndxMVdjX0FyWGtKQWFVTlpMVUdyYXVZWk5YdkY1enRUMzNtR0"
-      },
-      "2025-06": null,
-      "2025-07": {
-        "title": "SG\u2019s Cleantech Solar secures $140m green loan from ING - Tech in Asia",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPejRSMzZ3M3lPSDRWblYwS3dHd1dwYXB0Z0FzVkN4N0FLeEtrd2JxZEVxeE5BTFZwdjh4NHVVUHhSNlg4LUhMZmVKd2ZnRlBxeFcwa0p1RTNhVEpMNFFUcmE2NmlQWXVGS2Z1N3V2VklkQU41Q1cyQkRrSkloaDJkZ0Y1bk5sZw?oc=5",
-        "source": "Tech in Asia",
-        "published": "2025-07-16T07:00:00",
-        "snippet": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxPejRSMzZ3M3lPSDRWblYwS3dHd1dwYXB0Z0FzVkN4N0FLeEtrd2JxZEVxeE5BTFZwdjh4NHVVUHhSNlg4LUhMZmVKd2ZnRlBxeFcwa0p1RTNhVEpMNFFUcmE2NmlQWXVGS2Z1N3V2VklkQU41Q1cyQkRrSkloaDJkZ0Y1bk5sZw?oc=5\" target=\"_blank\">SG\u2019s Cleantech Solar secures $140m green loan"
-      },
-      "2025-08": null,
-      "2025-09": null,
-      "2025-10": {
-        "title": "Keppel takes full control of Cleantech Solar after buying Shell\u2019s 49% stake - Mint",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdGdEZmdlbzBsNU8tdnF6UHJjWWluTmotN1lULS1LZU9TWkM1ZFJXZ1BQbFBGdU1ncjEzUWsyNGphY2x2N3NycTJVT1VBS2NfdS1JVmpoN2VFV2JNUndld1RWazFJWFpKZWhaRnpXeUt5Qmloa20wR0NBV2NfUU0wMm5XcUNtY25mVkFMajhfWlZ2TXYzTmczVDJHbGFXVGs1dU5PQkltc083YUhTdTdYSldleUluUdIBuwFBVV95cUxQMi1pVXhKUEFzT0VVdkhwamN2Tk9oTjhxRHBmQUNYRGdYLVE2TEoxUUdULWRzRWFkUUJocExjakgyd0pTeF9KWjdZLVpIeGsxMGxKNjM0QThDMV91OVBLWUdUY2RldlYyNExqQktSdElwQ256cGNvNlZnZl90bVRaek1ZWnNaNzM0eXZZVGdvQkxQTnlKN2lFT3UxYVdjUmtjRHRYTFc0am9OUGhuX1F1R1MzNFZVazRER05V?oc=5",
-        "source": "Mint",
-        "published": "2025-10-21T07:00:00",
-        "snippet": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxOdGdEZmdlbzBsNU8tdnF6UHJjWWluTmotN1lULS1LZU9TWkM1ZFJXZ1BQbFBGdU1ncjEzUWsyNGphY2x2N3NycTJVT1VBS2NfdS1JVmpoN2VFV2JNUndld1RWazFJWFpKZWhaRnpXeUt5Qmloa20wR0NBV2NfUU0wMm5XcUNtY25mVkFMajhfWlZ2TXYzTmczVDJHbGFXVGs1dU5PQkltc083YUhTdTdYSldleUluUdIBuw"
-      },
-      "2025-11": {
-        "title": "Keppel buys final 49% of Cleantech Solar from Shell Singapore - IPE Real Assets",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNLUlYb0lGZmc4M1dXcXVTOWRMUHpDMzdBS291Z2YxUGx2c2Zyem0wU2tOaEdteFR0RlppOWJyUDk4VE11ek1KQ0E2VDRhU0dwUm1jOEUzS2RiU241SDB1ckFFS0g5dDdaWjdYWlZiV0o5bGRFVDB2Rkh5eEZVbUVpdUVBYVpHcVhOWDhWLU9EeGRpenMyNEpXdUZ4VkpwbG1pS24tLTBhYnBnbjBWd0E?oc=5",
-        "source": "IPE Real Assets",
-        "published": "2025-11-04T08:00:00",
-        "snippet": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxNLUlYb0lGZmc4M1dXcXVTOWRMUHpDMzdBS291Z2YxUGx2c2Zyem0wU2tOaEdteFR0RlppOWJyUDk4VE11ek1KQ0E2VDRhU0dwUm1jOEUzS2RiU241SDB1ckFFS0g5dDdaWjdYWlZiV0o5bGRFVDB2Rkh5eEZVbUVpdUVBYVpHcVhOWDhWLU9EeGRpenMyNEpXdUZ4VkpwbG1pS24tLTBhYnBnbjBWd0E?oc=5\" target=\""
-      },
-      "2025-12": null,
-      "2026-01": null,
-      "2026-02": null,
-      "2026-03": {
-        "title": "Cleantech Solar deepens collaboration with Coats Group plc on second renewable energy project Indonesia - renewableenergymagazine.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdGdtWEY0eExFN2RBeFd2amVaWHFYMGJvbWVTbDJjRlpmSTlXNHM5LXZ6YjNWMTVyTzZrMzZTU2Jlc2ZQNk45R1A0WVNFdGQ0NDNPWEUtd1JzRnlxc2xVaUZFVklrQjVhOTFESTNvQWdTOUhzWGNZWHA1VE1FRmtFajJrWS1UdFFjYmUtNDJZNjBLaW1Nb2piVnJEYzY1SmN5TlFsV1kzZ09jcl9ENTN6VzFR?oc=5",
-        "source": "renewableenergymagazine.com",
-        "published": "2026-03-24T07:00:00",
-        "snippet": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNdGdtWEY0eExFN2RBeFd2amVaWHFYMGJvbWVTbDJjRlpmSTlXNHM5LXZ6YjNWMTVyTzZrMzZTU2Jlc2ZQNk45R1A0WVNFdGQ0NDNPWEUtd1JzRnlxc2xVaUZFVklrQjVhOTFESTNvQWdTOUhzWGNZWHA1VE1FRmtFajJrWS1UdFFjYmUtNDJZNjBLaW1Nb2piVnJEYzY1SmN5TlFsV1kzZ09jcl9ENTN6VzFR?oc=5\" tar"
       }
     }
   }

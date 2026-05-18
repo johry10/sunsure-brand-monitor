@@ -58,7 +58,6 @@ COMPANY_COLORS = {
     "Ampin":           "#FF7F0E",
     "Gentari/Amplus":  "#9467BD",
     "Hexa Climate":    "#8C564B",
-    "Cleantech Solar": "#7F7F7F",
 }
 
 st.set_page_config(

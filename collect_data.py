@@ -24,7 +24,6 @@ COMPANIES: dict[str, list[str]] = {
     "Ampin":           ["Ampin Energy", "AMPIN Solar"],
     "Gentari/Amplus":  ["Gentari", "Amplus Solar", "Amplus Energy"],
     "Hexa Climate":    ["Hexa Climate"],
-    "Cleantech Solar": ["Cleantech Solar"],
 }
 
 # Build month list — FY 2025-26 (Apr 2025 to Mar 2026)

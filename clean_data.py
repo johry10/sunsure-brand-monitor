@@ -18,7 +18,6 @@ MATCH_STRINGS: dict[str, list[str]] = {
     "Ampin":           ["ampin"],
     "Gentari/Amplus":  ["gentari", "amplus"],
     "Hexa Climate":    ["hexa climate"],
-    "Cleantech Solar": ["cleantech solar"],
 }
 
 
