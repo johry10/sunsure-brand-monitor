@@ -5,32 +5,48 @@ Outputs *_clean.json versions and prints a per-company noise report."""
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).parent
 
-# Strings that MUST appear (case-insensitive) in title or snippet for an article
-# to count for that company. More specific = less noise.
-MATCH_STRINGS: dict[str, list[str]] = {
-    "Sunsure":         ["sunsure"],
-    "ReNew":           ["renew power", "renew energy", "renewpower", "renew global"],
-    "Cleanmax":        ["cleanmax", "clean max"],
-    "Ampin":           ["ampin"],
-    "Gentari/Amplus":  ["gentari", "amplus"],
-    "Hexa Climate":    ["hexa climate"],
+# Each entry: list of plain substrings OR compiled regex patterns.
+# An article passes if ANY item matches title+snippet (case-insensitive).
+# For ReNew: \brenew\b catches "ReNew" as a standalone word without
+# matching "renewable", "renewables", "renewal", etc.
+MATCH_PATTERNS: dict[str, list] = {
+    "Sunsure":        ["sunsure"],
+    "ReNew":          [re.compile(r"\brenew\b", re.I)],
+    "Cleanmax":       ["cleanmax", "clean max"],
+    "Ampin":          ["ampin"],
+    "Gentari/Amplus": ["gentari", "amplus"],
+    "Hexa Climate":   ["hexa climate"],
 }
 
 
-def is_match(article: dict, terms: list[str]) -> bool:
+def is_match(article: dict, patterns: list) -> bool:
     haystack = (
         (article.get("title") or "") + " " + (article.get("snippet") or "")
-    ).lower()
-    return any(t.lower() in haystack for t in terms)
+    )
+    for p in patterns:
+        if isinstance(p, re.Pattern):
+            if p.search(haystack):
+                return True
+        else:
+            if p.lower() in haystack.lower():
+                return True
+    return False
 
 
 def clean_dataset(path: Path) -> Path:
     data = json.loads(path.read_text())
-    companies = data["companies"]
+    # Drop companies not in MATCH_PATTERNS (removed from tracker)
+    companies = [c for c in data["companies"] if c in MATCH_PATTERNS]
+    data["companies"] = companies
+    for c in list(data["data"]):
+        if c not in companies:
+            del data["data"][c]
+            data["highlights"].pop(c, None)
     months = [m["label"] for m in data["months"]]
 
     print(f"\n{'='*60}")
@@ -40,7 +56,7 @@ def clean_dataset(path: Path) -> Path:
     print(f"{'-'*55}")
 
     for company in companies:
-        terms = MATCH_STRINGS.get(company, [])
+        terms = MATCH_PATTERNS.get(company, [])
         before = 0
         after = 0
         for m in months:
