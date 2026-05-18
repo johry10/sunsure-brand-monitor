@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Collect 12 months of SOV data (Apr 2024 – Mar 2025) for Sunsure + competitors.
-Uses date-windowed Google News RSS queries. Outputs sov_data_fy25.json."""
+Uses date-windowed Google News RSS + direct industry RSS feeds. Outputs sov_data_fy25.json."""
 from __future__ import annotations
 
 import json
@@ -13,6 +13,7 @@ from pathlib import Path
 from time import mktime
 
 import feedparser
+from industry_feeds import fetch_industry_articles
 
 ROOT = Path(__file__).parent
 
@@ -102,8 +103,24 @@ def main():
                     seen.add(art["url"])
                     articles.append(art)
             data[company][month["label"]] = articles
-            print(f"  {month['label']}: {len(articles):>3} articles")
+            print(f"  {month['label']}: {len(articles):>3} articles (Google News)")
             time.sleep(0.25)
+
+    # Supplement with direct industry RSS feeds
+    # Note: industry feeds only return recent articles (~last 30 days), so
+    # for FY25 historical data the incremental gain will be minimal.
+    print("\nFetching industry RSS feeds...")
+    feed_added = 0
+    for month in MONTHS:
+        industry = fetch_industry_articles(month["start"], month["end"])
+        for company, arts in industry.items():
+            if company not in data:
+                continue
+            existing_urls = {a["url"] for a in data[company][month["label"]]}
+            new_arts = [a for a in arts if a["url"] not in existing_urls]
+            data[company][month["label"]].extend(new_arts)
+            feed_added += len(new_arts)
+    print(f"  Added {feed_added} articles not already in Google News")
 
     highlights = {
         c: {m["label"]: find_highlight(data[c][m["label"]]) for m in MONTHS}
