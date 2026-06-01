@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import re
 import subprocess
+import sys
 from collections import Counter
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -179,7 +180,7 @@ with st.sidebar:
         with st.status("Collecting fresh data…", expanded=True) as status:
             st.write("Running collect_data.py (takes ~3 min)…")
             r1 = subprocess.run(
-                ["python3", str(ROOT / "collect_data.py")],
+                [sys.executable, str(ROOT / "collect_data.py")],
                 capture_output=True, text=True, cwd=str(ROOT),
             )
             if r1.returncode != 0:
@@ -188,7 +189,7 @@ with st.sidebar:
                 st.stop()
             st.write("Applying noise filter…")
             r2 = subprocess.run(
-                ["python3", str(ROOT / "clean_data.py")],
+                [sys.executable, str(ROOT / "clean_data.py")],
                 capture_output=True, text=True, cwd=str(ROOT),
             )
             if r2.returncode != 0:
