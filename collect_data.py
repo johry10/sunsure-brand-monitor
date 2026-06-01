@@ -19,7 +19,7 @@ from industry_feeds import fetch_industry_articles
 ROOT = Path(__file__).parent
 
 COMPANIES: dict[str, list[str]] = {
-    "Sunsure":         ["Sunsure Energy", "Sunsure Solar"],
+    "Sunsure":         ["Sunsure Energy", "Sunsure Solar", "Sunsure"],
     "ReNew":           ["ReNew Power", "ReNew Energy Global"],
     "Cleanmax":        ["CleanMax Solar", "Clean Max Enviro"],
     "Ampin":           ["Ampin Energy", "AMPIN Solar"],

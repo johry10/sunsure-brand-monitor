@@ -300,7 +300,7 @@ tab0, tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
 
 # ── Tab 0: Latest News
 with tab0:
-    days_back = st.slider("Show articles from last N days", 3, 30, 7, key="latest_days")
+    days_back = st.slider("Show articles from last N days", 3, 30, 10, key="latest_days")
     cutoff = datetime.now() - timedelta(days=days_back)
 
     recent_all = []
