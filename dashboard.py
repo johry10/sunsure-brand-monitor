@@ -70,12 +70,12 @@ st.set_page_config(
 
 
 @st.cache_data
-def load_data():
+def load_data(_mtime: float = 0):
     return json.loads(DATA_PATH.read_text())
 
 
 @st.cache_data
-def load_fy25_data():
+def load_fy25_data(_mtime: float = 0):
     if DATA_PATH_FY25.exists():
         return json.loads(DATA_PATH_FY25.read_text())
     return None
@@ -96,7 +96,7 @@ def sentiment_label(score: float) -> str:
     return "neutral"
 
 
-@st.cache_data
+@st.cache_data(show_spinner=False)
 def compute_sentiments(_data):
     """Score every article. Keyed by URL → {score, label}."""
     a = get_sentiment_analyzer()
@@ -139,8 +139,10 @@ def is_industry_quote(article: dict) -> bool:
     return False
 
 
-data = load_data()
-data_fy25 = load_fy25_data()
+_mtime = DATA_PATH.stat().st_mtime
+_mtime25 = DATA_PATH_FY25.stat().st_mtime if DATA_PATH_FY25.exists() else 0
+data = load_data(_mtime)
+data_fy25 = load_fy25_data(_mtime25)
 sentiments = compute_sentiments(data)
 months = data["months"]
 month_labels = [m["label"] for m in months]
