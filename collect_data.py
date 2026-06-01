@@ -9,7 +9,7 @@ import time
 import urllib.parse
 from calendar import monthrange
 from collections import defaultdict
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from time import mktime
 
@@ -54,7 +54,9 @@ MONTHS = _build_months(n_back=12)
 
 
 def google_news_url(query: str, after: date, before: date) -> str:
-    q = f'"{query}" after:{after.isoformat()} before:{before.isoformat()}'
+    # Google News 'before:' is exclusive, so add 1 day to include articles on 'before' date
+    before_incl = before + timedelta(days=1)
+    q = f'"{query}" after:{after.isoformat()} before:{before_incl.isoformat()}'
     return (
         f"https://news.google.com/rss/search?q={urllib.parse.quote(q)}"
         f"&hl=en-IN&gl=IN&ceid=IN:en"
