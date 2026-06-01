@@ -15,6 +15,7 @@ from time import mktime
 
 import feedparser
 from industry_feeds import fetch_industry_articles
+from supplementary_feeds import fetch_supplementary_articles
 
 ROOT = Path(__file__).parent
 
@@ -138,6 +139,24 @@ def main():
             data[company][month["label"]].extend(new_arts)
             feed_added += len(new_arts)
     print(f"  Added {feed_added} articles not already in Google News")
+
+    # Supplement with GDELT + Bing News RSS for the 3 most recent months.
+    # GDELT historical coverage is limited to ~3 months; Bing only returns recent
+    # articles. Limiting to 3 months keeps refresh time reasonable (~+2 min).
+    print("\nFetching GDELT + Bing supplementary feeds (last 3 months)...")
+    supp_added = 0
+    recent_months = MONTHS[-3:]
+    for month in recent_months:
+        supp = fetch_supplementary_articles(month["start"], month["end"])
+        for company, arts in supp.items():
+            if company not in data:
+                continue
+            existing_urls = {a["url"] for a in data[company][month["label"]]}
+            new_arts = [a for a in arts if a["url"] not in existing_urls]
+            data[company][month["label"]].extend(new_arts)
+            supp_added += len(new_arts)
+        print(f"  {month['label']}: supplementary pass done")
+    print(f"  Added {supp_added} articles from GDELT + Bing not in other sources")
 
     # Build highlights
     highlights = {
