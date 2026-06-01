@@ -4,8 +4,9 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import pandas as pd
@@ -172,9 +173,31 @@ with st.sidebar:
 
     st.markdown("---")
     st.caption(f"Data refreshed: {data['generated_at'][:10]}")
-    st.caption(f"Source: Google News RSS, India region")
-    if st.button("🔄 Re-collect data", help="Run collect_data.py to refresh"):
-        st.info("Open terminal, run: `python collect_data.py`, then refresh this page.")
+    st.caption("Source: Google News RSS + 6 industry feeds")
+
+    if st.button("🔄 Refresh Data Now", type="primary", use_container_width=True):
+        with st.status("Collecting fresh data…", expanded=True) as status:
+            st.write("Running collect_data.py (takes ~3 min)…")
+            r1 = subprocess.run(
+                ["python3", str(ROOT / "collect_data.py")],
+                capture_output=True, text=True, cwd=str(ROOT),
+            )
+            if r1.returncode != 0:
+                status.update(label="Collection failed", state="error")
+                st.error(r1.stderr[-500:])
+                st.stop()
+            st.write("Applying noise filter…")
+            r2 = subprocess.run(
+                ["python3", str(ROOT / "clean_data.py")],
+                capture_output=True, text=True, cwd=str(ROOT),
+            )
+            if r2.returncode != 0:
+                status.update(label="Clean step failed", state="error")
+                st.error(r2.stderr[-500:])
+                st.stop()
+            status.update(label="Done — reloading dashboard", state="complete")
+        st.cache_data.clear()
+        st.rerun()
 
 
 # ─────────────── Build core dataframe ───────────────
@@ -195,9 +218,10 @@ df = pd.DataFrame(rows)
 
 
 # ─────────────── Header ───────────────
+date_range = f"{month_display[month_labels[0]]} – {month_display[month_labels[-1]]}"
 st.title("☀️ Sunsure Energy — Share of Voice Dashboard")
 st.caption(
-    f"FY 2025-26 (April 2025 – March 2026)"
+    f"{date_range}"
     f"  ·  {sum(len(arts) for c in selected_companies for arts in data['data'][c].values())} articles tracked"
     f"  ·  {len(selected_companies)} companies"
 )
@@ -235,11 +259,11 @@ def sunsure_kpis():
 k = sunsure_kpis()
 if k:
     c1, c2, c3, c4, c5 = st.columns(5)
-    c1.metric("Sunsure avg SOV (FY26)", f"{k['avg_sov']:.1f}%")
+    c1.metric(f"Sunsure avg SOV ({date_range})", f"{k['avg_sov']:.1f}%")
     c2.metric(
         f"Latest ({month_display[month_labels[-1]]})",
         f"{k['latest_sov']:.1f}% SOV",
-        f"{k['delta']:+.1f}pp vs Apr '25",
+        f"{k['delta']:+.1f}pp vs {month_display[month_labels[0]]}",
     )
     c3.metric(
         "🏆 Best by article count",
@@ -259,7 +283,8 @@ st.markdown("---")
 
 
 # ─────────────── Tabs ───────────────
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
+tab0, tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
+    "🔴 Latest News",
     "📈 SOV Trend",
     "📊 Monthly Composition",
     "📰 Highlights",
@@ -269,6 +294,97 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
     "💚 Sentiment",
     "📅 FY25 vs FY26",
 ])
+
+# ── Tab 0: Latest News
+with tab0:
+    days_back = st.slider("Show articles from last N days", 3, 30, 7, key="latest_days")
+    cutoff = datetime.now() - timedelta(days=days_back)
+
+    recent_all = []
+    for c in selected_companies:
+        for m in month_labels:
+            for art in data["data"][c][m]:
+                pub = art.get("published")
+                if not pub:
+                    continue
+                try:
+                    pub_dt = datetime.fromisoformat(pub)
+                except ValueError:
+                    continue
+                if pub_dt >= cutoff:
+                    s = sent_for(art["url"])
+                    recent_all.append({
+                        "pub_dt": pub_dt,
+                        "Date": pub[:10],
+                        "Company": c,
+                        "Score": s["score"],
+                        "Sentiment": f"{SENTIMENT_EMOJI[s['label']]} {s['score']:+.2f}",
+                        "Source": (art.get("source") or "—"),
+                        "Title": art["title"],
+                        "URL": art["url"],
+                    })
+
+    recent_all.sort(key=lambda x: x["pub_dt"], reverse=True)
+    sunsure_recent = [r for r in recent_all if r["Company"] == "Sunsure"]
+    competitor_recent = [r for r in recent_all if r["Company"] != "Sunsure"]
+
+    # ── Sunsure section
+    st.markdown(f"### 🔴 Sunsure — last {days_back} days ({len(sunsure_recent)} articles)")
+    if sunsure_recent:
+        avg_score = sum(r["Score"] for r in sunsure_recent) / len(sunsure_recent)
+        pos = sum(1 for r in sunsure_recent if r["Score"] >= 0.05)
+        neg = sum(1 for r in sunsure_recent if r["Score"] <= -0.05)
+        m1, m2, m3 = st.columns(3)
+        m1.metric("Articles", len(sunsure_recent))
+        m2.metric("Avg sentiment", f"{avg_score:+.2f}")
+        m3.metric("Positive / Negative", f"{pos} / {neg}")
+
+        df_s = pd.DataFrame([{
+            "Date": r["Date"],
+            "Sentiment": r["Sentiment"],
+            "Source": r["Source"],
+            "Title": r["Title"],
+            "URL": r["URL"],
+        } for r in sunsure_recent])
+        st.dataframe(
+            df_s, hide_index=True, width="stretch", height=min(50 + 35 * len(df_s), 480),
+            column_config={
+                "URL": st.column_config.LinkColumn("Open"),
+                "Title": st.column_config.TextColumn("Title", width="large"),
+                "Sentiment": st.column_config.TextColumn("Sentiment", width="small"),
+            },
+        )
+    else:
+        st.info(f"No Sunsure articles in the last {days_back} days — try increasing the slider or refreshing data.")
+
+    st.markdown("---")
+
+    # ── Competitor section
+    st.markdown(f"### Competitors — last {days_back} days ({len(competitor_recent)} articles)")
+    if competitor_recent:
+        for company in [c for c in selected_companies if c != "Sunsure"]:
+            comp_arts = [r for r in competitor_recent if r["Company"] == company]
+            if not comp_arts:
+                continue
+            with st.expander(f"{company}  ({len(comp_arts)} articles)", expanded=False):
+                df_c = pd.DataFrame([{
+                    "Date": r["Date"],
+                    "Sentiment": r["Sentiment"],
+                    "Source": r["Source"],
+                    "Title": r["Title"],
+                    "URL": r["URL"],
+                } for r in comp_arts])
+                st.dataframe(
+                    df_c, hide_index=True, width="stretch",
+                    height=min(50 + 35 * len(df_c), 360),
+                    column_config={
+                        "URL": st.column_config.LinkColumn("Open"),
+                        "Title": st.column_config.TextColumn("Title", width="large"),
+                    },
+                )
+    else:
+        st.info("No competitor articles in this window.")
+
 
 # ── Tab 1: SOV Trend (line)
 with tab1:

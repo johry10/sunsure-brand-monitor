@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Collect 12 months of SOV data (Apr 2025 – Mar 2026) for Sunsure + competitors.
-Uses date-windowed Google News RSS + direct industry RSS feeds. Outputs sov_data.json."""
+"""Collect rolling 13-month SOV data for Sunsure + competitors.
+Always covers the last 12 complete months + the current partial month.
+Uses Google News RSS + direct industry RSS feeds. Outputs sov_data.json."""
 from __future__ import annotations
 
 import json
@@ -17,7 +18,6 @@ from industry_feeds import fetch_industry_articles
 
 ROOT = Path(__file__).parent
 
-# Companies + search queries. Multiple variants per company catch rebrands and aliases.
 COMPANIES: dict[str, list[str]] = {
     "Sunsure":         ["Sunsure Energy", "Sunsure Solar"],
     "ReNew":           ["ReNew Power", "ReNew Energy Global"],
@@ -27,16 +27,30 @@ COMPANIES: dict[str, list[str]] = {
     "Hexa Climate":    ["Hexa Climate"],
 }
 
-# Build month list — FY 2025-26 (Apr 2025 to Mar 2026)
-MONTHS: list[dict] = []
-for y, m in [(2025, mm) for mm in range(4, 13)] + [(2026, mm) for mm in range(1, 4)]:
-    last = monthrange(y, m)[1]
-    MONTHS.append({
-        "label": f"{y}-{m:02d}",
-        "display": date(y, m, 1).strftime("%b %Y"),
-        "start": date(y, m, 1),
-        "end": date(y, m, last),
-    })
+
+def _build_months(n_back: int = 12) -> list[dict]:
+    """Return list of month dicts from n_back months ago through current month."""
+    today = date.today()
+    months = []
+    for i in range(n_back, -1, -1):
+        m = today.month - i
+        y = today.year
+        while m <= 0:
+            m += 12
+            y -= 1
+        last = monthrange(y, m)[1]
+        # For the current month use today as end date (partial month)
+        end = today if i == 0 else date(y, m, last)
+        months.append({
+            "label": f"{y}-{m:02d}",
+            "display": date(y, m, 1).strftime("%b %Y"),
+            "start": date(y, m, 1),
+            "end": end,
+        })
+    return months
+
+
+MONTHS = _build_months(n_back=12)
 
 
 def google_news_url(query: str, after: date, before: date) -> str:
