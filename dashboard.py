@@ -62,6 +62,103 @@ COMPANY_COLORS = {
     "Hexa Climate":    "#8C564B",
 }
 
+# ── Estimated monthly unique visitors (in thousands) per outlet ───────────
+# Source: SimilarWeb estimates + media kit data, 2025.
+# Figures are order-of-magnitude — use for relative comparison, not absolutes.
+SOURCE_REACH_K: dict[str, int] = {
+    # National business / news
+    "The Economic Times":             80_000,
+    "ET EnergyWorld":                  5_000,
+    "Moneycontrol.com":               45_000,
+    "Business Standard":              25_000,
+    "livemint.com":                   20_000,
+    "Mint":                           20_000,
+    "NDTV Profit":                    10_000,
+    "CNBC TV18":                       8_000,
+    "BusinessLine":                    8_000,
+    "The Hindu":                      25_000,
+    "financialexpress.com":           12_000,
+    "Business Today":                 10_000,
+    "TheWire.in":                      3_000,
+    "The New Indian Express":          5_000,
+    "Outlook Money":                   1_500,
+    "BW Businessworld":                2_000,
+    "VCCircle":                        1_500,
+    "Bar and Bench":                     500,
+    "SCC Online":                      2_000,
+    # Wire services
+    "Reuters":                        40_000,
+    "Bloomberg.com":                  20_000,
+    "ANI News":                        3_000,
+    "Asian News International":        3_000,
+    "PR Newswire":                       500,
+    "Business Wire":                   2_000,
+    # Finance / investing platforms
+    "Yahoo Finance":                   5_000,
+    "Investing.com":                   3_000,
+    "Investing.com India":             3_000,
+    "TradingView":                     5_000,
+    "Groww":                          10_000,
+    "Upstox":                          5_000,
+    "HDFC Sky":                        2_000,
+    "Samco":                           1_000,
+    "Markets Mojo":                      500,
+    "Rediff MoneyWiz":                   500,
+    "simplywall.st":                     500,
+    "Stock Titan":                       200,
+    "scanx.trade":                       100,
+    "Business Upturn":                   200,
+    "Dalal Street Investment Journal":   300,
+    "Equitypandit":                      300,
+    "marketscreener.com":              1_000,
+    "Whalesbook":                        100,
+    # Energy / renewables trade press
+    "pv magazine India":                 300,
+    "pv magazine Global":                600,
+    "PV Tech":                           500,
+    "SolarQuarter":                      200,
+    "Mercomindia.com":                   250,
+    "Saur Energy":                       150,
+    "Renewables Now":                    300,
+    "Energetica India Magazine":         100,
+    "Renewable Watch Magazine":          100,
+    "Solarbytes":                         50,
+    "TaiyangNews":                       100,
+    "Wind Insider":                       50,
+    "ESG Today":                         200,
+    "Energy-Storage.News":               200,
+    "Asian Power":                       100,
+    "BigInfo.in":                         50,
+    "IndexBox":                          100,
+    "BioEnergy Times":                    50,
+    # Industry / B2B
+    "Construction World India":          200,
+    "Machine Maker":                     100,
+    "Manufacturing Today India":         100,
+    "Projects Today":                    200,
+    "SMEStreet":                         200,
+    "Data Center Dynamics":              200,
+    "NST Online":                      2_000,
+}
+_REACH_DEFAULT_K = 100   # fallback for sources not in the table
+
+
+def source_reach_k(source: str) -> int:
+    return SOURCE_REACH_K.get(source or "", _REACH_DEFAULT_K)
+
+
+def articles_reach_m(articles: list[dict]) -> float:
+    """Sum of outlet monthly-visitor reach (in millions) across a list of articles."""
+    return sum(source_reach_k(a.get("source") or "") for a in articles) / 1_000
+
+
+def fmt_reach(m: float) -> str:
+    if m >= 1_000:
+        return f"{m / 1_000:.1f}B"
+    if m >= 1:
+        return f"{m:.1f}M"
+    return f"{m * 1_000:.0f}K"
+
 st.set_page_config(
     page_title="Sunsure Energy — SOV Dashboard",
     page_icon="☀️",
@@ -216,6 +313,7 @@ for m in month_labels:
             "Articles": counts[c],
             "SOV %": round((counts[c] / total * 100), 1) if total else 0.0,
             "Total Pool": total,
+            "Reach_M": articles_reach_m(data["data"][c][m]),
         })
 df = pd.DataFrame(rows)
 
@@ -247,6 +345,9 @@ def sunsure_kpis():
     latest_df = df[df["Month"] == latest_month].sort_values("SOV %", ascending=False).reset_index(drop=True)
     rank = int(latest_df[latest_df["Company"] == "Sunsure"].index[0]) + 1
 
+    total_reach_m = float(s["Reach_M"].sum())
+    latest_reach_m = float(s.iloc[-1]["Reach_M"])
+
     return {
         "avg_sov": avg_sov,
         "best_by_sov": best_by_sov,
@@ -256,12 +357,14 @@ def sunsure_kpis():
         "rank": rank,
         "total": len(selected_companies),
         "total_articles": total_articles,
+        "total_reach_m": total_reach_m,
+        "latest_reach_m": latest_reach_m,
     }
 
 
 k = sunsure_kpis()
 if k:
-    c1, c2, c3, c4, c5 = st.columns(5)
+    c1, c2, c3, c4, c5, c6 = st.columns(6)
     c1.metric(f"Sunsure avg SOV ({date_range})", f"{k['avg_sov']:.1f}%")
     c2.metric(
         f"Latest ({month_display[month_labels[-1]]})",
@@ -281,6 +384,14 @@ if k:
         delta_color="off",
     )
     c5.metric(f"Latest rank", f"#{k['rank']} of {k['total']}")
+    c6.metric(
+        "📡 Est. reach (FY)",
+        fmt_reach(k["total_reach_m"]),
+        f"{fmt_reach(k['latest_reach_m'])} latest mo.",
+        delta_color="off",
+        help="Sum of outlet monthly unique visitors across all Sunsure articles. "
+             "Potential impressions — not deduplicated unique readers.",
+    )
 
 st.markdown("---")
 
@@ -430,6 +541,35 @@ with tab1:
     fig2.update_layout(height=400, yaxis_title="Articles", hovermode="x unified")
     st.plotly_chart(fig2, width="stretch")
 
+    # Estimated reach trend
+    st.subheader("Estimated reach by month (potential impressions, millions)")
+    st.caption(
+        "Each article is weighted by its outlet's estimated monthly unique visitors. "
+        "Reach = sum of those weights across all articles in the month. "
+        "Figures are order-of-magnitude estimates based on SimilarWeb data — "
+        "use for relative trend comparison, not absolute reporting."
+    )
+    pivot_r = df.pivot(index="Month", columns="Company", values="Reach_M").reindex(month_labels)
+    fig3 = go.Figure()
+    for c in selected_companies:
+        is_sunsure = c == "Sunsure"
+        fig3.add_trace(go.Scatter(
+            x=[month_display[m] for m in month_labels],
+            y=pivot_r[c].tolist(),
+            mode="lines+markers",
+            name=c,
+            line=dict(width=4 if is_sunsure else 2, color=COMPANY_COLORS.get(c)),
+            marker=dict(size=10 if is_sunsure else 6, color=COMPANY_COLORS.get(c)),
+            hovertemplate="%{x}: %{y:.1f}M<extra>" + c + "</extra>",
+        ))
+    fig3.update_layout(
+        height=400,
+        yaxis_title="Est. reach (M potential impressions)",
+        hovermode="x unified",
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+    )
+    st.plotly_chart(fig3, width="stretch")
+
 
 # ── Tab 2: Stacked bar
 with tab2:
@@ -514,10 +654,12 @@ with tab4:
         rows_a = []
         for a in sorted(articles, key=lambda x: x.get("published") or "", reverse=True):
             s = sent_for(a["url"])
+            src = a.get("source") or "—"
             rows_a.append({
                 "Date": (a["published"][:10] if a.get("published") else "—"),
                 "Sentiment": f"{SENTIMENT_EMOJI[s['label']]} {s['score']:+.2f}",
-                "Source": a.get("source") or "—",
+                "Source": src,
+                "Reach": fmt_reach(source_reach_k(src) / 1_000),
                 "Title": a["title"],
                 "Category": categorize(a["title"]),
                 "URL": a["url"],
@@ -532,6 +674,8 @@ with tab4:
                 "URL": st.column_config.LinkColumn("Open"),
                 "Title": st.column_config.TextColumn("Title", width="large"),
                 "Sentiment": st.column_config.TextColumn("Sentiment", width="small"),
+                "Reach": st.column_config.TextColumn("Reach", width="small",
+                    help="Outlet's estimated monthly unique visitors"),
             },
         )
     else:
@@ -554,16 +698,35 @@ with tab5:
         st.plotly_chart(fig, width="stretch")
 
     st.subheader("Sunsure's top sources (full FY)")
-    src_counter = Counter()
+    src_counter: Counter = Counter()
+    src_reach: dict[str, float] = {}
     for m in month_labels:
         for a in data["data"]["Sunsure"][m]:
-            if a.get("source"):
-                src_counter[a["source"]] += 1
+            src = a.get("source") or ""
+            if src:
+                src_counter[src] += 1
+                src_reach[src] = src_reach.get(src, 0) + source_reach_k(src) / 1_000
+
+    view = st.radio("View by", ["Article count", "Estimated reach"], horizontal=True, key="src_view")
+
     if src_counter:
-        df_src = pd.DataFrame(src_counter.most_common(20), columns=["Source", "Articles"])
-        fig = px.bar(df_src, x="Articles", y="Source", orientation="h",
-                     color_discrete_sequence=[SUNSURE_COLOR])
-        fig.update_layout(height=500, yaxis={"categoryorder": "total ascending"})
+        if view == "Article count":
+            df_src = pd.DataFrame(src_counter.most_common(20), columns=["Source", "Articles"])
+            fig = px.bar(df_src, x="Articles", y="Source", orientation="h",
+                         color_discrete_sequence=[SUNSURE_COLOR])
+            fig.update_layout(height=520, yaxis={"categoryorder": "total ascending"},
+                              xaxis_title="Articles")
+        else:
+            reach_rows = sorted(src_reach.items(), key=lambda x: -x[1])[:20]
+            df_src = pd.DataFrame(reach_rows, columns=["Source", "Reach_M"])
+            df_src["Reach_fmt"] = df_src["Reach_M"].apply(fmt_reach)
+            fig = px.bar(df_src, x="Reach_M", y="Source", orientation="h",
+                         color_discrete_sequence=[SUNSURE_COLOR],
+                         text="Reach_fmt",
+                         hover_data={"Reach_M": ":.1f", "Reach_fmt": False})
+            fig.update_traces(textposition="outside")
+            fig.update_layout(height=520, yaxis={"categoryorder": "total ascending"},
+                              xaxis_title="Est. reach (M potential impressions)")
         st.plotly_chart(fig, width="stretch")
 
 
