@@ -60,6 +60,7 @@ COMPANY_COLORS = {
     "Ampin":           "#FF7F0E",
     "Gentari/Amplus":  "#9467BD",
     "Hexa Climate":    "#8C564B",
+    "Serentica":       "#17BECF",
 }
 
 # ── Estimated monthly unique visitors (in thousands) per outlet ───────────
@@ -959,8 +960,11 @@ with tab8:
                 }
             return result
 
-        fy25_summary = fy_sov_summary(data_fy25, fy25_months, all_companies)
-        fy26_summary = fy_sov_summary(data, fy26_months, all_companies)
+        # Companies added after the FY25 backfill (e.g. Serentica) have no FY25
+        # data, so year-on-year compares only companies tracked in both years.
+        yoy_companies = [c for c in all_companies if c in data_fy25["data"]]
+        fy25_summary = fy_sov_summary(data_fy25, fy25_months, yoy_companies)
+        fy26_summary = fy_sov_summary(data, fy26_months, yoy_companies)
 
         # ── 1. KPI cards for Sunsure
         st.markdown("### 1. Overall SOV — Sunsure Energy")
@@ -982,7 +986,7 @@ with tab8:
         # ── SOV comparison bar chart (all companies, FY25 vs FY26)
         st.markdown("##### FY25 vs FY26 SOV — all companies")
         compare_rows = []
-        for c in all_companies:
+        for c in yoy_companies:
             compare_rows.append({"Company": c, "FY": "FY25", "SOV %": fy25_summary[c]["avg_sov"],
                                   "Articles": fy25_summary[c]["total_articles"]})
             compare_rows.append({"Company": c, "FY": "FY26", "SOV %": fy26_summary[c]["avg_sov"],
@@ -1039,7 +1043,7 @@ with tab8:
         # Summary table
         with st.expander("Full SOV table — FY25 vs FY26 (all companies)"):
             tbl_rows = []
-            for c in all_companies:
+            for c in yoy_companies:
                 s25c = fy25_summary[c]
                 s26c = fy26_summary[c]
                 tbl_rows.append({

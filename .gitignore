@@ -6,3 +6,4 @@ venv/
 .venv/
 streamlit.log
 run.log
+digest_preview.html

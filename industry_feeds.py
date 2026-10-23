@@ -32,6 +32,7 @@ COMPANY_PATTERNS: dict[str, list] = {
     "Ampin":          ["ampin"],
     "Gentari/Amplus": ["gentari", "amplus"],
     "Hexa Climate":   ["hexa climate"],
+    "Serentica":      ["serentica"],
 }
 
 

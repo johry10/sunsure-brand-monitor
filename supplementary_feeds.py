@@ -38,6 +38,7 @@ COMPANY_QUERIES: dict[str, list[str]] = {
     "Ampin":           ["Ampin Energy", "AMPIN Solar"],
     "Gentari/Amplus":  ["Gentari", "Amplus Solar", "Amplus Energy"],
     "Hexa Climate":    ["Hexa Climate"],
+    "Serentica":       ["Serentica Renewables", "Serentica"],
 }
 
 # Mirrors MATCH_PATTERNS in clean_data.py — used to assign articles to companies
@@ -48,6 +49,7 @@ COMPANY_PATTERNS: dict[str, list] = {
     "Ampin":          ["ampin"],
     "Gentari/Amplus": ["gentari", "amplus"],
     "Hexa Climate":   ["hexa climate"],
+    "Serentica":      ["serentica"],
 }
 
 _GDELT_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"

@@ -9,6 +9,39 @@ One-file Python tool that pulls news from Google News RSS (+ optional industry f
 - Asks Claude to classify each article: is it really about us? competitor? sentiment? category? why it matters?
 - Emails a ranked digest grouped into **About Sunsure** and **Competitors**
 
+## Automation (GitHub Actions, free, no API key)
+
+Two scheduled workflows in `.github/workflows/` keep everything running without your laptop:
+
+| Workflow | When (IST) | What it does |
+|---|---|---|
+| `refresh.yml` | daily 06:00 | `collect_data.py` → `clean_data.py` → `classify_coverage.py`, commits the data files. Streamlit Cloud redeploys the dashboard on push. New runs are merged with the previous data, so a flaky fetch never drops coverage. |
+| `digest.yml` | 08:00 and 18:00 | `digest.py` pulls the last ~36h of coverage for Sunsure and each competitor (Google News, industry RSS, GDELT, Bing), tags sentiment with VADER and Tier 1 outlets, and emails it. Already-sent articles are remembered in `digest_seen.json`. |
+
+Both can also be run by hand from the repo's **Actions** tab (**Run workflow**).
+
+### One-time setup for the email digest
+
+1. Create a Gmail App Password for the sending account (needs 2-Step Verification): https://myaccount.google.com/apppasswords
+2. Add three repository secrets (Settings → Secrets and variables → Actions), or from this folder:
+
+   ```bash
+   gh secret set GMAIL_USER
+   gh secret set GMAIL_APP_PASSWORD
+   gh secret set DIGEST_TO
+   ```
+
+   `DIGEST_TO` is a comma-separated list of recipients.
+3. Optional: add a repository **variable** `DASHBOARD_URL` with the Streamlit link so the email links to it.
+
+Preview the email locally without sending: `python digest.py --dry-run` (writes `digest_preview.html`).
+
+Competitors and search terms live in `COMPANIES` (`collect_data.py`) and `MATCH_PATTERNS` (`clean_data.py`); the digest uses the same lists.
+
+---
+
+_The section below describes the original `monitor.py`, which uses the Anthropic API. The automated digest above replaces it._
+
 ## One-time setup
 
 ### 1. Install Python 3.10+

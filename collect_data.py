@@ -26,6 +26,7 @@ COMPANIES: dict[str, list[str]] = {
     "Ampin":           ["Ampin Energy", "AMPIN Solar"],
     "Gentari/Amplus":  ["Gentari", "Amplus Solar", "Amplus Energy"],
     "Hexa Climate":    ["Hexa Climate"],
+    "Serentica":       ["Serentica Renewables", "Serentica"],
 }
 
 
@@ -103,6 +104,28 @@ def find_highlight(articles: list[dict]) -> dict | None:
     return max(biggest, key=lambda a: len(a["title"]))
 
 
+def merge_previous(data: dict[str, dict[str, list[dict]]], prev_path: Path) -> int:
+    """Union previous run's articles into `data` (in place) for months still in
+    the window. Dedupes by URL and by normalised title. Returns count kept."""
+    if not prev_path.exists():
+        return 0
+    prev = json.loads(prev_path.read_text()).get("data", {})
+    kept = 0
+    for company, months in data.items():
+        for label, arts in months.items():
+            urls = {a["url"] for a in arts}
+            titles = {a["title"].lower().strip() for a in arts}
+            for a in prev.get(company, {}).get(label, []):
+                t = a.get("title", "").lower().strip()
+                if a.get("url") in urls or t in titles:
+                    continue
+                arts.append(a)
+                urls.add(a.get("url"))
+                titles.add(t)
+                kept += 1
+    return kept
+
+
 def main():
     print(f"Collecting SOV data for {len(COMPANIES)} companies × {len(MONTHS)} months")
     print(f"= {sum(len(q) for q in COMPANIES.values()) * len(MONTHS)} queries total\n")
@@ -157,6 +180,12 @@ def main():
             supp_added += len(new_arts)
         print(f"  {month['label']}: supplementary pass done")
     print(f"  Added {supp_added} articles from GDELT + Bing not in other sources")
+
+    # Keep articles from the previous run that this run didn't return.
+    # Google News results shift (and can be throttled on CI runners), so a daily
+    # refresh should only ever add coverage, never silently drop it.
+    kept = merge_previous(data, ROOT / "sov_data.json")
+    print(f"\nKept {kept} articles from the previous run not returned this time")
 
     # Build highlights
     highlights = {

@@ -1,0 +1,40 @@
+name: Email digest
+
+on:
+  schedule:
+    - cron: "30 2 * * *"    # 08:00 IST
+    - cron: "30 12 * * *"   # 18:00 IST
+  workflow_dispatch:
+
+concurrency:
+  group: data-commits
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install feedparser PyYAML vaderSentiment
+      - run: python digest.py
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
+      - name: Remember sent articles
+        run: |
+          git config user.name "sov-bot"
+          git config user.email "sov-bot@users.noreply.github.com"
+          git add digest_seen.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Digest sent $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase
+          git push
