@@ -257,7 +257,7 @@
         "pickups": 2,
         "date": "2026-10-27",
         "outlets": [
-          "Construction World India",
+          "Construction World",
           "SolarQuarter"
         ]
       },
@@ -631,11 +631,11 @@
         ]
       },
       {
-        "representative_title": "Bharat Dynamics set to inaugurate two new manufacturing facilities - Business Standard",
+        "representative_title": "Sunsure Energy Signs PPAs with Daeseung Autoparts and Ilgahng Automotive - Energetica India Magazine",
         "pickups": 1,
-        "date": "2026-03-25",
+        "date": "2026-03-07",
         "outlets": [
-          "Business Standard"
+          "Energetica India Magazine"
         ]
       },
       {
@@ -663,11 +663,11 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy Signs PPAs with Daeseung Autoparts and Ilgahng Automotive - Energetica India Magazine",
+        "representative_title": "Bharat Dynamics set to inaugurate two new manufacturing facilities - Business Standard",
         "pickups": 1,
-        "date": "2026-03-07",
+        "date": "2026-03-25",
         "outlets": [
-          "Energetica India Magazine"
+          "Business Standard"
         ]
       },
       {
@@ -847,6 +847,14 @@
         ]
       },
       {
+        "representative_title": "Sunsure Signs 3 Solar PPAs with India's Wonder Cement, Powered by 150 MWp and 49 MWp Plants - SolarQuarter",
+        "pickups": 1,
+        "date": "2026-04-08",
+        "outlets": [
+          "SolarQuarter"
+        ]
+      },
+      {
         "representative_title": "Sunsure Energy Signs 3 Consecutive PPAs with Wonder Cement; Delivering 30 MWp Across Maharashtra & UP - PR Newswire",
         "pickups": 1,
         "date": "2026-04-07",
@@ -855,19 +863,19 @@
         ]
       },
       {
-        "representative_title": "SECI launches 500 MW peak supply renewable tender requiring dispatch via power exchanges - pv magazine India",
-        "pickups": 1,
-        "date": "2026-04-28",
-        "outlets": [
-          "pv magazine India"
-        ]
-      },
-      {
         "representative_title": "Longi launches Longi One: new integrated solar-plus-storage platform strategy - ESS News",
         "pickups": 1,
         "date": "2026-04-02",
         "outlets": [
           "ESS News"
+        ]
+      },
+      {
+        "representative_title": "SECI launches 500 MW peak supply renewable tender requiring dispatch via power exchanges - pv magazine India",
+        "pickups": 1,
+        "date": "2026-04-28",
+        "outlets": [
+          "pv magazine India"
         ]
       },
       {
@@ -892,14 +900,6 @@
         "date": "2026-04-21",
         "outlets": [
           "ESS News"
-        ]
-      },
-      {
-        "representative_title": "Sunsure Signs 3 Solar PPAs with India\u2019s Wonder Cement, Powered by 150 MWp and 49 MWp Plants - SolarQuarter",
-        "pickups": 1,
-        "date": "2026-04-08",
-        "outlets": [
-          "SolarQuarter"
         ]
       },
       {
@@ -2162,12 +2162,6 @@
         "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbjZqM2NDWTQ0RjQtcVNRemlLU01xcGREb0UtbzlYVEJVcHgxazQ5WkNvdHdJVFE4ZGNCSGN1bXNjOWpPc3ZUOWRUOWRBMVF3QzVoWGMyb3dNV2JjeTBwTmphQi1BYWJCVFFCRW9XQi0xOFNGWDdiOFoyZkJzcmFKdFBCQVkyWUJiSGthUEdIbENQdHQ2SnViNkQ3RGZ1dlF5RnQtYS1aZ09oTWdWM2xFZDV4NEZJclExYmdTbHpqanNHZEpFYUp3?oc=5"
       },
       {
-        "title": "Suzlon Energy's 3 MW platform reaches a milestone after a 195 MW order from Sunsure Energy - CNBC TV18",
-        "source": "CNBC TV18",
-        "date": "2026-05-22",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNWEotYjJHX1BqTkpacmNjbThZdlA5WXB1NU1NOUlfWV9yLVJ1eWdsQ1BLYUEzSFdwcEtBZkVkTTRkWjlQTm1EM1d3TlFhZk9hejZXaF8wQUY5akx1ZEUzZHVpb0t3VVJha05WNTc1Q1NXcUdVNmV0RGlKaTdxdWhsVVEwZTEzQTc5ZmtlWms4SVBENWRWQlNFdjEzYzh3Y3dERUVCbFVRV2s2aGJUaWtubkVUOWwzRERzbmduYWQzMm9qZ3Nld1RoT0dPVmlIM3hfczVyaE56QUNLQnJIVG5nRUxzWVZmclRl0gHuAUFVX3lxTE9jeDFqWWwtbWlyaUd5dHRFU1JfOUJfUlNIbmN4d2dUMG9ZM1EzTkswSU1yMTU0ejA5TlN6ZVpjVGhkT21VODNtZkhQbEQyUVVWV0lUZmU1WUJrX2NuNlBBbHJ2V3FNWklTLVVPSU5xRUhKN09qNk5SWGoxZ3JYdUcxWjFYeWxGcjN1OTBzY21NQlNKOHVaT3M0WFktalpBdDBoLU5VdURzZzQyNUVzWVB3NUJrZlNpMzBrem81MWxET0Z6cktObTlHemxNLW11dUZobkNGMUU0UTFhQlhCT2ljLVBvX3VhRDZ0Z3FSNkE?oc=5"
-      },
-      {
         "title": "Suzlon Energy Shares Gain on Securing 195 MW Order - Equitypandit",
         "source": "Equitypandit",
         "date": "2026-05-22",
@@ -2190,6 +2184,12 @@
         "source": "Business Today",
         "date": "2026-05-22",
         "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPS0lkOF9zRWV4Q0lpRUt5akFqOWVrekZPVlg4dkxlTUJOdThVX1NOeXRLS1NxdW4xVnA1SGxFZ2NIbTM0UFRmSlNvamh0VXBLMTZhb0xFaDBhVHAtdVRtS2RybUoyYXcta09aeGVYaEZRZXU4aHZ1NUN4UmJGeWprb09Wd0JLN3pkYWJJZ3lRNU1JOURnTFoyU3BwanNPdU9NVDdDaVdCdUhEVDZzU0JiWTVTX2d6bVJlWHA3Vnd2dnl5Y0FOTlhtREg3QUtvQlJuNXMyM1Z6SzBqNTZKYUpfeUV6UdIB6AFBVV95cUxNRTZJU3RacWxxUkdLSGJTV3Y3TXNsa3o0OEtUY0c1dkY5RjAwTTB3WWEyZVJXRk9FaTNSTEt6YW5sbkNuSjhrbjU2X1dDUzBtSEI1NFVXZzlweTdJUUN0SklfRXJ2X2F1Rm5IRU9UV2M4R2dNY3ZCSC1GcjZlNExwb1dpNFd5TndyYjF4N2ZHU09VMzVvbnpITDhWbFR5VnZaT2FwY3dpME95SUw0YjY3Zi03VnN0ajVsclh4U2dVVFpLZmpkNEJOdE1PVVVmQXIySGN5NHR1b0hJYnAyeERCWC1YdHYwUHN2?oc=5"
+      },
+      {
+        "title": "Suzlon Energy's 3 MW platform reaches a milestone after a 195 MW order from Sunsure Energy - CNBC TV18",
+        "source": "CNBC TV18",
+        "date": "2026-05-22",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNWEotYjJHX1BqTkpacmNjbThZdlA5WXB1NU1NOUlfWV9yLVJ1eWdsQ1BLYUEzSFdwcEtBZkVkTTRkWjlQTm1EM1d3TlFhZk9hejZXaF8wQUY5akx1ZEUzZHVpb0t3VVJha05WNTc1Q1NXcUdVNmV0RGlKaTdxdWhsVVEwZTEzQTc5ZmtlWms4SVBENWRWQlNFdjEzYzh3Y3dERUVCbFVRV2s2aGJUaWtubkVUOWwzRERzbmduYWQzMm9qZ3Nld1RoT0dPVmlIM3hfczVyaE56QUNLQnJIVG5nRUxzWVZmclRl0gHuAUFVX3lxTE9jeDFqWWwtbWlyaUd5dHRFU1JfOUJfUlNIbmN4d2dUMG9ZM1EzTkswSU1yMTU0ejA5TlN6ZVpjVGhkT21VODNtZkhQbEQyUVVWV0lUZmU1WUJrX2NuNlBBbHJ2V3FNWklTLVVPSU5xRUhKN09qNk5SWGoxZ3JYdUcxWjFYeWxGcjN1OTBzY21NQlNKOHVaT3M0WFktalpBdDBoLU5VdURzZzQyNUVzWVB3NUJrZlNpMzBrem81MWxET0Z6cktObTlHemxNLW11dUZobkNGMUU0UTFhQlhCT2ljLVBvX3VhRDZ0Z3FSNkE?oc=5"
       },
       {
         "title": "Suzlon 3 MW platform sales reach nearly 9 GW with a new 195 MW order from Sunsure Energy - Odisha Diary",
