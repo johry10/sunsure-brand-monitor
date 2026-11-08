@@ -1,9 +1,9 @@
 {
   "fy_label": "FY26 (Apr 2025 \u2013 Mar 2026)",
-  "total_articles": 468,
+  "total_articles": 472,
   "press_releases": {
-    "unique_count": 197,
-    "total_pickups": 252,
+    "unique_count": 200,
+    "total_pickups": 255,
     "avg_pickups_per_release": 1.3,
     "clusters": [
       {
@@ -431,19 +431,27 @@
         ]
       },
       {
-        "representative_title": "Max Healthcare Signs 4 MW Solar Power Purchase Agreement with Sunsure - Mercomindia.com",
-        "pickups": 1,
-        "date": "2026-01-30",
-        "outlets": [
-          "Mercomindia.com"
-        ]
-      },
-      {
         "representative_title": "Ibere\u00f3lica announces three energy storage projects in Chile totaling 6.3 GWh - ESS News",
         "pickups": 1,
         "date": "2026-01-14",
         "outlets": [
           "ESS News"
+        ]
+      },
+      {
+        "representative_title": "Bulgaria commissions 500 MWh BESS at thermal power plant site - ESS News",
+        "pickups": 1,
+        "date": "2026-01-09",
+        "outlets": [
+          "ESS News"
+        ]
+      },
+      {
+        "representative_title": "Max Healthcare Signs 4 MW Solar Power Purchase Agreement with Sunsure - Mercomindia.com",
+        "pickups": 1,
+        "date": "2026-01-30",
+        "outlets": [
+          "Mercomindia.com"
         ]
       },
       {
@@ -623,6 +631,14 @@
         ]
       },
       {
+        "representative_title": "Sunsure secures US$65.6 million debt to fund 242MWp solar portfolio in India - PV Tech",
+        "pickups": 1,
+        "date": "2026-03-17",
+        "outlets": [
+          "PV Tech"
+        ]
+      },
+      {
         "representative_title": "Sunsure Energy, JAKSON Engineering ink solar PPA for green power supply - ET EnergyWorld",
         "pickups": 1,
         "date": "2026-03-20",
@@ -716,14 +732,6 @@
         "date": "2026-03-02",
         "outlets": [
           "ESS News"
-        ]
-      },
-      {
-        "representative_title": "Sunsure secures US$65.6 million debt to fund 242MWp solar portfolio in India - PV Tech",
-        "pickups": 1,
-        "date": "2026-03-17",
-        "outlets": [
-          "PV Tech"
         ]
       },
       {
@@ -871,6 +879,14 @@
         ]
       },
       {
+        "representative_title": "India Solar Open Access Growth Stalled by Land Acquisition - www.mvapulse.com",
+        "pickups": 1,
+        "date": "2026-04-13",
+        "outlets": [
+          "www.mvapulse.com"
+        ]
+      },
+      {
         "representative_title": "Longi launches Longi One: new integrated solar-plus-storage platform strategy - ESS News",
         "pickups": 1,
         "date": "2026-04-02",
@@ -991,14 +1007,6 @@
         ]
       },
       {
-        "representative_title": "Suzlon Secures 195 Megawatt (MW) Wind Energy Order From Sunsure Energy - Construction World",
-        "pickups": 1,
-        "date": "2026-05-28",
-        "outlets": [
-          "Construction World"
-        ]
-      },
-      {
         "representative_title": "Suzlon Wins 195 MW Sunsure Order; Shares Gain 0.66% - HDFC Sky",
         "pickups": 1,
         "date": "2026-05-22",
@@ -1020,6 +1028,22 @@
         "date": "2026-05-22",
         "outlets": [
           "Saur Energy"
+        ]
+      },
+      {
+        "representative_title": "Sunsure commissions 105 MW Uttar Pradesh solar project - Solarbytes",
+        "pickups": 1,
+        "date": "2026-05-30",
+        "outlets": [
+          "Solarbytes"
+        ]
+      },
+      {
+        "representative_title": "Suzlon Secures 195 Megawatt (MW) Wind Energy Order From Sunsure Energy - Construction World",
+        "pickups": 1,
+        "date": "2026-05-28",
+        "outlets": [
+          "Construction World"
         ]
       },
       {
@@ -1215,14 +1239,6 @@
         ]
       },
       {
-        "representative_title": "Sunsure raises \u20b9262 crore debt from FMO, Axis Bank for Tamil Nadu solar - Dealroom",
-        "pickups": 1,
-        "date": "2026-07-06",
-        "outlets": [
-          "Dealroom"
-        ]
-      },
-      {
         "representative_title": "Suzlon Bags 105 Megawatt Wind Project From Sunsure Energy - Construction World",
         "pickups": 1,
         "date": "2026-07-03",
@@ -1244,6 +1260,14 @@
         "date": "2026-07-07",
         "outlets": [
           "Renewables Now"
+        ]
+      },
+      {
+        "representative_title": "Sunsure raises \u20b9262 crore debt from FMO, Axis Bank for Tamil Nadu solar - Dealroom",
+        "pickups": 1,
+        "date": "2026-07-06",
+        "outlets": [
+          "Dealroom"
         ]
       },
       {
@@ -1629,7 +1653,7 @@
     "articles": []
   },
   "features": {
-    "count": 216,
+    "count": 217,
     "articles": [
       {
         "title": "Suzlon S144 sales cross 10 GW after Ayana Renewable Power order - scanx.trade",
@@ -2184,16 +2208,16 @@
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWW11MG5GWnZtaUx2XzVES1VtMERwQUU2RWM2SDFZQ0QxTUIzRXJCT3ZUakNGNUZKOVphVndJYUYtVnNmSHNTN2k1VlpxZmxucW5kSEIzY0RBNndndlVScTNIRm1kb3g2T012M0pqTjFJNGo0b1B5b2J5djUxUk03X2FEZUoxNXc?oc=5"
       },
       {
-        "title": "Suzlon 3 MW platform sales near 9 GW after fresh 195 MW repeat order; details here - Business Today",
-        "source": "Business Today",
-        "date": "2026-05-22",
-        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPS0lkOF9zRWV4Q0lpRUt5akFqOWVrekZPVlg4dkxlTUJOdThVX1NOeXRLS1NxdW4xVnA1SGxFZ2NIbTM0UFRmSlNvamh0VXBLMTZhb0xFaDBhVHAtdVRtS2RybUoyYXcta09aeGVYaEZRZXU4aHZ1NUN4UmJGeWprb09Wd0JLN3pkYWJJZ3lRNU1JOURnTFoyU3BwanNPdU9NVDdDaVdCdUhEVDZzU0JiWTVTX2d6bVJlWHA3Vnd2dnl5Y0FOTlhtREg3QUtvQlJuNXMyM1Z6SzBqNTZKYUpfeUV6UdIB6AFBVV95cUxNRTZJU3RacWxxUkdLSGJTV3Y3TXNsa3o0OEtUY0c1dkY5RjAwTTB3WWEyZVJXRk9FaTNSTEt6YW5sbkNuSjhrbjU2X1dDUzBtSEI1NFVXZzlweTdJUUN0SklfRXJ2X2F1Rm5IRU9UV2M4R2dNY3ZCSC1GcjZlNExwb1dpNFd5TndyYjF4N2ZHU09VMzVvbnpITDhWbFR5VnZaT2FwY3dpME95SUw0YjY3Zi03VnN0ajVsclh4U2dVVFpLZmpkNEJOdE1PVVVmQXIySGN5NHR1b0hJYnAyeERCWC1YdHYwUHN2?oc=5"
-      },
-      {
         "title": "Suzlon 3 MW Platform Sales Reach Nearly 9 GW With a New 195 MW Order From Sunsure Energy - SMEStreet",
         "source": "SMEStreet",
         "date": "2026-05-22",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNU05pY2xqeHZ4dGRMRDhEUWhJXzFudUo4NDR6ZjBBTVJxQXUxRFBpSTBMMjFaREd5ZTI4ck9XT3dMelNNakRpemZjV0pPMlZydnNYZXBaS0NUajhiSWxWb0h2eF9IcFlkODJWQS1kalRyVmc2cUtoVnlQaDBXaXNISzd1WWJzaktsTGxuNFpCNHlNM2UyZ2Ztb0MtdTdJVFJ0VXVmdXgxUW0wUEZkel8zMUN0dDZ2akVvZTQ5UVFHaWZZYzFl0gHEAUFVX3lxTE1TTmljbGp4dnh0ZExEOERRaElfMW51Sjg0NHpmMEFNUnFBdTFEUGlJMEwyMVpER3llMjhyT1dPd0x6U01qRGl6ZmNXSk8yVnJ2c1hlcFpLQ1RqOGJJbFZvSHZ4X0hwWWQ4MlZBLWRqVHJWZzZxS2hWeVBoMFdpc0hLN3VZYnNqS2xMbG40WkI0eU0zZTJnZm1vQy11N0lUUnRVdWZ1eDFRbTBQRmR6XzMxQ3R0NnZqRW9lNDlRUUdpZlljMWU?oc=5"
+      },
+      {
+        "title": "Suzlon 3 MW platform sales near 9 GW after fresh 195 MW repeat order; details here - Business Today",
+        "source": "Business Today",
+        "date": "2026-05-22",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPS0lkOF9zRWV4Q0lpRUt5akFqOWVrekZPVlg4dkxlTUJOdThVX1NOeXRLS1NxdW4xVnA1SGxFZ2NIbTM0UFRmSlNvamh0VXBLMTZhb0xFaDBhVHAtdVRtS2RybUoyYXcta09aeGVYaEZRZXU4aHZ1NUN4UmJGeWprb09Wd0JLN3pkYWJJZ3lRNU1JOURnTFoyU3BwanNPdU9NVDdDaVdCdUhEVDZzU0JiWTVTX2d6bVJlWHA3Vnd2dnl5Y0FOTlhtREg3QUtvQlJuNXMyM1Z6SzBqNTZKYUpfeUV6UdIB6AFBVV95cUxNRTZJU3RacWxxUkdLSGJTV3Y3TXNsa3o0OEtUY0c1dkY5RjAwTTB3WWEyZVJXRk9FaTNSTEt6YW5sbkNuSjhrbjU2X1dDUzBtSEI1NFVXZzlweTdJUUN0SklfRXJ2X2F1Rm5IRU9UV2M4R2dNY3ZCSC1GcjZlNExwb1dpNFd5TndyYjF4N2ZHU09VMzVvbnpITDhWbFR5VnZaT2FwY3dpME95SUw0YjY3Zi03VnN0ajVsclh4U2dVVFpLZmpkNEJOdE1PVVVmQXIySGN5NHR1b0hJYnAyeERCWC1YdHYwUHN2?oc=5"
       },
       {
         "title": "Suzlon 3 MW platform sales reach nearly 9 GW with a new 195 MW order from Sunsure Energy - Passionate In Marketing",
@@ -2608,6 +2632,12 @@
         "source": "TheWire.in",
         "date": "2026-01-28",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONUhrNUxRZUNtU3p3b2RLOGd3S3ZZXzFGYlJCVldleWlLTWliMHZVaVlQa0V5YWtLYmdvWEN4azMyWXdPbWdPUF8zVEl3S2NDaXZ4dzBNZDRlYk5XdVB1WUQ3amlvalYtQXdPR0JhVkpja2ZFZHktYU9iR0NRbXNvNW1wMmMzdEJjbGw4NzBiQjVmMVpjdTBWbVJDcFpReENoZWFHZjlMUzF1WWhjUkd0ZmlQU1EwMXIzTElscXp3QzE3WUxZ0gHKAUFVX3lxTE42MHMybF9raG5LOTdiZy1rdlF4a05tYWVFdUl0clNDVzRULUtPNnBNanJEc29GRnJJQVplZThjaDJFQUdWMnA5TklMdUViS2pDUjZDcXQ1YmZCaGRVb0MybHpMd3JreDlQRDFUY1BIcHZFUVdXNTI2b0dYMm9hLUtERnIyTFRITmx4UmxBcURPZlhNbk8tVXUxekFkRU85WkNHZFVQRU03V2RRVWctWlJWN2N5dnpGTEtBdmZhWUd1TjY3b3N0bjJEQmc?oc=5"
+      },
+      {
+        "title": "ESAB India Limited Increases Shareholding in Solar Power Company to 17.38% - scanx.trade",
+        "source": "scanx.trade",
+        "date": "2026-01-28",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdHlvcXo2RzhXZ0otWTRvVmw2R2xMbHhRLVZmeTNYLUdBeXFfQVBxMm9pNHJ6N1NYc3hqZ2V4ZkVna2NVSExRT09mOURheWhQTDN4c2pGUEhzY3N2OGlyQkJiaGlVSHc3VE5BOUNtYVUxeHA2U040N0hHNlVndGU4VnFJZHRqRHVxNjBKTEFXLVUwWGxBN0JXOFFiVVFUUVN5S3RkOHU3S0FkaGVKN1ZPM1lkT3FfRGM5X3V3Y0hRaEJtLUo0RlVZZ1JmZ0lFQQ?oc=5"
       },
       {
         "title": "Sunsure Energy powers Max Healthcare's Super Speciality Hospital, Noida with Green Energy - Business Standard",
