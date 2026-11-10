@@ -1,16 +1,17 @@
 {
   "fy_label": "FY26 (Apr 2025 \u2013 Mar 2026)",
-  "total_articles": 472,
+  "total_articles": 483,
   "press_releases": {
-    "unique_count": 200,
-    "total_pickups": 255,
+    "unique_count": 201,
+    "total_pickups": 257,
     "avg_pickups_per_release": 1.3,
     "clusters": [
       {
-        "representative_title": "Sunsure Energy commissions 105 MWp solar plant in Mahoba; kicks off Uttar Pradeshs first green power evacuation under Green Energy Corridor-II - TheWire.in",
-        "pickups": 7,
+        "representative_title": "Sunsure Energy commissions 105 MWp solar plant in Mahoba; kicks off Uttar Pradesh's first green power evacuation under Green Energy Corridor-II - Business Standard",
+        "pickups": 8,
         "date": "2026-06-01",
         "outlets": [
+          "Business Standard",
           "Energetica India Magazine",
           "SolarQuarter",
           "TheWire.in",
@@ -855,14 +856,6 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy Signs Solar Open-Access PPAs to Supply 30 MWp Power to Wonder Cement - Energetica India Magazine",
-        "pickups": 1,
-        "date": "2026-04-08",
-        "outlets": [
-          "Energetica India Magazine"
-        ]
-      },
-      {
         "representative_title": "Sunsure Energy Signs 3 Consecutive PPAs with Wonder Cement; Delivering 30 MWp Across Maharashtra & UP - PR Newswire",
         "pickups": 1,
         "date": "2026-04-07",
@@ -892,6 +885,14 @@
         "date": "2026-04-02",
         "outlets": [
           "ESS News"
+        ]
+      },
+      {
+        "representative_title": "Sunsure Energy Signs Solar Open-Access PPAs to Supply 30 MWp Power to Wonder Cement - Energetica India Magazine",
+        "pickups": 1,
+        "date": "2026-04-08",
+        "outlets": [
+          "Energetica India Magazine"
         ]
       },
       {
@@ -1087,19 +1088,19 @@
         ]
       },
       {
-        "representative_title": "Suzlon Bags 105 MW Karnataka Wind Energy Contract From Sunsure Energy - Trade Brains",
-        "pickups": 1,
-        "date": "2026-06-30",
-        "outlets": [
-          "Trade Brains"
-        ]
-      },
-      {
         "representative_title": "Suzlon Energy Rises 2% on Fresh 105 MW Order Win - Equitypandit",
         "pickups": 1,
         "date": "2026-06-30",
         "outlets": [
           "Equitypandit"
+        ]
+      },
+      {
+        "representative_title": "Suzlon Bags 105 MW Karnataka Wind Energy Contract From Sunsure Energy - Trade Brains",
+        "pickups": 1,
+        "date": "2026-06-30",
+        "outlets": [
+          "Trade Brains"
         ]
       },
       {
@@ -1423,11 +1424,11 @@
         ]
       },
       {
-        "representative_title": "Avaada secures $1.3bn in financing for 2.15GW renewable energy projects - Yahoo Finance",
+        "representative_title": "Hinduja Group announces Rs 25 billion clean energy investment in Tamil Nadu - Renewable Watch",
         "pickups": 1,
-        "date": "2026-08-03",
+        "date": "2026-08-17",
         "outlets": [
-          "Yahoo Finance"
+          "Renewable Watch"
         ]
       },
       {
@@ -1439,17 +1440,17 @@
         ]
       },
       {
-        "representative_title": "Suzlon secures 250 MW wind order from Torrent Group - Renewable Watch",
+        "representative_title": "Avaada secures $1.3bn in financing for 2.15GW renewable energy projects - Yahoo Finance",
         "pickups": 1,
-        "date": "2026-08-25",
+        "date": "2026-08-03",
         "outlets": [
-          "Renewable Watch"
+          "Yahoo Finance"
         ]
       },
       {
-        "representative_title": "Hinduja Group announces Rs 25 billion clean energy investment in Tamil Nadu - Renewable Watch",
+        "representative_title": "Suzlon secures 250 MW wind order from Torrent Group - Renewable Watch",
         "pickups": 1,
-        "date": "2026-08-17",
+        "date": "2026-08-25",
         "outlets": [
           "Renewable Watch"
         ]
@@ -1535,14 +1536,6 @@
         ]
       },
       {
-        "representative_title": "Kajaria Ceramics to Procure Power from Sunsure\u2019s 20 MW Wind-Solar Project - Mercomindia.com",
-        "pickups": 1,
-        "date": "2026-09-07",
-        "outlets": [
-          "Mercomindia.com"
-        ]
-      },
-      {
         "representative_title": "From Rooftop Solar to Open Access: The Sunsure Energy Journey | Saur Energy Podcast - Saur Energy",
         "pickups": 1,
         "date": "2026-09-14",
@@ -1556,6 +1549,14 @@
         "date": "2026-09-09",
         "outlets": [
           "ET Manufacturing"
+        ]
+      },
+      {
+        "representative_title": "Kajaria Ceramics to Procure Power from Sunsure\u2019s 20 MW Wind-Solar Project - Mercomindia.com",
+        "pickups": 1,
+        "date": "2026-09-07",
+        "outlets": [
+          "Mercomindia.com"
         ]
       },
       {
@@ -1639,6 +1640,14 @@
         ]
       },
       {
+        "representative_title": "Sungrow Launches Grid-Forming Inverters, Showcases 420kW String Inverters - Saur Energy",
+        "pickups": 1,
+        "date": "2026-11-07",
+        "outlets": [
+          "Saur Energy"
+        ]
+      },
+      {
         "representative_title": "El Pel\u00edcano raises $129.58 million for solar-plus-storage in Chile - ESS News",
         "pickups": 1,
         "date": "2026-11-06",
@@ -1653,13 +1662,67 @@
     "articles": []
   },
   "features": {
-    "count": 217,
+    "count": 226,
     "articles": [
+      {
+        "title": "iPower Batteries' 2 GWh Expansion Plan: What's Next for BESS in India? - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-07",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVzJ0Z2RiQUhPWWdBUUt3b0R0ekdaR0E2Nmlja3EtYno1T2dVUGdvaFNCenpFblRjQWZJZDNFQnpfWnNXcFM3S2w4Tmp0RmNQRHBSR0h6cmhpM1JPcXByamlWNmJqUUFzd1JvRTFaaXZJTnc1c3VCZzJsejFvWDREbVBTZWVXV0FaQmZkR0ZWOEdxQXZLazhXM3A0bUtoWEZtZU9GRkRaY0xOTjZt?oc=5"
+      },
+      {
+        "title": "India's Solar Boom Has a Hidden Chemical Story | Kredence's \u20b9100 Crore Bet - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQME1ENmltZDRIUzRCakh4SEdDYktvU0lHV0hUZnhXVHZ6c0JGemdHRjJMOHV0dXNKcEpnZEQ3a0JYUGRWb3pGcml1bGRWM2VkSjdCdENjR0dUNVl0eURuRTUtdFR4UjB4NzF6YktlWkRlTHpNQnU4UGt6cUFDakRIT2pOb01ybmVTcW52NWJCb2EyV1c5dVRHeXhvODNTNGJYckhhWWp6MFhKNERwV1Zmdw?oc=5"
+      },
+      {
+        "title": "India\u2019s Solar Manufacturing Push | Jackson Solar MD Ivan Saha on ALMM 2 & BESS - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNb1VmUWYyNW5qN3R3Z2ZxTVFFZmxiS25Sa0hLZkJuajUyYWFPd0RHVERTLXhJZTFiX3NjRXdJWDlfMzVlWUFXYS1rc3hJRnhZM205MW53VHFxYmVkZm1nVW1mbVRlQXhMNWQyd0hkME9IWGw1VzdxdTdOWDRwWmc0OW1iVktKbDNnLTlGNEF6WWZ3UkY0NC1VdUh5NmJTOTRyUlVtYl93MFV6SlV1YVJYUnJXRmFSZw?oc=5"
+      },
+      {
+        "title": "How 3M Is Advancing Battery Technology for BESS | Interview - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWFI5azZSWTZKbU5tUllIM3FDMzdFY0Z6UGJLMzVPSF9XZDA1VERpT0tDNUJUM1R0RWVwS01jMlM0aXV0N2FPQmpwclRKWDlqOTJ2RTI4WENhblQtTlNNTkkwemVQd2JkbVRQZmhLT2ZLUHpfTGtzXzVaMlRWRElaWWdvdjNUY09uYTRvTXJzR3R1UTJHYUZhaVpsN3FabTN5?oc=5"
+      },
+      {
+        "title": "Hoymiles Showcases 6-In-1 Microinverters, BESS & PCS Solutions - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNa2tLWFlJVkhjVXBlS1FsczIxcmkxUVN3QVJOLWR0WVUtd1YtV3VmbGFVMHh2VkdoR2RLbkZ3UzJkU2xPZmF0Tjl1V2FNSlA3bE9EUkFQSXpUSGlaMmVfMG90QjE2aUZzbGs1ejhOVXZSTUlvY2k4MWdxMms1NnZQU3ZScTJLYWRCN0dFNnZVN0hTbjd1WkJBMTlJTGNRVlRsakZV?oc=5"
+      },
+      {
+        "title": "Trontek\u2019s 5 MW BESS Plans & 12 GW Expansion | CEO Samrath Jit Singh Interview - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamQ1QlVGSjdkWnV2S0Q5bnJncGk4cWxlaW8yZHFrbFVkYUxHTXZ5Mnd4bEJaLUZZdDk0SHV2Sk9OR3dtS0k1akdUb3Q4V1NobWc2R0REZngyT1ZGR2p4Qi1wRDI0Sm45TncxbFE4UU9qVlNSeV9NUVVfaWhBaWNubVp4VEoySFdYR1dJb0tXRC1mTlNPSjk3NUdzbHB6T3JYOEdlYU9zYjMwd09XVzdzS1p3Rmg?oc=5"
+      },
+      {
+        "title": "How Sanchi Connect Is Boosting Renewable Energy Startups in India? Firm Explains - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-04",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMDBfUlpxSUxyYXQ1anpUbjJGV0lDRFE0LUltdllWZmMzcUpSM2t4ZGhLQTBpU1pNbVBkWXY0d1R0U2dLSTg5M19NT181cjBtT293bjNETkZuSVVFVlZNYnh3cWFlQ29QcjF5c2gxVUt4MXRFRUtpdFN5MURkUDdfQU5xWFNKbVJ2eGllamhqMTNXY1RLcjMzdndTb3ZfQ0F4NUpFM1VWR1hqRjIyeG52WFNnMVJCbmtEU3VEeTNn?oc=5"
+      },
       {
         "title": "Suzlon S144 sales cross 10 GW after Ayana Renewable Power order - scanx.trade",
         "source": "scanx.trade",
         "date": "2026-11-04",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxORUk0YlhxZ2ZmREZ1b19keXJ1WER1SEo0ZGVVSTlQcjRTU2tiOTVGY2g5V19kcHlZc3RRalhtLUxTMUNQMTJXMkdvWmRkTEZVT0NHNWZYcG1HZDJ4WEJEM1h4NmE5d25jd0txSUd2UXBLOWVnSlJuYndPRDgwZXNHdHhmWnZ0UXBOU04zSmo5dFRMUVZXd3FxTW1xNDJoTkx3MGFWXzNabENwNFBjMXlnQkJvQUpWTFU1NFVPTXlmTkM?oc=5"
+      },
+      {
+        "title": "Novasys To Start Solar Cell Manufacturing From May 2027: Rakesh Singh - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-03",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQLTFnTG1FbGZXUkNnUHd1ZFZGT2RZZlFrc1BJNENYbzcwUDZMT0lMLUlydFN2UEwtM3BmaUdIcWdDTUVpbzM3a3VOMnFKRzJDdUhOaDVzakJZWnpfYTVaLXphQmpjQ2tHVkMzTTJGV3JGZ2paZ1BzUkVKd1czcnZBUzJKbmFwcTVWME9FdFUyY3ViX2RMenhRaG0tMGZXUQ?oc=5"
+      },
+      {
+        "title": "Okaya Showcases Its IP--66 Rated Hybrid Solar Inverters - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-03",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSWtkNGVHUjFlNVhLQUt2aXRlOHhwNTNrUXlxX0dzS0Zpa2xyakZnSWlHRnM1T1poVVhmM053VllCSl9UY0ZRR1lyTFpQenVEZzNNd0dJYzBCaWIweGNqdzh5MC1SaFpzWWxoa25VTC0ybGVXTEhQN1hFNUswTmFYdlU3d1Byd2VoTGV0R2JPVVRkVFpDanpCVmxwR1U?oc=5"
       },
       {
         "title": "Sunsure Solarpark Fourty Three Private Limited announced that it has received INR 12.149565 million in funding from Kajaria Ceramics Limited",
