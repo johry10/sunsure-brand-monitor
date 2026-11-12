@@ -1,6 +1,6 @@
 {
   "fy_label": "FY26 (Apr 2025 \u2013 Mar 2026)",
-  "total_articles": 485,
+  "total_articles": 490,
   "press_releases": {
     "unique_count": 202,
     "total_pickups": 258,
@@ -62,7 +62,8 @@
           "Powerline Magazine",
           "Renewable Watch",
           "Renewable Watch Magazine",
-          "pv magazine India"
+          "pv magazine India",
+          "pv-magazine-india"
         ]
       },
       {
@@ -236,21 +237,21 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy, Kajaria Ceramics sign 20 MW wind-solar hybrid PPA in Rajasthan - ET EnergyWorld",
-        "pickups": 2,
-        "date": "2026-09-08",
-        "outlets": [
-          "ET EnergyWorld",
-          "Renewable Watch"
-        ]
-      },
-      {
         "representative_title": "Sunsure Energy signs 20 MW PPA with Kajaria Ceramics for round-the-clock renewable energy supply - pv magazine India",
         "pickups": 2,
         "date": "2026-09-07",
         "outlets": [
           "Energetica India Magazine",
           "pv magazine India"
+        ]
+      },
+      {
+        "representative_title": "Sunsure Energy, Kajaria Ceramics sign 20 MW wind-solar hybrid PPA in Rajasthan - ET EnergyWorld",
+        "pickups": 2,
+        "date": "2026-09-08",
+        "outlets": [
+          "ET EnergyWorld",
+          "Renewable Watch"
         ]
       },
       {
@@ -272,19 +273,19 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy to Supply 19.36 MW Wind-Solar Hybrid Power to Deepak Fertilisers in Maharashtra - Energetica India Magazine",
+        "representative_title": "Sunsure Energy Signs PPA with Bisleri International to Supply Solar Power to its Sahibabad Plant - Energetica India Magazine",
         "pickups": 1,
-        "date": "2025-11-12",
+        "date": "2025-11-27",
         "outlets": [
           "Energetica India Magazine"
         ]
       },
       {
-        "representative_title": "Partners Group-owned Sunsure raising offshore financing for solar project - VCCircle",
+        "representative_title": "Sunsure Energy to Supply 19.36 MW Wind-Solar Hybrid Power to Deepak Fertilisers in Maharashtra - Energetica India Magazine",
         "pickups": 1,
         "date": "2025-11-12",
         "outlets": [
-          "VCCircle"
+          "Energetica India Magazine"
         ]
       },
       {
@@ -304,11 +305,11 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy Signs PPA with Bisleri International to Supply Solar Power to its Sahibabad Plant - Energetica India Magazine",
+        "representative_title": "Partners Group-owned Sunsure raising offshore financing for solar project - VCCircle",
         "pickups": 1,
-        "date": "2025-11-27",
+        "date": "2025-11-12",
         "outlets": [
-          "Energetica India Magazine"
+          "VCCircle"
         ]
       },
       {
@@ -344,14 +345,6 @@
         ]
       },
       {
-        "representative_title": "Saatvik Solar Launches Solar Inverters | Prashant Mathur (CEO) Interview - Saur Energy",
-        "pickups": 1,
-        "date": "2025-12-23",
-        "outlets": [
-          "Saur Energy"
-        ]
-      },
-      {
         "representative_title": "India\u2019s Trontek enters residential energy storage market with 1.4 kWh and 2.7 kWh lithium ion battery systems - ESS News",
         "pickups": 1,
         "date": "2025-12-11",
@@ -365,6 +358,14 @@
         "date": "2025-12-12",
         "outlets": [
           "ESS News"
+        ]
+      },
+      {
+        "representative_title": "Saatvik Solar Launches Solar Inverters | Prashant Mathur (CEO) Interview - Saur Energy",
+        "pickups": 1,
+        "date": "2025-12-23",
+        "outlets": [
+          "Saur Energy"
         ]
       },
       {
@@ -432,6 +433,14 @@
         ]
       },
       {
+        "representative_title": "Waaree Energy Storage Solutions raises funding for 20 GWh lithium-ion cell and battery pack manufacturing facility - ESS News",
+        "pickups": 1,
+        "date": "2026-01-05",
+        "outlets": [
+          "ESS News"
+        ]
+      },
+      {
         "representative_title": "Ibere\u00f3lica announces three energy storage projects in Chile totaling 6.3 GWh - ESS News",
         "pickups": 1,
         "date": "2026-01-14",
@@ -457,14 +466,6 @@
       },
       {
         "representative_title": "CATL inks 50 GWh energy storage deal with Sieyuan, secures 20 GWh order for battery cells from CRRC - ESS News",
-        "pickups": 1,
-        "date": "2026-01-05",
-        "outlets": [
-          "ESS News"
-        ]
-      },
-      {
-        "representative_title": "Waaree Energy Storage Solutions raises funding for 20 GWh lithium-ion cell and battery pack manufacturing facility - ESS News",
         "pickups": 1,
         "date": "2026-01-05",
         "outlets": [
@@ -600,19 +601,19 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy Raises Rs. 606 Cr Debt from Aseem Infra, RBL Bank for Solar Expansion - Saur Energy",
+        "representative_title": "Sunsure Energy Signs PPAs with Daeseung Autoparts and Ilgahng Automotive - Energetica India Magazine",
         "pickups": 1,
-        "date": "2026-03-17",
+        "date": "2026-03-07",
         "outlets": [
-          "Saur Energy"
+          "Energetica India Magazine"
         ]
       },
       {
-        "representative_title": "LGE India Signs PPAs with Hinduja Renewables and Sunsure Energy to Procure 20.8 MWp Solar Power - Energetica India Magazine",
+        "representative_title": "Sunsure Energy secures \u20b9606 cr debt financing from Aseem Infra and RBL Bank for projects across Maharashtra and Uttar Pradesh - ANI News",
         "pickups": 1,
-        "date": "2026-03-26",
+        "date": "2026-03-16",
         "outlets": [
-          "Energetica India Magazine"
+          "ANI News"
         ]
       },
       {
@@ -624,11 +625,11 @@
         ]
       },
       {
-        "representative_title": "Sunsure secures US$65.6 million debt to fund 242MWp solar portfolio in India - PV Tech",
+        "representative_title": "LGE India Signs PPAs with Hinduja Renewables and Sunsure Energy to Procure 20.8 MWp Solar Power - Energetica India Magazine",
         "pickups": 1,
-        "date": "2026-03-17",
+        "date": "2026-03-26",
         "outlets": [
-          "PV Tech"
+          "Energetica India Magazine"
         ]
       },
       {
@@ -640,11 +641,11 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy Signs PPAs with Daeseung Autoparts and Ilgahng Automotive - Energetica India Magazine",
+        "representative_title": "Bharat Dynamics set to inaugurate two new manufacturing facilities - Business Standard",
         "pickups": 1,
-        "date": "2026-03-07",
+        "date": "2026-03-25",
         "outlets": [
-          "Energetica India Magazine"
+          "Business Standard"
         ]
       },
       {
@@ -664,11 +665,19 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy secures \u20b9606 cr debt financing from Aseem Infra and RBL Bank for projects across Maharashtra and Uttar Pradesh - ANI News",
+        "representative_title": "Sunsure Energy Raises Rs. 606 Cr Debt from Aseem Infra, RBL Bank for Solar Expansion - Saur Energy",
         "pickups": 1,
-        "date": "2026-03-16",
+        "date": "2026-03-17",
         "outlets": [
-          "ANI News"
+          "Saur Energy"
+        ]
+      },
+      {
+        "representative_title": "Sunsure secures US$65.6 million debt to fund 242MWp solar portfolio in India - PV Tech",
+        "pickups": 1,
+        "date": "2026-03-17",
+        "outlets": [
+          "PV Tech"
         ]
       },
       {
@@ -677,14 +686,6 @@
         "date": "2026-03-07",
         "outlets": [
           "Dalal Street Investment Journal"
-        ]
-      },
-      {
-        "representative_title": "Bharat Dynamics set to inaugurate two new manufacturing facilities - Business Standard",
-        "pickups": 1,
-        "date": "2026-03-25",
-        "outlets": [
-          "Business Standard"
         ]
       },
       {
@@ -864,14 +865,6 @@
         ]
       },
       {
-        "representative_title": "Sunsure Signs 3 Solar PPAs with India's Wonder Cement, Powered by 150 MWp and 49 MWp Plants - SolarQuarter",
-        "pickups": 1,
-        "date": "2026-04-08",
-        "outlets": [
-          "SolarQuarter"
-        ]
-      },
-      {
         "representative_title": "India Solar Open Access Growth Stalled by Land Acquisition - www.mvapulse.com",
         "pickups": 1,
         "date": "2026-04-13",
@@ -880,11 +873,27 @@
         ]
       },
       {
+        "representative_title": "Meta signs 100 GWh supply agreement for Noon Energy\u2019s ultra-long-duration fuel cell storage - ESS News",
+        "pickups": 1,
+        "date": "2026-04-21",
+        "outlets": [
+          "ESS News"
+        ]
+      },
+      {
         "representative_title": "Longi launches Longi One: new integrated solar-plus-storage platform strategy - ESS News",
         "pickups": 1,
         "date": "2026-04-02",
         "outlets": [
           "ESS News"
+        ]
+      },
+      {
+        "representative_title": "Sunsure Signs 3 Solar PPAs with India's Wonder Cement, Powered by 150 MWp and 49 MWp Plants - SolarQuarter",
+        "pickups": 1,
+        "date": "2026-04-08",
+        "outlets": [
+          "SolarQuarter"
         ]
       },
       {
@@ -907,14 +916,6 @@
         "representative_title": "Dominican Republic opens bids for renewables tender, mandates energy storage - ESS News",
         "pickups": 1,
         "date": "2026-04-14",
-        "outlets": [
-          "ESS News"
-        ]
-      },
-      {
-        "representative_title": "Meta signs 100 GWh supply agreement for Noon Energy\u2019s ultra-long-duration fuel cell storage - ESS News",
-        "pickups": 1,
-        "date": "2026-04-21",
         "outlets": [
           "ESS News"
         ]
@@ -976,14 +977,6 @@
         ]
       },
       {
-        "representative_title": "Suzlon bags 195 MW wind energy order from Sunsure Energy - The Economic Times",
-        "pickups": 1,
-        "date": "2026-05-22",
-        "outlets": [
-          "The Economic Times"
-        ]
-      },
-      {
         "representative_title": "Suzlon bags repeat 195 MW order from Sunsure Energy in Karnataka - ET EnergyWorld",
         "pickups": 1,
         "date": "2026-05-22",
@@ -1037,6 +1030,14 @@
         "date": "2026-05-30",
         "outlets": [
           "Solarbytes"
+        ]
+      },
+      {
+        "representative_title": "Suzlon bags 195 MW wind energy order from Sunsure Energy - The Economic Times",
+        "pickups": 1,
+        "date": "2026-05-22",
+        "outlets": [
+          "The Economic Times"
         ]
       },
       {
@@ -1104,6 +1105,14 @@
         ]
       },
       {
+        "representative_title": "Suzlon Energy Share Price Gains on 105 MW Order Win - Univest",
+        "pickups": 1,
+        "date": "2026-06-30",
+        "outlets": [
+          "Univest"
+        ]
+      },
+      {
         "representative_title": "Suzlon Bags 105 MW Karnataka Wind Energy Contract From Sunsure Energy - Trade Brains",
         "pickups": 1,
         "date": "2026-06-30",
@@ -1133,14 +1142,6 @@
         "date": "2026-06-29",
         "outlets": [
           "Renewable Watch"
-        ]
-      },
-      {
-        "representative_title": "Suzlon Energy Share Price Gains on 105 MW Order Win - Univest",
-        "pickups": 1,
-        "date": "2026-06-30",
-        "outlets": [
-          "Univest"
         ]
       },
       {
@@ -1248,14 +1249,6 @@
         ]
       },
       {
-        "representative_title": "Suzlon Bags 105 Megawatt Wind Project From Sunsure Energy - Construction World",
-        "pickups": 1,
-        "date": "2026-07-03",
-        "outlets": [
-          "Construction World"
-        ]
-      },
-      {
         "representative_title": "Sunsure Energy raises Rs.262-Cr project financing from FMO, Axis Bank - Venture Intelligence News",
         "pickups": 1,
         "date": "2026-07-07",
@@ -1269,6 +1262,14 @@
         "date": "2026-07-07",
         "outlets": [
           "Renewables Now"
+        ]
+      },
+      {
+        "representative_title": "Suzlon Bags 105 Megawatt Wind Project From Sunsure Energy - Construction World",
+        "pickups": 1,
+        "date": "2026-07-03",
+        "outlets": [
+          "Construction World"
         ]
       },
       {
@@ -1520,22 +1521,6 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy Signs Hybrid PPA With Kajaria Ceramics - Construction World",
-        "pickups": 1,
-        "date": "2026-09-09",
-        "outlets": [
-          "Construction World"
-        ]
-      },
-      {
-        "representative_title": "[Solar: Sunsure and Kajaria sign wind-solar hybrid PPA in India] - Shanghai Metals Market",
-        "pickups": 1,
-        "date": "2026-09-07",
-        "outlets": [
-          "Shanghai Metals Market"
-        ]
-      },
-      {
         "representative_title": "Kajaria Ceramics Inks 20 MW Wind-Solar PPA with Sunsure - https://www.mvapulse.com/",
         "pickups": 1,
         "date": "2026-09-07",
@@ -1557,6 +1542,22 @@
         "date": "2026-09-09",
         "outlets": [
           "ET Manufacturing"
+        ]
+      },
+      {
+        "representative_title": "Sunsure Energy Signs Hybrid PPA With Kajaria Ceramics - Construction World",
+        "pickups": 1,
+        "date": "2026-09-09",
+        "outlets": [
+          "Construction World"
+        ]
+      },
+      {
+        "representative_title": "[Solar: Sunsure and Kajaria sign wind-solar hybrid PPA in India] - Shanghai Metals Market",
+        "pickups": 1,
+        "date": "2026-09-07",
+        "outlets": [
+          "Shanghai Metals Market"
         ]
       },
       {
@@ -1600,6 +1601,14 @@
         ]
       },
       {
+        "representative_title": "Sunsure Energy signs PPA with Evonith Steel for 30 MWp of solar capacity - pv magazine India",
+        "pickups": 1,
+        "date": "2026-10-12",
+        "outlets": [
+          "pv magazine India"
+        ]
+      },
+      {
         "representative_title": "Rajasthan: Sunsure Energy Signs 21 MWp Group Captive PPA With SPR Auto, SPR Takahata - Saur Energy",
         "pickups": 1,
         "date": "2026-10-22",
@@ -1616,11 +1625,11 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy signs PPA with Evonith Steel for 30 MWp of solar capacity - pv magazine India",
+        "representative_title": "Sunsure signs 30 MW solar PPA with Evonith Steel in Maharashtra - Solarbytes",
         "pickups": 1,
-        "date": "2026-10-12",
+        "date": "2026-10-14",
         "outlets": [
-          "pv magazine India"
+          "Solarbytes"
         ]
       },
       {
@@ -1637,14 +1646,6 @@
         "date": "2026-10-08",
         "outlets": [
           "Renewable Watch"
-        ]
-      },
-      {
-        "representative_title": "Sunsure signs 30 MW solar PPA with Evonith Steel in Maharashtra - Solarbytes",
-        "pickups": 1,
-        "date": "2026-10-14",
-        "outlets": [
-          "Solarbytes"
         ]
       },
       {
@@ -1670,7 +1671,7 @@
     "articles": []
   },
   "features": {
-    "count": 227,
+    "count": 232,
     "articles": [
       {
         "title": "iPower Batteries' 2 GWh Expansion Plan: What's Next for BESS in India? - Saur Energy",
@@ -1697,6 +1698,12 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWFI5azZSWTZKbU5tUllIM3FDMzdFY0Z6UGJLMzVPSF9XZDA1VERpT0tDNUJUM1R0RWVwS01jMlM0aXV0N2FPQmpwclRKWDlqOTJ2RTI4WENhblQtTlNNTkkwemVQd2JkbVRQZmhLT2ZLUHpfTGtzXzVaMlRWRElaWWdvdjNUY09uYTRvTXJzR3R1UTJHYUZhaVpsN3FabTN5?oc=5"
       },
       {
+        "title": "How AI Is Transforming Solar, Wind & BESS | Dr. Kumar M | Smartgrid Analytics - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-05",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZGxEWndQQk9TblA2QmNXSU1sTHJEaXJPVldmcGRVeE9CZDRRODlDczlDZWliWTNMRzFMYTkydlhFRE1mNHZQSGxMTUE5WkdNbUdQTjhBaldDcjQtbjE5V2lpWG5Wb05EZldaMDZxeThxUXZXYnZqT3VOajN4bFc1WkFqZ3JJYXhGM3FnVnRXTVp0clhwSm80Wl9TUjByVnNkVUg1Q2dYT0ZORGJxMmZ6YQ?oc=5"
+      },
+      {
         "title": "Hoymiles Showcases 6-In-1 Microinverters, BESS & PCS Solutions - Saur Energy",
         "source": "Saur Energy",
         "date": "2026-11-05",
@@ -1707,6 +1714,12 @@
         "source": "Saur Energy",
         "date": "2026-11-05",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamQ1QlVGSjdkWnV2S0Q5bnJncGk4cWxlaW8yZHFrbFVkYUxHTXZ5Mnd4bEJaLUZZdDk0SHV2Sk9OR3dtS0k1akdUb3Q4V1NobWc2R0REZngyT1ZGR2p4Qi1wRDI0Sm45TncxbFE4UU9qVlNSeV9NUVVfaWhBaWNubVp4VEoySFdYR1dJb0tXRC1mTlNPSjk3NUdzbHB6T3JYOEdlYU9zYjMwd09XVzdzS1p3Rmg?oc=5"
+      },
+      {
+        "title": "India\u2019s Residential Solar Market Is Changing | Arkannect CEO Sagar Saxena on Hybrid Solar & Growth - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-04",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZS04cEo0M0lzSVJ4a1p1b2Jrakl3SGhZVTRoZG9JTTNzVjVKMUgxM0xCeU1POWc4ZGM3dHVab0dZdEtCSVFOaElBT3FXNEpFX2czbmhQREM2RkpWQlFoMXoxdTkxZEZ2eGFrVGo3YXB0akh6WXJkNVBrd1JhRmp2RTNSVF9GOHV6N19ZMGI3ZE5VcENOazNhY1ljR0Fzd0N3RFBBdUthYVhSX09selBka3RLU3JDNlZGc3hhM0Z4VE9keEhSWG5IRjg1RmxsZHZY?oc=5"
       },
       {
         "title": "How Sanchi Connect Is Boosting Renewable Energy Startups in India? Firm Explains - Saur Energy",
@@ -1839,6 +1852,12 @@
         "source": "ET EnergyWorld",
         "date": "2026-09-06",
         "url": "https://energy.economictimes.indiatimes.com/tag/sunsure+energy"
+      },
+      {
+        "title": "Accord Transformer & Switchgear Ltd receives 2 orders from Sunsure Energy Pvt Ltd - EquityBulls",
+        "source": "EquityBulls",
+        "date": "2026-09-04",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNXVqVUJSN2RuOGFVZ01NZjNDOVYwVFRTX3YwV0thdVpXbWFOLXEtb2lEUFcyU010aXdON2lzaWgxeUw1cHNVY0V5TE8tQzdPcS10YVZHQTdKUlRkbGFudHhVazN0VEVGMFFVc0tDRjlfZ2lSbkctZWMyb3VyQVpuMGpnZVVjMGp5bVNPWlAyalgzUVV1TEVxMWRYQUtNSndSRURqc3JGUkNnc2hldHJWV3hNdFZyTnVVTElz?oc=5"
       },
       {
         "title": "Kajaria Ceramics To Invest \u20b912.15 Cr In Sunsure Solarpark For Renewable Energy - Trade Brains",
@@ -2129,6 +2148,12 @@
         "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ0tzc3g4dVp6RUQ0Zk52YkczNHMzbGdSWFhOZll2bFcyUk5iTHB6OE9pUk5KTlpIWVgtWTVka3Jaa3J5ckFQZWJvWk11d0JIMGd2UlktOW9TUWRCQlBPZE5kMmd4ZGR1bGlUUzI3eEYtOFUwb0pwa2RVaVptVDZMUWN2SU9sM3gwQnFDYm0wSTNyTjBLYUVLZHhYaExtN2ZfOHRkTnJuYVFwX3ZQcnpOLUluSEFsMS1xZ05SWEkycHBsdlnSAcgBQVVfeXFMTlI2ZjJCYmQ0cnYtUkdTUkYtaHIydE1IOTRGVXpZeDRWcUZSQlpHa0VJTHI5UHUtQ3lvUk9UN3RxWFZXTjVnR25XTV9ubjV2WXFwQ1lrczhkM01kdTRnWTlxTlRTaE5UTVB6WlZMVEw3ZG9hbHlBYUUzbEI3THVsaF93SGc1X2R0a0ZYeWsyb04tWWlEdUdJWDJUTzdVRVZLcGI3RUdhS1lyWWxuSHoyb090WFFONFZWWXVxVzhrMmhYNWdGT1ZfcTU?oc=5"
       },
       {
+        "title": "Suzlon S175 makes strong debut with 105 MW order - Manufacturing Today India",
+        "source": "Manufacturing Today India",
+        "date": "2026-06-30",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1sUHgzWjE3UWpCVXE4amo1TDFhNkhja1J4WWMzOTkwejJLdVZLZFlqNV93VnZpUnpiUFUxMTIwdm1ZWDVlOS1Jc1BvQWdKTjMxS0NKa0NyUkJiWHB5TkZQLWw0UEtsU19ycHdmUHNCTGFtblRBdVcyajBB?oc=5"
+      },
+      {
         "title": "Suzlon and Sunsure Energy Expand Partnership to 400.8 MW - SMEStreet",
         "source": "SMEStreet",
         "date": "2026-06-30",
@@ -2139,12 +2164,6 @@
         "source": "Facebook",
         "date": "2026-06-30",
         "url": "https://news.google.com/rss/articles/CBMi7ANBVV95cUxNTzliNnNLTk02SVpzaFkxeE1kQ3kzaVFZa0ozWkpZZDlPaW1qem96V3VDMmVOZXZZSXhCOHViUmFldktTTE1nNnpmRDFIR2NXdUV6OXBZSHhUckJjUUpReWVzSS1IOXNwOE9XSzIxblYxWDZ2d2VJY19Id3VFVVZpWU9nM0gyZm9TVDJMVWlwaHNpQ1RsN0FuWWtsOUR0TDRteXhIU0d5MFJoaW9FNTJjQ3lCdkFZbEp3R3FUSzMxVGs2dWVZbHlsMGZETVdlOXROcDB6c0Q3Sk9aa2pqeDNNUkdTMVlCV2RVNGxUYktRVkFSRi0wT3cwcmlGV1dmODBBWkdrRkZBajhJY0hGaTAzQnNHLWlDZ3Y5aE1WeXp3UjUzR3g5aFVWeXVLZU9nYTJWNFVDY2s0SmZRR1pKcGFzUXl4VDNIUEpHaVhiOWNNcXdzd2VmV1NCU2dOSjkxMXRBaW1lUkdyV3NGVjFLSGhmT0kyQTBZV09DMHQwT01wYWQ4MUs0dVpqTTRPb3RlUlE5eWx6SERvMENISFZqS1NaOUVxTzFSNVlGRWxDY2VjMEVTTEY5WG8tVHp0WnUyLTFFQmRMOGtMWWlSbXhiOHhIRnNrdU1vRlNBSmp5WmZ3dU5McW9oM2xkQzZhaDQ?oc=5"
-      },
-      {
-        "title": "Suzlon S175 makes strong debut with 105 MW order - Manufacturing Today India",
-        "source": "Manufacturing Today India",
-        "date": "2026-06-30",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1sUHgzWjE3UWpCVXE4amo1TDFhNkhja1J4WWMzOTkwejJLdVZLZFlqNV93VnZpUnpiUFUxMTIwdm1ZWDVlOS1Jc1BvQWdKTjMxS0NKa0NyUkJiWHB5TkZQLWw0UEtsU19ycHdmUHNCTGFtblRBdVcyajBB?oc=5"
       },
       {
         "title": "Suzlon's New S175 Wind Turbine Makes Commercial Debut with 105 MW Sunsure Energy Order - PSU Connect",
@@ -2549,6 +2568,12 @@
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNT245WlNubV94MnB2bnZ4WWxOX1JWdVBFWFZvckMxT1Q5d1NQSFJpSjVUYkRsenRXVlNNYjBvY2JZMGFpSDQ0LVY5S1JFdHNmaWIxMTRDdmd0WjU3NkxOWF8ydEdaT0RURW93UF9DWDBSMFM3V19rcWpkd2M0VEVqWnd5MmxTeVZBT0IxNnAwTQ?oc=5"
       },
       {
+        "title": "Lightsource bp in Australia finds a buyer for large solar and storage portfolio, pivots to hybrid generation - ESS News",
+        "source": "ESS News",
+        "date": "2026-02-24",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUFN1NUY0NnYtaWh4dE9XNG5xOENSTHRCSDdmaXlHUVhhd3dMcWtnM1doZmszdGRWZzNYbWJHN3ZfeWVKU3lKUHdJU2ppSUd0LUZQQ0pyOUxhSXBSTUhnaExhNmNtdDByd2ZEeUJPUHl4U2x4aWVpY0RRZEF4WTJWQVVIQ3Z4MzJqeW81enYxUmlObVJtd0lOM0ZydEhzVW11dVVjaEE2YW5XeXlHRXNXOVhjbHpzVmp4TFVEUUtEQVd5Rm5RbGNmOUJ2RGJJTnZ4SGlDZnpLcEFZMkJZ?oc=5"
+      },
+      {
         "title": "Trina Storage, Gore Street Capital to deliver 12 GWh of new BESS projects in Europe - ESS News",
         "source": "ESS News",
         "date": "2026-02-24",
@@ -2607,6 +2632,12 @@
         "source": "The Economic Times",
         "date": "2026-02-10",
         "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUDJPeEpnbmotNEZiTGdVckUwMkUwdVJQM1gxRDRtQkN3QURrcjU0TlQ4eWEtcUpSdGt3UFBkeHh0c2tzX2ZBSjh5Wnd5NHkydE5ZX2xQc01iRXdWSFJSUEhxWFVXOXNJUUVSbjd0OVlweHlyUExZMXgyY2RhWjlZMjNlcndqNDdhYXA1dkZRRmQ2R1ptRDdLXzJFbF8tMUtGeVU0QUp4M3cwdWVFSDVCRzhqWHhmeHdNMEN3cnNuQXpUQ1VMcEM5Tlhnd3FBb0o4dzNkRkZ6MEJNY2FVZ3fSAeMBQVVfeXFMTmJaRUFCR1BnYVM1Mnk3WGVVN0JnNXhtSEM5RVMzd3NjaHRrYWVfbFRDZmxLSlVReUpNR1J2VjFyZm1jRzVEVmpwLUgzZHozVmRRY19XS21lRkd1NkdsczdTcDRubjc1clRpeHE0ZUtGMjBpRlBQcjFLNVFBQkJaNzBvTm5RM1JxTk9CNFNwdTV3b1lyQTRTaF84MXVzS0M0YnRDNnNYQ2pCUVlUbmdOLTQtZmtpUzc0eVhhOWNEcnZtYmxkTVZPcWlsWFZaMFJvV3k5bElaSTFCN0xTN2pRV3JqaVU?oc=5"
+      },
+      {
+        "title": "EVE Energy \u201cMr Big\u201d Big Battery Delivers Reliable Energy Storage Power to KLIA - ESS News",
+        "source": "ESS News",
+        "date": "2026-02-06",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQXNVemwwNXl0VVZJZnNtT1lJYVdDb2loeTA4Y20yUXU2TTFRMU1CMDk0SDQ4Y2hKSkRxRHJwM2Y5S3lRWDZqZElLODNabHk2TkZRQVVneU1tenRnSnhJOEFIZFlUZ1NRM1oxX0d2X3hpSHFYbjJQWkkyYzVMU1N1ZHdRWnBEajRibDFXdzZiMl9BUEg1b0FGeWxra3VPdU1lV1ByMXVUVzI2SnFVdWNwRTRlaw?oc=5"
       },
       {
         "title": "The business case for C&I storage - Energy Storage - ESS News",
