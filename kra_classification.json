@@ -1,6 +1,6 @@
 {
   "fy_label": "FY26 (Apr 2025 \u2013 Mar 2026)",
-  "total_articles": 494,
+  "total_articles": 497,
   "press_releases": {
     "unique_count": 203,
     "total_pickups": 259,
@@ -865,6 +865,14 @@
         ]
       },
       {
+        "representative_title": "Sunsure Energy Signs Solar Open-Access PPAs to Supply 30 MWp Power to Wonder Cement - Energetica India Magazine",
+        "pickups": 1,
+        "date": "2026-04-08",
+        "outlets": [
+          "Energetica India Magazine"
+        ]
+      },
+      {
         "representative_title": "Sunsure Energy Signs 3 Consecutive PPAs with Wonder Cement; Delivering 30 MWp Across Maharashtra & UP - PR Newswire",
         "pickups": 1,
         "date": "2026-04-07",
@@ -873,19 +881,19 @@
         ]
       },
       {
-        "representative_title": "India Solar Open Access Growth Stalled by Land Acquisition - www.mvapulse.com",
-        "pickups": 1,
-        "date": "2026-04-13",
-        "outlets": [
-          "www.mvapulse.com"
-        ]
-      },
-      {
         "representative_title": "Longi launches Longi One: new integrated solar-plus-storage platform strategy - ESS News",
         "pickups": 1,
         "date": "2026-04-02",
         "outlets": [
           "ESS News"
+        ]
+      },
+      {
+        "representative_title": "India Solar Open Access Growth Stalled by Land Acquisition - www.mvapulse.com",
+        "pickups": 1,
+        "date": "2026-04-13",
+        "outlets": [
+          "www.mvapulse.com"
         ]
       },
       {
@@ -902,14 +910,6 @@
         "date": "2026-04-08",
         "outlets": [
           "SolarQuarter"
-        ]
-      },
-      {
-        "representative_title": "Sunsure Energy Signs Solar Open-Access PPAs to Supply 30 MWp Power to Wonder Cement - Energetica India Magazine",
-        "pickups": 1,
-        "date": "2026-04-08",
-        "outlets": [
-          "Energetica India Magazine"
         ]
       },
       {
@@ -1657,19 +1657,19 @@
         ]
       },
       {
-        "representative_title": "Sungrow Launches Grid-Forming Inverters, Showcases 420kW String Inverters - Saur Energy",
-        "pickups": 1,
-        "date": "2026-11-07",
-        "outlets": [
-          "Saur Energy"
-        ]
-      },
-      {
         "representative_title": "El Pel\u00edcano raises $129.58 million for solar-plus-storage in Chile - ESS News",
         "pickups": 1,
         "date": "2026-11-06",
         "outlets": [
           "ESS News"
+        ]
+      },
+      {
+        "representative_title": "Sungrow Launches Grid-Forming Inverters, Showcases 420kW String Inverters - Saur Energy",
+        "pickups": 1,
+        "date": "2026-11-07",
+        "outlets": [
+          "Saur Energy"
         ]
       }
     ]
@@ -1679,13 +1679,25 @@
     "articles": []
   },
   "features": {
-    "count": 235,
+    "count": 238,
     "articles": [
+      {
+        "title": "Croatia\u2019s first large-scale standalone 60 MW BESS goes live - ESS News",
+        "source": "ESS News",
+        "date": "2026-11-09",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb3RLejhnWE1QVWR5YVg4VGZOYjhMOUQ1MEhmNHh6d3ZGV3ZISDN4SjdLZ0t1WEVXemFIUXRoS1lxT21majdRWWpIQ0pJaHMzOFRaZ3hHMjRxeE9qUUd4a3B0czhDYm5hU0U4STZJN0lZalpEa2RZVVhUUVdTN3FWZXRCYU9FWEs4UnBkT29MSHBRRXJYN3ZhWVZiTQ?oc=5"
+      },
       {
         "title": "iPower Batteries' 2 GWh Expansion Plan: What's Next for BESS in India? - Saur Energy",
         "source": "Saur Energy",
         "date": "2026-11-07",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVzJ0Z2RiQUhPWWdBUUt3b0R0ekdaR0E2Nmlja3EtYno1T2dVUGdvaFNCenpFblRjQWZJZDNFQnpfWnNXcFM3S2w4Tmp0RmNQRHBSR0h6cmhpM1JPcXByamlWNmJqUUFzd1JvRTFaaXZJTnc1c3VCZzJsejFvWDREbVBTZWVXV0FaQmZkR0ZWOEdxQXZLazhXM3A0bUtoWEZtZU9GRkRaY0xOTjZt?oc=5"
+      },
+      {
+        "title": "India's Battery Storage Boom: Redon India's 5 kW to 50 kW Solutions | Sachin Agarwal | Redon India - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-06",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWmZrUUFXOWJjMnJmbk1zelJYbFp6WEhINXpCOURYYk8zZzRxOHRvWFhrSC1BZXAyOWRGMWhuRW5ZSE1QQUVrTDVTWEhmNFFqTjg3U2hBN2dXSkRQQnR0M1g5OFR5dGU0WXpFMFd6TFJhdGM5VkxLNEtoR0pLNl8wcWp6MVlOeEFWY0toWHZGdnNoazMzR0RxcHpVdTMzeXhMSXI2dnhaWklSWjRIZ0t1WDNRVXpveFZYbmN5eHVlQW5lSllHTk53M0VMWlFBUQ?oc=5"
       },
       {
         "title": "India's Solar Boom Has a Hidden Chemical Story | Kredence's \u20b9100 Crore Bet - Saur Energy",
@@ -2228,16 +2240,16 @@
         "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNVjRjVDJxMDNtd0gxOUZRdm9YODRiVFo4MWl0anFEdEZFUEtmdUdSaDg2UkxMX091amFBcjEwc0RPT0tSNkNWQjZ5ZVZpWEM1S1M5UE1CenlTWElRQ0hSOFVZUWNDMmxjdDNkdVZKNlJyZnMzb0lxVk5oRzRMLW85QWZ0QlhkV2VJWi1KT2Z3ck5JaGV3ZUFTZVZ2OE5vRndnNkpwbExxTUtLU1gyYVp6WXQxTndIYXJvMXpiU0tCOWZVdmhyLTVWVjU3VlB5ZzYxU0tWc3M5UDZlbGxNd0hn0gHkAUFVX3lxTE9HSlRucEpQaFNWdXpPNFJSbE4xclJyakM4Unh5M3JEZll2Wm1MdWRmclNTbzBpQUlORnp6elhCS0QxNlBYT0VYZDFwN0hJQXNmR1cxLUc1VFIxRmZWbGc5NFJiNFE1bXdJSUZhcXAycWlHTW41VTZSVHplZHJ2Q1VHT3kyc0VHUGQ4eTl1SHpPU1lKM3gxNndhZ19qVjNMY3lsZHM3cGxWOG5BS2luQ1N6Qk1vcHZaZXBQWlNPOEJZaFpiU2F3M1BIRHZUYnN6d0h1YU1BRzEtZUhOLU8zMWtpVnVHbQ?oc=5"
       },
       {
-        "title": "India's tougher grid rules unsettle investors, test clean energy ambitions - Reuters",
-        "source": "Reuters",
-        "date": "2026-06-03",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZHh1R3MwakNSVk1sck5kQlRMdzNnNzBQTElGSGk1WnlpZm1qN2Q5Vy0xUU9NTWRoVl9LYjBaZzFudHVRSG1jS3pYU3hyRThMZi11ZFNKVWxoeEYwNEJXRVhXc2wwdEtHWXkyZHY2alRyam5vbDhORHNaMlJfeTBRWGd5Ny1PYnlzNHoxMy1DRy1DY2JZM19Fd0dqYjlvVVJaeVZlYVRDendKRnMxaVJLUHgyMnFBUFU4S1FjOW5rMnEzZw?oc=5"
-      },
-      {
         "title": "Sunsure Energy comissions 105 MW solar project in Mahoba - BigInfo.in",
         "source": "BigInfo.in",
         "date": "2026-06-03",
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOYzN5Y1FuajlEM3FiUTlMVlJldkNYVC1JOHFQdFlxY3FacmFwNmhTZk9nX0taMmgxTy02MXBhOTNEaWNwaEpyaDdLMFhnbWw5QjRGT1RhN0RlSDVORzduZ0J0YTB0V0ZDVDJvQTF4Zmlla2lhLUkwakczb3VwTlRZb2RsdEQ3bkU?oc=5"
+      },
+      {
+        "title": "India's tougher grid rules unsettle investors, test clean energy ambitions - Reuters",
+        "source": "Reuters",
+        "date": "2026-06-03",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZHh1R3MwakNSVk1sck5kQlRMdzNnNzBQTElGSGk1WnlpZm1qN2Q5Vy0xUU9NTWRoVl9LYjBaZzFudHVRSG1jS3pYU3hyRThMZi11ZFNKVWxoeEYwNEJXRVhXc2wwdEtHWXkyZHY2alRyam5vbDhORHNaMlJfeTBRWGd5Ny1PYnlzNHoxMy1DRy1DY2JZM19Fd0dqYjlvVVJaeVZlYVRDendKRnMxaVJLUHgyMnFBUFU4S1FjOW5rMnEzZw?oc=5"
       },
       {
         "title": "Suzlon unveils new purpose-led identity 'Good Energies That Work' for the energy-intensive world - suzlon.com",
@@ -2430,6 +2442,12 @@
         "source": "ESS News",
         "date": "2026-04-16",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOC1mUlRlWE45bFFBYnUweHdEdWlFNHh1MmI0M2hiY3lqZW5lVzhnUXZpdGoyWnMwQTlRcmlBTHNlQ0FMMFRqa2RJOGgwX3pMeVExeGQwZG0yTlhnN08zT0dTT3htUVo5Yjl6cVVqTTBIdnNNMVNNYWZVSWtOMC1qbkNhSmhYTTRmTGFJU0FPa2RXdzdvLU4tUVJQcHYyQWJwM29ENmhpRENLSUlzSzQ4cg?oc=5"
+      },
+      {
+        "title": "LG Electronics India shares rally 8% as shareholder lock-in period ends; what investors need to know - Upstox",
+        "source": "Upstox",
+        "date": "2026-04-14",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQZEtQUmVIYmNoUUlQdWxNRll5ZW5idHVIMjh1S2ZjdnQwTzgxbXZOSXAwRW5WU09rWXZVYlV3RHlFeEQtMVp0bDY5eHdsVmZBemt6VlFqNkZFNWNvcWNRNXhEemRCTFgzbUgyOFNDTFNZOXRfZ2s4cVREcDFZMm9iejUxQkhJdkppaVJsN3l5NHlXeXV2bV9IUE54REpabk41UkdhaDltX3RJcGFiYjI0OUF2Q016NzV5X1daeHE4SG9VYzAzM1VqVjJSTWtlUVJXZEs3RHQwMVZ4dVEydm10aTlBdTNoS09ER0pvRjB3?oc=5"
       },
       {
         "title": "Vikram Solar crosses 10 GW global deployment milestone - Construction Week India",
