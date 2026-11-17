@@ -1,9 +1,9 @@
 {
   "fy_label": "FY26 (Apr 2025 \u2013 Mar 2026)",
-  "total_articles": 502,
+  "total_articles": 505,
   "press_releases": {
-    "unique_count": 205,
-    "total_pickups": 262,
+    "unique_count": 207,
+    "total_pickups": 264,
     "avg_pickups_per_release": 1.3,
     "clusters": [
       {
@@ -290,6 +290,14 @@
         ]
       },
       {
+        "representative_title": "Sunsure Energy secures 19.36 MW round-the-clock wind\u2013solar PPA with Deepak Fertilisers - pv magazine India",
+        "pickups": 1,
+        "date": "2025-11-12",
+        "outlets": [
+          "pv magazine India"
+        ]
+      },
+      {
         "representative_title": "Peak Energy to supply up to 4.75 GWh of sodium-ion batteries to Jupiter Power - ESS News",
         "pickups": 1,
         "date": "2025-11-13",
@@ -442,19 +450,19 @@
         ]
       },
       {
-        "representative_title": "Max Healthcare Signs 4 MW Solar Power Purchase Agreement with Sunsure - Mercomindia.com",
-        "pickups": 1,
-        "date": "2026-01-30",
-        "outlets": [
-          "Mercomindia.com"
-        ]
-      },
-      {
         "representative_title": "Waaree Energy Storage Solutions raises funding for 20 GWh lithium-ion cell and battery pack manufacturing facility - ESS News",
         "pickups": 1,
         "date": "2026-01-05",
         "outlets": [
           "ESS News"
+        ]
+      },
+      {
+        "representative_title": "Max Healthcare Signs 4 MW Solar Power Purchase Agreement with Sunsure - Mercomindia.com",
+        "pickups": 1,
+        "date": "2026-01-30",
+        "outlets": [
+          "Mercomindia.com"
         ]
       },
       {
@@ -610,33 +618,17 @@
         ]
       },
       {
+        "representative_title": "Sunsure secures US$65.6 million debt to fund 242MWp solar portfolio in India - PV Tech",
+        "pickups": 1,
+        "date": "2026-03-17",
+        "outlets": [
+          "PV Tech"
+        ]
+      },
+      {
         "representative_title": "LGE India Signs PPAs with Hinduja Renewables and Sunsure Energy to Procure 20.8 MWp Solar Power - Energetica India Magazine",
         "pickups": 1,
         "date": "2026-03-26",
-        "outlets": [
-          "Energetica India Magazine"
-        ]
-      },
-      {
-        "representative_title": "Sunsure Energy signs solar PPAs with Daeseung Group firms in Tamil Nadu - ET Auto",
-        "pickups": 1,
-        "date": "2026-03-07",
-        "outlets": [
-          "ET Auto"
-        ]
-      },
-      {
-        "representative_title": "LG Electronics India signs 25-year solar power deal with Hinduja Renewables and Sunsure Energy; check details - Upstox",
-        "pickups": 1,
-        "date": "2026-03-25",
-        "outlets": [
-          "Upstox"
-        ]
-      },
-      {
-        "representative_title": "Sunsure Energy Signs PPAs with Daeseung Autoparts and Ilgahng Automotive - Energetica India Magazine",
-        "pickups": 1,
-        "date": "2026-03-07",
         "outlets": [
           "Energetica India Magazine"
         ]
@@ -650,19 +642,11 @@
         ]
       },
       {
-        "representative_title": "Bharat Dynamics set to inaugurate two new manufacturing facilities - Business Standard",
+        "representative_title": "LG Electronics India signs 25-year solar power deal with Hinduja Renewables and Sunsure Energy; check details - Upstox",
         "pickups": 1,
         "date": "2026-03-25",
         "outlets": [
-          "Business Standard"
-        ]
-      },
-      {
-        "representative_title": "UltraTech Cement to Procure Captive Solar Power from Sunsure\u2019s 14 MW Project in Maharashtra - Energetica India Magazine",
-        "pickups": 1,
-        "date": "2026-03-12",
-        "outlets": [
-          "Energetica India Magazine"
+          "Upstox"
         ]
       },
       {
@@ -674,11 +658,43 @@
         ]
       },
       {
+        "representative_title": "Sunsure Energy Signs PPAs with Daeseung Autoparts and Ilgahng Automotive - Energetica India Magazine",
+        "pickups": 1,
+        "date": "2026-03-07",
+        "outlets": [
+          "Energetica India Magazine"
+        ]
+      },
+      {
+        "representative_title": "Sunsure Energy signs solar PPAs with Daeseung Group firms in Tamil Nadu - ET Auto",
+        "pickups": 1,
+        "date": "2026-03-07",
+        "outlets": [
+          "ET Auto"
+        ]
+      },
+      {
         "representative_title": "UltraTech Cement Acquires 26.20% Stake in Solar Power Company for Rs. 6.72 Crore - scanx.trade",
         "pickups": 1,
         "date": "2026-03-06",
         "outlets": [
           "scanx.trade"
+        ]
+      },
+      {
+        "representative_title": "UltraTech Cement to Procure Captive Solar Power from Sunsure\u2019s 14 MW Project in Maharashtra - Energetica India Magazine",
+        "pickups": 1,
+        "date": "2026-03-12",
+        "outlets": [
+          "Energetica India Magazine"
+        ]
+      },
+      {
+        "representative_title": "Bharat Dynamics set to inaugurate two new manufacturing facilities - Business Standard",
+        "pickups": 1,
+        "date": "2026-03-25",
+        "outlets": [
+          "Business Standard"
         ]
       },
       {
@@ -695,14 +711,6 @@
         "date": "2026-03-17",
         "outlets": [
           "Saur Energy"
-        ]
-      },
-      {
-        "representative_title": "Sunsure secures US$65.6 million debt to fund 242MWp solar portfolio in India - PV Tech",
-        "pickups": 1,
-        "date": "2026-03-17",
-        "outlets": [
-          "PV Tech"
         ]
       },
       {
@@ -1002,11 +1010,11 @@
         ]
       },
       {
-        "representative_title": "Sunsure and Vikram Solar supply dispute enters arbitration - Solarbytes",
+        "representative_title": "Suzlon bags 195MW wind energy order from Sunsure Energy - BusinessLine",
         "pickups": 1,
-        "date": "2026-05-08",
+        "date": "2026-05-22",
         "outlets": [
-          "Solarbytes"
+          "BusinessLine"
         ]
       },
       {
@@ -1018,11 +1026,11 @@
         ]
       },
       {
-        "representative_title": "Suzlon bags order for wind energy project from Sunsure Energy - BigInfo.in",
+        "representative_title": "Sunsure and Vikram Solar supply dispute enters arbitration - Solarbytes",
         "pickups": 1,
-        "date": "2026-05-23",
+        "date": "2026-05-08",
         "outlets": [
-          "BigInfo.in"
+          "Solarbytes"
         ]
       },
       {
@@ -1058,6 +1066,14 @@
         ]
       },
       {
+        "representative_title": "Suzlon bags order for wind energy project from Sunsure Energy - BigInfo.in",
+        "pickups": 1,
+        "date": "2026-05-23",
+        "outlets": [
+          "BigInfo.in"
+        ]
+      },
+      {
         "representative_title": "Suzlon Wins 195 MW Sunsure Order; Shares Gain 0.66% - HDFC Sky",
         "pickups": 1,
         "date": "2026-05-22",
@@ -1079,14 +1095,6 @@
         "date": "2026-05-22",
         "outlets": [
           "Dalal Street Investment Journal"
-        ]
-      },
-      {
-        "representative_title": "Suzlon bags 195MW wind energy order from Sunsure Energy - BusinessLine",
-        "pickups": 1,
-        "date": "2026-05-22",
-        "outlets": [
-          "BusinessLine"
         ]
       },
       {
@@ -1450,6 +1458,14 @@
         ]
       },
       {
+        "representative_title": "Risen Energy signs Ukraine solar-plus-storage MoUs covering 200 MWh - ESS News",
+        "pickups": 1,
+        "date": "2026-08-18",
+        "outlets": [
+          "ESS News"
+        ]
+      },
+      {
         "representative_title": "EDF power solutions secures PPAs with NV Energy for 400 MW solar-plus-storage project - ESS News",
         "pickups": 1,
         "date": "2026-08-20",
@@ -1696,8 +1712,14 @@
     "articles": []
   },
   "features": {
-    "count": 240,
+    "count": 241,
     "articles": [
+      {
+        "title": "India\u2019s Big Battery Gold Rush Pulls In Tile and Medicine Makers - Bloomberg.com",
+        "source": "Bloomberg.com",
+        "date": "2026-11-17",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMHdXazZvMWVoemczLUtrS3R6aW81SVY0V3h1ekVTMUJ4YXMxSWdabUwzX3oxM0pkSW4xR1U5T0JhRnU5X3FzNExKLTlMYUUzb05aRER4UjNBdHY5Qmw3UjlmQmpyMHZ1OGc1TTRoQTZPNmdIeHNROWxvTjJjeDlQcVdHQ3gyUHhDT2R0cDdJOENFVmlTT3Y4OXFtNFFkVjk3UXF3WlkxNGRMcHZMWUhUaDRKY3BDQQ?oc=5"
+      },
       {
         "title": "Croatia\u2019s first large-scale standalone 60 MW BESS goes live - ESS News",
         "source": "ESS News",
@@ -2335,6 +2357,12 @@
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWG1IOHllZUNxVWhPcXUxRVVHZjJiZHJCT3NVTmxlSU9LOG1KZGpqb29acnl3MTd0QWxVSHlRUWJwLXp3OGhDXzhaZEg1NjJJRmNpQTNEQmhHbHpQYzFuWUU1cm5zTVFERkVlVXd2RE9XRU5WcFVXeGd1WFludXp5MkxqN2JaY2tHUHhFdHRLY2dxd1FlYWd1TXpJS2xKYUJRVGcwcUJQSnFlOExRUk9Xakw4N0w?oc=5"
       },
       {
+        "title": "Green Energy Stock Jumps After Securing 195 MW Order From Sunsure Energy By Trade Brains - Investing.com India",
+        "source": "Investing.com India",
+        "date": "2026-05-22",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbjZqM2NDWTQ0RjQtcVNRemlLU01xcGREb0UtbzlYVEJVcHgxazQ5WkNvdHdJVFE4ZGNCSGN1bXNjOWpPc3ZUOWRUOWRBMVF3QzVoWGMyb3dNV2JjeTBwTmphQi1BYWJCVFFCRW9XQi0xOFNGWDdiOFoyZkJzcmFKdFBCQVkyWUJiSGthUEdIbENQdHQ2SnViNkQ3RGZ1dlF5RnQtYS1aZ09oTWdWM2xFZDV4NEZJclExYmdTbHpqanNHZEpFYUp3?oc=5"
+      },
+      {
         "title": "Suzlon Energy Shares Gain on Securing 195 MW Order - Equitypandit",
         "source": "Equitypandit",
         "date": "2026-05-22",
@@ -2351,12 +2379,6 @@
         "source": "Passionate In Marketing",
         "date": "2026-05-22",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNV2dLUnFnR2xOdmZvT3VXbHpMUTVYcllrRmJiazZUQWstT0FKTm1MU2VzeF83ZVZWSkRDcUphbGZlOWpzXzMwY1J1R3JrcFpwNFV4Y3RQdk1GcU94T2N1TzhtUi00RGpwbURuQzRZdUI5dWZycktsR3AycGM2YXNOYU9TUGgtX0lJcnkyNUVZdHR0SmNsSTNZV0xHbk5na3loVy1CS0RoVUotZl8xaC1wQUFHU0c0bzd4dU1hWFpnR3RpUlAxWXc?oc=5"
-      },
-      {
-        "title": "Green Energy Stock Jumps After Securing 195 MW Order From Sunsure Energy By Trade Brains - Investing.com India",
-        "source": "Investing.com India",
-        "date": "2026-05-22",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbjZqM2NDWTQ0RjQtcVNRemlLU01xcGREb0UtbzlYVEJVcHgxazQ5WkNvdHdJVFE4ZGNCSGN1bXNjOWpPc3ZUOWRUOWRBMVF3QzVoWGMyb3dNV2JjeTBwTmphQi1BYWJCVFFCRW9XQi0xOFNGWDdiOFoyZkJzcmFKdFBCQVkyWUJiSGthUEdIbENQdHQ2SnViNkQ3RGZ1dlF5RnQtYS1aZ09oTWdWM2xFZDV4NEZJclExYmdTbHpqanNHZEpFYUp3?oc=5"
       },
       {
         "title": "Suzlon 3 MW Platform Sales Reach Nearly 9 GW With a New 195 MW Order From Sunsure Energy - SMEStreet",
