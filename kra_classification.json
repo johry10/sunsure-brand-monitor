@@ -1,9 +1,9 @@
 {
   "fy_label": "FY26 (Apr 2025 \u2013 Mar 2026)",
-  "total_articles": 523,
+  "total_articles": 528,
   "press_releases": {
-    "unique_count": 213,
-    "total_pickups": 274,
+    "unique_count": 214,
+    "total_pickups": 275,
     "avg_pickups_per_release": 1.3,
     "clusters": [
       {
@@ -83,6 +83,7 @@
         "date": "2026-11-18",
         "outlets": [
           "Energetica India Magazine",
+          "Mercom India",
           "Mercomindia.com",
           "https://www.mvapulse.com/"
         ]
@@ -309,14 +310,6 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy secures 19.36 MW round-the-clock wind\u2013solar PPA with Deepak Fertilisers - pv magazine India",
-        "pickups": 1,
-        "date": "2025-11-12",
-        "outlets": [
-          "pv magazine India"
-        ]
-      },
-      {
         "representative_title": "Peak Energy to supply up to 4.75 GWh of sodium-ion batteries to Jupiter Power - ESS News",
         "pickups": 1,
         "date": "2025-11-13",
@@ -325,19 +318,27 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy to Supply 19.36 MW Wind-Solar Hybrid Power to Deepak Fertilisers in Maharashtra - Energetica India Magazine",
-        "pickups": 1,
-        "date": "2025-11-12",
-        "outlets": [
-          "Energetica India Magazine"
-        ]
-      },
-      {
         "representative_title": "EFT Energy Solutions launches pre-configured C&I battery featuring BYD modules - ESS News",
         "pickups": 1,
         "date": "2025-11-07",
         "outlets": [
           "ESS News"
+        ]
+      },
+      {
+        "representative_title": "Sunsure Energy secures 19.36 MW round-the-clock wind\u2013solar PPA with Deepak Fertilisers - pv magazine India",
+        "pickups": 1,
+        "date": "2025-11-12",
+        "outlets": [
+          "pv magazine India"
+        ]
+      },
+      {
+        "representative_title": "Sunsure Energy to Supply 19.36 MW Wind-Solar Hybrid Power to Deepak Fertilisers in Maharashtra - Energetica India Magazine",
+        "pickups": 1,
+        "date": "2025-11-12",
+        "outlets": [
+          "Energetica India Magazine"
         ]
       },
       {
@@ -389,6 +390,14 @@
         ]
       },
       {
+        "representative_title": "Toki Power secures 300 MWh standalone BESS in Romania - ESS News",
+        "pickups": 1,
+        "date": "2025-12-12",
+        "outlets": [
+          "ESS News"
+        ]
+      },
+      {
         "representative_title": "US: Trina Storage to deliver 1 GWh BESS; Samsung SDI lands $1.36B battery deal; BayWa r.e. secures funding for solar+storage - ESS News",
         "pickups": 1,
         "date": "2025-12-12",
@@ -408,14 +417,6 @@
         "representative_title": "India\u2019s Oriana Power explores compact pumped storage for C&I customers, raises BESS target to 20 GWh by 2030 - ESS News",
         "pickups": 1,
         "date": "2025-12-08",
-        "outlets": [
-          "ESS News"
-        ]
-      },
-      {
-        "representative_title": "Toki Power secures 300 MWh standalone BESS in Romania - ESS News",
-        "pickups": 1,
-        "date": "2025-12-12",
         "outlets": [
           "ESS News"
         ]
@@ -477,19 +478,19 @@
         ]
       },
       {
-        "representative_title": "Max Healthcare Signs 4 MW Solar Power Purchase Agreement with Sunsure - Mercomindia.com",
-        "pickups": 1,
-        "date": "2026-01-30",
-        "outlets": [
-          "Mercomindia.com"
-        ]
-      },
-      {
         "representative_title": "TheStorage launches its first industrial-scale sand-based heat storage system - ESS News",
         "pickups": 1,
         "date": "2026-01-30",
         "outlets": [
           "ESS News"
+        ]
+      },
+      {
+        "representative_title": "Max Healthcare Signs 4 MW Solar Power Purchase Agreement with Sunsure - Mercomindia.com",
+        "pickups": 1,
+        "date": "2026-01-30",
+        "outlets": [
+          "Mercomindia.com"
         ]
       },
       {
@@ -661,14 +662,6 @@
         ]
       },
       {
-        "representative_title": "Sunsure secures US$65.6 million debt to fund 242MWp solar portfolio in India - PV Tech",
-        "pickups": 1,
-        "date": "2026-03-17",
-        "outlets": [
-          "PV Tech"
-        ]
-      },
-      {
         "representative_title": "Sunsure Energy Signs PPAs with Daeseung Autoparts and Ilgahng Automotive - Energetica India Magazine",
         "pickups": 1,
         "date": "2026-03-07",
@@ -698,6 +691,14 @@
         "date": "2026-03-12",
         "outlets": [
           "Energetica India Magazine"
+        ]
+      },
+      {
+        "representative_title": "Sunsure secures US$65.6 million debt to fund 242MWp solar portfolio in India - PV Tech",
+        "pickups": 1,
+        "date": "2026-03-17",
+        "outlets": [
+          "PV Tech"
         ]
       },
       {
@@ -1581,6 +1582,22 @@
         ]
       },
       {
+        "representative_title": "Suzlon Secures First 200 MW Wind Contract From Ayana, S144 Orders Exceed 10 GW - Sahi",
+        "pickups": 1,
+        "date": "2026-09-08",
+        "outlets": [
+          "Sahi"
+        ]
+      },
+      {
+        "representative_title": "Qualitas Energy acquires Cero Generation\u2019s solar-plus-storage platform from Macquarie - ESS News",
+        "pickups": 1,
+        "date": "2026-09-08",
+        "outlets": [
+          "ESS News"
+        ]
+      },
+      {
         "representative_title": "Kajaria Ceramics Inks 20 MW Wind-Solar PPA with Sunsure - https://www.mvapulse.com/",
         "pickups": 1,
         "date": "2026-09-07",
@@ -1637,14 +1654,6 @@
         ]
       },
       {
-        "representative_title": "Suzlon Secures First 200 MW Wind Contract From Ayana, S144 Orders Exceed 10 GW - Sahi",
-        "pickups": 1,
-        "date": "2026-09-08",
-        "outlets": [
-          "Sahi"
-        ]
-      },
-      {
         "representative_title": "Accord Transformer bags \u20b98.39 Cr order for 22 transformers - scanx.trade",
         "pickups": 1,
         "date": "2026-09-29",
@@ -1661,6 +1670,14 @@
         ]
       },
       {
+        "representative_title": "Kajaria Ceramics acquires 19.77% stake in Sunsure Solar for \u20b91.21 crore - scanx.trade",
+        "pickups": 1,
+        "date": "2026-10-30",
+        "outlets": [
+          "scanx.trade"
+        ]
+      },
+      {
         "representative_title": "Sunsure signs 30 MW solar PPA with Evonith Steel in Maharashtra - Solarbytes",
         "pickups": 1,
         "date": "2026-10-14",
@@ -1674,14 +1691,6 @@
         "date": "2026-10-12",
         "outlets": [
           "pv magazine India"
-        ]
-      },
-      {
-        "representative_title": "Kajaria Ceramics acquires 19.77% stake in Sunsure Solar for \u20b91.21 crore - scanx.trade",
-        "pickups": 1,
-        "date": "2026-10-30",
-        "outlets": [
-          "scanx.trade"
         ]
       },
       {
@@ -1763,13 +1772,19 @@
     "articles": []
   },
   "features": {
-    "count": 249,
+    "count": 253,
     "articles": [
       {
         "title": "Amazon Renewable Energy: $7 Billion India Investment by 2030 - Construction Review",
         "source": "Construction Review",
         "date": "2026-11-18",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTm14MTBnSEtaVGFoT19QMGVDVzJwcmpIa29XcHdMSXZwUTRRbVUtVVhJdmVJUWpFd0Y2enNiWjEyd0tGYi04T3R6SFdoZmpZUko4MnJ0NW1qS1JVSG1tRWhxSmE4SVdtOEV3MzI4d3hfTzkzSDJLWlEzNExuN0xqQUJpZlQyVjJEZHowbGo4RHR6SXZjVmRzZ3dUYno?oc=5"
+      },
+      {
+        "title": "Amazon to Invest $7 Bn in India Renewables by 2030, Adds 934 MW Wind-Solar Projects - Saur Energy",
+        "source": "Saur Energy",
+        "date": "2026-11-18",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPT0M1Ql9wcFZ1TlczQ0VMNTUtY2IxYzBaSlotN1BwWHlPZEk5NWRjQ1dScm91aHVtN0dJTS1IeGZpemJFdTRQbGRMOFlSM2lPb2FNUWxCcmFpcER4OHFnUUlwOW9Vb01IWkJVc05nVnV2SlMzMk1HVThJenpHb1VVdnNPcERoZWFlSzdTX3ZOVjBlanZ5U0hsNlZaTjRsTnZJM0JGTDZOaFdZT19OWTBldER6S3dfNFFGWjg4bUpIXzcxTzZrNzBaU0NMZ09mandD?oc=5"
       },
       {
         "title": "Rajasthan Invites Bids for Standalone Battery Energy Storage Systems - https://www.mvapulse.com/",
@@ -1782,6 +1797,18 @@
         "source": "The Times of India",
         "date": "2026-11-17",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVzZ3c05vSml0RDFpb0pNZDhDWHhoUGlaTDNrLUFzaGplaXpERThQMTV1RnpRYjY5emRoeVV2N3ZIZFRIdnJfV1dORlU2X21kZDA2MkpHTkRWNVptWWNXeUJGN2tJUmRfclExOGk5Z3JQTHVPY2dmLWdYS2stdHYxYUZ0ZXhnNHFxVFZGYTFVLUdReGVOc1F3aHFKYXMzaEJfUWJVZzBZb1ZVYkhDLVNiM2hFNGdnbE9KUldMN3M3alZUbk1yVFd2MnBPSjZpeVd6ZmhCTGdBQmp5UdIB3wFBVV95cUxQMk14VWNUN3NSVjNwdFduR0lyX1FmQUotWEVjM1hxblVmZnN3Mm1xSlNBcTFTT0RxU1VhVUZMMHVnZWZDdlgwU29FNGZmT0wtWlVNa0Rka3ZyeE5VMHNQTDBBWkRrOHBTZldfdFhsNEh1eHJlNEh5cDE2OFRtRjRLVGlmY3JWSVJDV3dPUk1qYnpSekk4djVEcFEyaTNsNi1WUU5fdGFVTXNlOFRFMDM5RVJqVnpvYTgxQ3pwdUFRN3QwTkJQWjVUd2ozY1JhVmdwMHMxdERTWXc1ejZGSWww?oc=5"
+      },
+      {
+        "title": "Wind-Solar-BESS Cost Reduction Insights by Ember - https://www.mvapulse.com/",
+        "source": "https://www.mvapulse.com/",
+        "date": "2026-11-17",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zakN4Vnd5QkdWRk5NWjROMEZJY05OVHdUUTc0OE5uaVYtWXhEOFZHSVR2ajlHb3hnR3NUNHlBM0lyekdhc09JaVVRNy1rOWl1RDNYVzlvcjZ5YXl2NXVHenY2QTNKaktySThJSHluLWJRaFZ6Y1c0Vkh5czJ4UGM?oc=5"
+      },
+      {
+        "title": "Amazon Plans $7 Billion India Renewable Energy Investment by 2030 - News and Statistics - IndexBox",
+        "source": "IndexBox",
+        "date": "2026-11-17",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ3FmX3RhZ1M3VWdBZEp2QUo0TGh6T1dLRHg4ajAtSEJWUmwzSkxXSlF4b2QtcndYTHM0d0FOTnpleEpBLWQ5b1c4cXJDZ1ZnVl9maHhCZW02a3pObUJLMGNBTDZFRzVVLXczUW1LYVZ0ZXdXT2c0UURHM3FaWEZZQ0tVVXNzeW92c2p2Um1TY0hzTy1L?oc=5"
       },
       {
         "title": "Amazon plans additional $7 billion investment in India\u2019s renewable energy sector - The Financial Express",
@@ -2682,6 +2709,12 @@
         "source": "ESS News",
         "date": "2026-03-23",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPelVnQ3kxY3lvQUs5bXVMUVFmSmoyZmFhZEJzZmlfeWgzMDBDOG5BcTQzMTA5ajhtZFVycXlPYzFJR2VEdzZGUzNCWWY1el9ISUpWMmhxQUpRc0lfbjMzQjlOSzY4Q2xtTXh3TjZJN09Yb2lHN05CbGFKNFVSUGdtOVN6QVotYTZBSDdHUTZ3VEVuUDh2SFpDaWhKZVdVb0xjU21KTERaRnhXdXJaLXB1elZ3?oc=5"
+      },
+      {
+        "title": "Stocks to Watch for March 19: HDFC Bank, Vedanta, UltraTech Cement and more - CNBC TV18",
+        "source": "CNBC TV18",
+        "date": "2026-03-19",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOOHRTWUl2bWtPU0xjTGJTMmIzWDc1R01MUXRCbGF2eURIVlN4dUtZbklRcl9XaUt5MFpNSXFCRVpoaF9xQnVleXlaR1k3TV9GQ2tZQUJEdnU1b1VWNzYzZzl0NnNtNm4xSWtvM0kxeGhWU0dRQVQ5cDhrOE52V1M5YlhncUFxUE1obzQtYXp1cVRNdWZhMU5KbzhOT1UtTXJtX2lFQmROTWFnR0FLekJ4TnVrSTJIYkxFVXBVVnF2ZHVjNWU2QVNNcXhBZVPSAdIBQVVfeXFMT3ZFOFY5YXJkTmMycE1mbUJSakZjQWs5NFNmTERVRkxOWW1KWi1JSDd1M3J2bXhvVFdMMm8tdG1vOWZXX3cwS2hOdWE1WGRYOWpxRDJJRmgwcWxZNVhZdzhLMFdPSHRQQVJVYTM1dzk1d0t1Q0NHbjk1LXpqek5HRk1sM3lNNlZ4WWxndHhUQ2J3STc4T1NmcjRxN2NjVlNjMmVkNVNFN0F1MjZHWnJ1Y0xBRzU4R2V6M3dza3hrY2dSOTF5WkZSQlU0OGRVcTNfSVl3?oc=5"
       },
       {
         "title": "UltraTech to pick up 26% in Sunsure Solarpark Seven - The Economic Times",
