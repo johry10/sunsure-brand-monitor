@@ -1,9 +1,9 @@
 {
   "fy_label": "FY26 (Apr 2025 \u2013 Mar 2026)",
-  "total_articles": 539,
+  "total_articles": 547,
   "press_releases": {
-    "unique_count": 217,
-    "total_pickups": 282,
+    "unique_count": 219,
+    "total_pickups": 284,
     "avg_pickups_per_release": 1.3,
     "clusters": [
       {
@@ -89,15 +89,6 @@
         ]
       },
       {
-        "representative_title": "Suzlon Energy Bags 105 MW Deal From Sunsure Energy, Deploys New S175 Wind Turbines - Free Press Journal",
-        "pickups": 3,
-        "date": "2026-06-30",
-        "outlets": [
-          "Free Press Journal",
-          "Mercomindia.com"
-        ]
-      },
-      {
         "representative_title": "Suzlon bags 105 MW wind energy project from Sunsure Energy - The Economic Times",
         "pickups": 3,
         "date": "2026-06-30",
@@ -123,6 +114,15 @@
         "outlets": [
           "Business Outreach Magazine",
           "The Financial Express"
+        ]
+      },
+      {
+        "representative_title": "Suzlon Energy Bags 105 MW Deal From Sunsure Energy, Deploys New S175 Wind Turbines - Free Press Journal",
+        "pickups": 3,
+        "date": "2026-06-30",
+        "outlets": [
+          "Free Press Journal",
+          "Mercomindia.com"
         ]
       },
       {
@@ -408,6 +408,14 @@
         ]
       },
       {
+        "representative_title": "US: Trina Storage to deliver 1 GWh BESS; Samsung SDI lands $1.36B battery deal; BayWa r.e. secures funding for solar+storage - ESS News",
+        "pickups": 1,
+        "date": "2025-12-12",
+        "outlets": [
+          "ESS News"
+        ]
+      },
+      {
         "representative_title": "Toki Power secures 300 MWh standalone BESS in Romania - ESS News",
         "pickups": 1,
         "date": "2025-12-12",
@@ -421,14 +429,6 @@
         "date": "2025-12-02",
         "outlets": [
           "PV Tech"
-        ]
-      },
-      {
-        "representative_title": "US: Trina Storage to deliver 1 GWh BESS; Samsung SDI lands $1.36B battery deal; BayWa r.e. secures funding for solar+storage - ESS News",
-        "pickups": 1,
-        "date": "2025-12-12",
-        "outlets": [
-          "ESS News"
         ]
       },
       {
@@ -680,6 +680,14 @@
         ]
       },
       {
+        "representative_title": "Sunsure Energy secures \u20b9606 cr debt financing from Aseem Infra and RBL Bank for projects across Maharashtra and Uttar Pradesh - ANI News",
+        "pickups": 1,
+        "date": "2026-03-16",
+        "outlets": [
+          "ANI News"
+        ]
+      },
+      {
         "representative_title": "Sunsure secures US$65.6 million debt to fund 242MWp solar portfolio in India - PV Tech",
         "pickups": 1,
         "date": "2026-03-17",
@@ -741,14 +749,6 @@
         "date": "2026-03-06",
         "outlets": [
           "scanx.trade"
-        ]
-      },
-      {
-        "representative_title": "Sunsure Energy secures \u20b9606 cr debt financing from Aseem Infra and RBL Bank for projects across Maharashtra and Uttar Pradesh - ANI News",
-        "pickups": 1,
-        "date": "2026-03-16",
-        "outlets": [
-          "ANI News"
         ]
       },
       {
@@ -1072,6 +1072,14 @@
         ]
       },
       {
+        "representative_title": "Suzlon Wins 195 MW Sunsure Order; Shares Gain 0.66% - HDFC Sky",
+        "pickups": 1,
+        "date": "2026-05-22",
+        "outlets": [
+          "HDFC Sky"
+        ]
+      },
+      {
         "representative_title": "Karnataka: Suzlon Bags 195 MW Wind Repeat Order From Sunsure; Orderbook Crosses 2 GW - Saur Energy",
         "pickups": 1,
         "date": "2026-05-22",
@@ -1117,14 +1125,6 @@
         "date": "2026-05-23",
         "outlets": [
           "BigInfo.in"
-        ]
-      },
-      {
-        "representative_title": "Suzlon Wins 195 MW Sunsure Order; Shares Gain 0.66% - HDFC Sky",
-        "pickups": 1,
-        "date": "2026-05-22",
-        "outlets": [
-          "HDFC Sky"
         ]
       },
       {
@@ -1488,6 +1488,14 @@
         ]
       },
       {
+        "representative_title": "SPR Auto Technologies to acquire minor stake in Sunsure Solarpark - Business Standard",
+        "pickups": 1,
+        "date": "2026-08-26",
+        "outlets": [
+          "Business Standard"
+        ]
+      },
+      {
         "representative_title": "Hinduja Group announces Rs 25 billion clean energy investment in Tamil Nadu - Renewable Watch",
         "pickups": 1,
         "date": "2026-08-17",
@@ -1496,9 +1504,25 @@
         ]
       },
       {
+        "representative_title": "Suzlon secures 250 MW wind order from Torrent Group - Renewable Watch",
+        "pickups": 1,
+        "date": "2026-08-25",
+        "outlets": [
+          "Renewable Watch"
+        ]
+      },
+      {
         "representative_title": "EDF power solutions secures PPAs with NV Energy for 400 MW solar-plus-storage project - ESS News",
         "pickups": 1,
         "date": "2026-08-20",
+        "outlets": [
+          "ESS News"
+        ]
+      },
+      {
+        "representative_title": "Australia completes first solar-BESS hybrid dispatched as a single generator - ESS News",
+        "pickups": 1,
+        "date": "2026-08-27",
         "outlets": [
           "ESS News"
         ]
@@ -1544,14 +1568,6 @@
         ]
       },
       {
-        "representative_title": "Suzlon secures 250 MW wind order from Torrent Group - Renewable Watch",
-        "pickups": 1,
-        "date": "2026-08-25",
-        "outlets": [
-          "Renewable Watch"
-        ]
-      },
-      {
         "representative_title": "European Energy Secures $78M for Hybrid Solar-Battery Project - www.mvapulse.com",
         "pickups": 1,
         "date": "2026-08-11",
@@ -1581,14 +1597,6 @@
         "date": "2026-08-25",
         "outlets": [
           "scanx.trade"
-        ]
-      },
-      {
-        "representative_title": "SPR Auto Technologies to acquire minor stake in Sunsure Solarpark - Business Standard",
-        "pickups": 1,
-        "date": "2026-08-26",
-        "outlets": [
-          "Business Standard"
         ]
       },
       {
@@ -1704,6 +1712,14 @@
         ]
       },
       {
+        "representative_title": "Sunsure Energy signs PPA with Evonith Steel for 30 MWp of solar capacity - pv magazine India",
+        "pickups": 1,
+        "date": "2026-10-12",
+        "outlets": [
+          "pv magazine India"
+        ]
+      },
+      {
         "representative_title": "Sunsure signs 30 MW solar PPA with Evonith Steel in Maharashtra - Solarbytes",
         "pickups": 1,
         "date": "2026-10-14",
@@ -1717,14 +1733,6 @@
         "date": "2026-10-30",
         "outlets": [
           "scanx.trade"
-        ]
-      },
-      {
-        "representative_title": "Sunsure Energy signs PPA with Evonith Steel for 30 MWp of solar capacity - pv magazine India",
-        "pickups": 1,
-        "date": "2026-10-12",
-        "outlets": [
-          "pv magazine India"
         ]
       },
       {
@@ -1744,6 +1752,22 @@
         ]
       },
       {
+        "representative_title": "Amazon announces new wind and solar contracts for India - energynews.pro",
+        "pickups": 1,
+        "date": "2026-11-18",
+        "outlets": [
+          "energynews.pro"
+        ]
+      },
+      {
+        "representative_title": "Amazon Announces $7 Billion Renewable Energy Investment In India By 2030, Expands Wind And Solar Portfolio - SolarQuarter",
+        "pickups": 1,
+        "date": "2026-11-18",
+        "outlets": [
+          "SolarQuarter"
+        ]
+      },
+      {
         "representative_title": "[SMM PV Flash] Amazon Plans US$7 Billion India Renewables Investment by 2030, Signs 934 MW of Wind and Solar - Shanghai Metals Market",
         "pickups": 1,
         "date": "2026-11-18",
@@ -1757,14 +1781,6 @@
         "date": "2026-11-13",
         "outlets": [
           "ET Manufacturing"
-        ]
-      },
-      {
-        "representative_title": "Amazon announces new wind and solar contracts for India - energynews.pro",
-        "pickups": 1,
-        "date": "2026-11-18",
-        "outlets": [
-          "energynews.pro"
         ]
       },
       {
@@ -1798,8 +1814,14 @@
     "articles": []
   },
   "features": {
-    "count": 257,
+    "count": 263,
     "articles": [
+      {
+        "title": "Amazon Targets 65% Cut in Electricity Emissions Intensity by 2030 and Plans $7B India Renewables Investment - CarbonCredits.com",
+        "source": "CarbonCredits.com",
+        "date": "2026-11-19",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcWRDbm1BVTM1SW92QS13Wm1WeWd0VmtIZnN1djhXb3NnbmNIeWptRk93SUk2bUlPSEE1WVNKY1FrekJaV3ZUcXNHeGR3bFQtY1VPd3U5eUM2UFhKendaWDU5T0RjZ1ZSS29ralZiLUxsSVcyUGFLalpZdVZXMUpZcUZsT0RhRmRQY2FqQTZ2U0x6dWhwMEtqX1FiMmZkSnd1MGVnNElickoyUQ?oc=5"
+      },
       {
         "title": "Amazon plans US$7 billion investment in Indian solar, wind projects by 2030 - PV Tech",
         "source": "PV Tech",
@@ -1829,6 +1851,12 @@
         "source": "The Times of India",
         "date": "2026-11-17",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVzZ3c05vSml0RDFpb0pNZDhDWHhoUGlaTDNrLUFzaGplaXpERThQMTV1RnpRYjY5emRoeVV2N3ZIZFRIdnJfV1dORlU2X21kZDA2MkpHTkRWNVptWWNXeUJGN2tJUmRfclExOGk5Z3JQTHVPY2dmLWdYS2stdHYxYUZ0ZXhnNHFxVFZGYTFVLUdReGVOc1F3aHFKYXMzaEJfUWJVZzBZb1ZVYkhDLVNiM2hFNGdnbE9KUldMN3M3alZUbk1yVFd2MnBPSjZpeVd6ZmhCTGdBQmp5UdIB3wFBVV95cUxQMk14VWNUN3NSVjNwdFduR0lyX1FmQUotWEVjM1hxblVmZnN3Mm1xSlNBcTFTT0RxU1VhVUZMMHVnZWZDdlgwU29FNGZmT0wtWlVNa0Rka3ZyeE5VMHNQTDBBWkRrOHBTZldfdFhsNEh1eHJlNEh5cDE2OFRtRjRLVGlmY3JWSVJDV3dPUk1qYnpSekk4djVEcFEyaTNsNi1WUU5fdGFVTXNlOFRFMDM5RVJqVnpvYTgxQ3pwdUFRN3QwTkJQWjVUd2ozY1JhVmdwMHMxdERTWXc1ejZGSWww?oc=5"
+      },
+      {
+        "title": "Indian Green Energy Stocks Recover on Positive Market News - https://www.mvapulse.com/",
+        "source": "https://www.mvapulse.com/",
+        "date": "2026-11-17",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbzBscHU2VE40OExxOFFxZlIyTm9YdENxYmxhLVIwbWlyTmNuNkJRbUd6M2M5X0xYTUN0dERuTFprallSZDJzXy1HLURzNUUyMmpRX0tFb2l4WDZGbXltSnEwcy1ta1gxX2pZWEpEbm84Q2JlZWZzbzBVdFdNcHBQZGVVQzltYTdXZFJIaw?oc=5"
       },
       {
         "title": "Wind-Solar-BESS Cost Reduction Insights by Ember - https://www.mvapulse.com/",
@@ -1883,6 +1911,12 @@
         "source": "ESS News",
         "date": "2026-11-09",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb3RLejhnWE1QVWR5YVg4VGZOYjhMOUQ1MEhmNHh6d3ZGV3ZISDN4SjdLZ0t1WEVXemFIUXRoS1lxT21majdRWWpIQ0pJaHMzOFRaZ3hHMjRxeE9qUUd4a3B0czhDYm5hU0U4STZJN0lZalpEa2RZVVhUUVdTN3FWZXRCYU9FWEs4UnBkT29MSHBRRXJYN3ZhWVZiTQ?oc=5"
+      },
+      {
+        "title": "India\u2019s Renewable Capacity to Reach 530 GW by 2030: IEA - Construction World",
+        "source": "Construction World",
+        "date": "2026-11-09",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZ1pmYTRXaUt2djVZNmp3R1ZzU0t3XzNEa2ZmQk5UV0V6dFpUb05XenNvVmhTanpMVFlQeDJWaFl5bjdPdGZGbVFwZWw2d0hjVHlyZ3pJU3luQ2dSSGt5Nl9ZVGtjbFR5T0c3V0o4SFkxVWx5dEU1eXpHUGhyRlVFY2Z4RFBZdmN6VmlWMmlQcFVoNXhETER5YXEtUjZZTXFvcnhFN01QNXdzckx3eXJsTE9sVmRKVTFQSnotRFNGVnJUX0FmZG5rT0w3ZnZjQXdQdkk0c3QtNU5ndw?oc=5"
       },
       {
         "title": "iPower Batteries' 2 GWh Expansion Plan: What's Next for BESS in India? - Saur Energy",
@@ -2167,6 +2201,12 @@
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPejhrMnRBQjhDWURjX3lKUEZPS2VoYTlCdmlPZHAzTHNDZXpfYmlnZzI2ZHMtMjlEZXlOOGtBZ3hJSXZjV3NBMUpSRlROZERYNURUa2RZSEo2NU8xZnIxUWh3Z2k1bEdLeVhGUlRXMTh5MW1mUE5OaFgzQVZSMm9kS25UMS1aRVk?oc=5"
       },
       {
+        "title": "UltraTech Cement Buys 26.2% Stake In Sunsure Solarpark Project - Kotak Neo",
+        "source": "Kotak Neo",
+        "date": "2026-08-12",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT3AxMnVILUNVaWpWaVpGVjRjcW91ajF3d0Z4aTVwejJlajVmblp0dWVZLWpNNklKdHdUV0ZoTDRldDdwNzJwa2dVcjRTcnludzNJeU9fSWVIVEVPbkpOMWdFMjNYbm02cVdlbFNMb3lobHRZejVrUWw4djM3VkxQZlQwQ0duTW9na3R2cU5mRWRBbm92WHdOU1F1ZWVuaWNNSkFzNDRUVVFva2hyaEYybHdWbXZ6dw?oc=5"
+      },
+      {
         "title": "Global Renewable Energy Capacity Hits 5.2 TW Milestone - https://www.mvapulse.com/",
         "source": "https://www.mvapulse.com/",
         "date": "2026-08-11",
@@ -2183,6 +2223,18 @@
         "source": "Saur Energy",
         "date": "2026-08-11",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUnFDTHBFX2FXME9hdFd5WW9yajZQMUp4aWhpZHJaVGxsUWxqTWJnbFVpMzN3RHQwWE1KcjNFRjRxYUVvRURzVFhiOEhOX0RlTkU0Wmlfa3RZRFowbGszVGc4MjhCa2JCUU9lQWx4YjZldkYtMHRfZHE0MjBnbVlZcUlnQ3h1SEpBcTB5MnY0Y09JRlVmaklsUWlxZU42TFRFaWc?oc=5"
+      },
+      {
+        "title": "Why Battery Swapping is Key to India\u2019s EV Adoption - www.mvapulse.com",
+        "source": "www.mvapulse.com",
+        "date": "2026-08-10",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbFRvQzFfTkxDYmFqY1gwc000Wmt0QTNvd3dHeDRILU01STN2OWRvVFg0bk1ZYmNrRGdmNmZqYWtsdE9wMG5LUThNX08zTXNuWXFueUc0OVk3QzNQTVFVdHl5dU9jbEJxSkx6TzJKalp3UmpzSHBucERCYVlyWlZ6eQ?oc=5"
+      },
+      {
+        "title": "GERC Approves \u20b94.87/kWh Tariff for 250 MW FDRE Project - www.mvapulse.com",
+        "source": "www.mvapulse.com",
+        "date": "2026-08-07",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSVBxNEljVUxvWWhUY21oWWtzblZScnAzTW5Ld09jRDVQZXRBckptR0x2dFQzdnRIbXNzNF9GOGE5VXNQZ01oTzV4VHpmVmxoNHJraHJLOUp3LWJKU181OHN5Y1lPcFVJdkQteEdoYlVoWmozbnhjWExQcnRuaHFZT0U0QzFLeVJIOWIxUGZyUUlaQQ?oc=5"
       },
       {
         "title": "Odisha Drafts New Distributed Renewable Energy Regulations - www.mvapulse.com",
@@ -3073,16 +3125,16 @@
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTW5XbFl3bW9aeFVndm9xRjB1NzBJLUk2aXQwT25WNEsxRmNXMkpBeEJ1RzlET0EzZjdOb1dBa0RsRFJVdjNRVWZxcTFNYkFlVkdhRl9XMUNjZ3ljY3YzRXV0Tko3aTJGRHlpbTgtSjhSWVdTU0FIdXlMcGV6ajE5NWo4bXhoYjVrZW1Qbmp1TDFTNUhNTVJHV0owQWtIcUVHbWQ1UFRaMEdwY3hPU1JXaHFvLXpDZDU5WElTQU1SeEZFdUtQ?oc=5"
       },
       {
-        "title": "Top 5 trends shaping India\u2019s battery energy storage market in 2025 - ESS News",
-        "source": "ESS News",
-        "date": "2026-01-05",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcDFIUjhhR3JpLW5ETFFsN0F6TG45UmJ2REo2d2dFMlV3a1UySVlReDN1ek5BWmdXMEdVRXhrbjlGWEpmdng0ckZHTjc1alV1SkhzeE9JdS13UDNDYkJPSG8zLUNNTHFESEE1MzBTaWVsZS10aDBMS09oYmF1TGZhWG5kT2V5LTVVbm9IeHNfRW5YbGdrN0VOeDBCQ0NremRhdEpNcg?oc=5"
-      },
-      {
         "title": "India adds record 35GW+ solar PV in 2025 - PV Tech",
         "source": "PV Tech",
         "date": "2026-01-05",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBnZ0RNX1pzaG1tUTRTdUJxZFg1M2JJVG5Ia2NUWW9VQnJSN01YbU9mQXZrYUdWSFRSeklBTTJZRXpLSUlsMktwalRORHVuR2tVNU1wWmNGWW1RVVlabUZ5NzNYRGhvNFl6NGRSV3hyRWh6UQ?oc=5"
+      },
+      {
+        "title": "Top 5 trends shaping India\u2019s battery energy storage market in 2025 - ESS News",
+        "source": "ESS News",
+        "date": "2026-01-05",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcDFIUjhhR3JpLW5ETFFsN0F6TG45UmJ2REo2d2dFMlV3a1UySVlReDN1ek5BWmdXMEdVRXhrbjlGWEpmdng0ckZHTjc1alV1SkhzeE9JdS13UDNDYkJPSG8zLUNNTHFESEE1MzBTaWVsZS10aDBMS09oYmF1TGZhWG5kT2V5LTVVbm9IeHNfRW5YbGdrN0VOeDBCQ0NremRhdEpNcg?oc=5"
       },
       {
         "title": "GUVNL Concludes 250 MW Wind Power Auction Under Phase-X at Tariffs Starting \u20b93.43 per kWh - WindInsider",
