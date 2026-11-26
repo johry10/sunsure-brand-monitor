@@ -36,7 +36,7 @@ from time import mktime
 import feedparser
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-from clean_data import MATCH_PATTERNS, is_match
+from clean_data import MATCH_PATTERNS, headline_doc_freq, is_match, link_story_articles
 from collect_data import COMPANIES
 from industry_feeds import fetch_industry_articles
 from supplementary_feeds import fetch_supplementary_articles
@@ -44,6 +44,7 @@ from supplementary_feeds import fetch_supplementary_articles
 ROOT = Path(__file__).parent
 SEEN_PATH = ROOT / "digest_seen.json"
 SOV_PATH = ROOT / "sov_data_clean.json"
+RAW_PATH = ROOT / "sov_data.json"
 DASHBOARD_URL = os.environ.get("DASHBOARD_URL", "")
 LOOKBACK_HOURS = 36       # overlap between runs; seen-file prevents repeats
 SEEN_RETENTION_DAYS = 30
@@ -98,21 +99,33 @@ def collect() -> dict[str, list[dict]]:
             if company in found:
                 found[company].extend(arts)
 
+    # Story-linking context: the dashboard's recent articles for each company,
+    # so a headline that only names e.g. Amazon still links to a Sunsure story.
+    recent, doc_freq = {}, {}
+    if SOV_PATH.exists() and RAW_PATH.exists():
+        sov = json.loads(SOV_PATH.read_text())
+        raw = json.loads(RAW_PATH.read_text())
+        labels = [m["label"] for m in sov["months"][-2:]]
+        recent = {c: [a for m in labels for a in sov["data"].get(c, {}).get(m, [])] for c in COMPANIES}
+        doc_freq = headline_doc_freq([a for c in raw["data"] for arts in raw["data"][c].values() for a in arts])
+
     result: dict[str, list[dict]] = {}
     for company, arts in found.items():
-        seen_urls, seen_titles, keep = set(), set(), []
+        patterns = MATCH_PATTERNS.get(company, [])
+        own_terms = {w.lower() for w in re.findall(r"[A-Za-z]+", company)}
+        seen_urls, seen_titles, keep, unmatched = set(), set(), [], []
         for a in arts:
             title_key = _title_key(a["title"])
             if a["url"] in seen_urls or title_key in seen_titles:
-                continue
-            if not is_match(a, MATCH_PATTERNS.get(company, [])):
                 continue
             pub = _parse_dt(a.get("published"))
             if pub and pub < cutoff:
                 continue
             seen_urls.add(a["url"])
             seen_titles.add(title_key)
-            keep.append(a)
+            (keep if is_match(a, patterns) else unmatched).append(a)
+        if doc_freq:
+            keep += link_story_articles(keep + recent.get(company, []), unmatched, doc_freq, own_terms)
         result[company] = keep
     return result
 

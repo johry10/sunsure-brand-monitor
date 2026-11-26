@@ -43,7 +43,7 @@ COMPANY_QUERIES: dict[str, list[str]] = {
 
 # Mirrors MATCH_PATTERNS in clean_data.py — used to assign articles to companies
 COMPANY_PATTERNS: dict[str, list] = {
-    "Sunsure":        ["sunsure"],
+    "Sunsure":        [re.compile(r"\b(Sunsure|SUNSURE)\b")],
     "ReNew":          [re.compile(r"\brenew\b", re.I)],
     "Cleanmax":       ["cleanmax", "clean max"],
     "Ampin":          ["ampin"],

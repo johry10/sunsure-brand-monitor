@@ -26,7 +26,7 @@ FEED_URLS: list[str] = [
 # Company name patterns — must appear in title or snippet.
 # Mirrors clean_data.py MATCH_PATTERNS.
 COMPANY_PATTERNS: dict[str, list] = {
-    "Sunsure":        ["sunsure"],
+    "Sunsure":        [re.compile(r"\b(Sunsure|SUNSURE)\b")],
     "ReNew":          [re.compile(r"\brenew\b", re.I)],
     "Cleanmax":       ["cleanmax", "clean max"],
     "Ampin":          ["ampin"],
