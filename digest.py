@@ -250,8 +250,9 @@ def render(articles: dict[str, list[dict]], edition: str) -> tuple[str, str]:
 
 
 def send(subject: str, body: str) -> None:
-    user = os.environ["GMAIL_USER"]
-    password = os.environ["GMAIL_APP_PASSWORD"].replace(" ", "")
+    user = os.environ["GMAIL_USER"].strip()
+    # Pasted secrets often carry a trailing newline, which breaks SMTP AUTH
+    password = "".join(os.environ["GMAIL_APP_PASSWORD"].split())
     to = [t.strip() for t in os.environ["DIGEST_TO"].split(",") if t.strip()]
     msg = MIMEMultipart("alternative")
     msg["Subject"], msg["From"], msg["To"] = subject, user, ", ".join(to)
