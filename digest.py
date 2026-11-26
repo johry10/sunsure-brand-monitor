@@ -263,10 +263,37 @@ def send(subject: str, body: str) -> None:
         s.sendmail(user, to, msg.as_string())
 
 
+def check_credentials() -> int:
+    """Report the shape of the Gmail secrets (never their values) and try to log in."""
+    user = os.environ.get("GMAIL_USER", "").strip()
+    password = "".join(os.environ.get("GMAIL_APP_PASSWORD", "").split())
+    print(f"GMAIL_USER: {len(user)} chars, gmail address: {user.lower().endswith('@gmail.com')}, "
+          f"ascii: {user.isascii()}")
+    print(f"GMAIL_APP_PASSWORD: {len(password)} chars (expect 16), letters only: {password.isalpha()}, "
+          f"ascii: {password.isascii()}")
+    attempts = [("STARTTLS 587", lambda: smtplib.SMTP("smtp.gmail.com", 587, timeout=30)),
+                ("SSL 465", lambda: smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30))]
+    ok = False
+    for name, connect in attempts:
+        try:
+            with connect() as s:
+                if name.startswith("STARTTLS"):
+                    s.starttls()
+                s.login(user, password)
+            print(f"{name}: login OK")
+            ok = True
+        except Exception as e:
+            print(f"{name}: {type(e).__name__}: {e}")
+    return 0 if ok else 1
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--check", action="store_true", help="test Gmail login only")
     args = ap.parse_args()
+    if args.check:
+        return check_credentials()
 
     edition = "Morning" if datetime.now(IST).hour < 12 else "Evening"
     seen = load_seen()
