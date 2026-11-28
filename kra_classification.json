@@ -1,6 +1,6 @@
 {
   "fy_label": "FY26 (Apr 2025 \u2013 Mar 2026)",
-  "total_articles": 594,
+  "total_articles": 600,
   "press_releases": {
     "unique_count": 229,
     "total_pickups": 295,
@@ -103,7 +103,7 @@
         "pickups": 3,
         "date": "2026-07-06",
         "outlets": [
-          "Prop News Time",
+          "PropNewsTime",
           "Renewable Watch"
         ]
       },
@@ -224,19 +224,19 @@
         ]
       },
       {
-        "representative_title": "Suzlon wins 105-MW order from Sunsure Energy for new 5-MW wind turbine - Renewables Now",
-        "pickups": 2,
-        "date": "2026-07-01",
-        "outlets": [
-          "Renewables Now"
-        ]
-      },
-      {
         "representative_title": "Suzlon Wins 105 MW Wind Energy Order from Sunsure Energy for Debut S175 5 MW Turbine - WindInsider",
         "pickups": 2,
         "date": "2026-07-01",
         "outlets": [
           "WindInsider"
+        ]
+      },
+      {
+        "representative_title": "Suzlon wins 105-MW order from Sunsure Energy for new 5-MW wind turbine - Renewables Now",
+        "pickups": 2,
+        "date": "2026-07-01",
+        "outlets": [
+          "Renewables Now"
         ]
       },
       {
@@ -336,27 +336,11 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy Signs PPA with Bisleri International to Supply Solar Power to its Sahibabad Plant - Energetica India Magazine",
+        "representative_title": "Ingrid Capacity enters German battery storage market with 200 MW partnership - ESS News",
         "pickups": 1,
-        "date": "2025-11-27",
+        "date": "2025-11-26",
         "outlets": [
-          "Energetica India Magazine"
-        ]
-      },
-      {
-        "representative_title": "Partners Group-owned Sunsure raising offshore financing for solar project - VCCircle",
-        "pickups": 1,
-        "date": "2025-11-12",
-        "outlets": [
-          "VCCircle"
-        ]
-      },
-      {
-        "representative_title": "Sunsure Energy to Supply 19.36 MW Wind-Solar Hybrid Power to Deepak Fertilisers in Maharashtra - Energetica India Magazine",
-        "pickups": 1,
-        "date": "2025-11-12",
-        "outlets": [
-          "Energetica India Magazine"
+          "ESS News"
         ]
       },
       {
@@ -368,11 +352,27 @@
         ]
       },
       {
-        "representative_title": "Ingrid Capacity enters German battery storage market with 200 MW partnership - ESS News",
+        "representative_title": "Sunsure Energy Signs PPA with Bisleri International to Supply Solar Power to its Sahibabad Plant - Energetica India Magazine",
         "pickups": 1,
-        "date": "2025-11-26",
+        "date": "2025-11-27",
         "outlets": [
-          "ESS News"
+          "Energetica India Magazine"
+        ]
+      },
+      {
+        "representative_title": "Sunsure Energy to Supply 19.36 MW Wind-Solar Hybrid Power to Deepak Fertilisers in Maharashtra - Energetica India Magazine",
+        "pickups": 1,
+        "date": "2025-11-12",
+        "outlets": [
+          "Energetica India Magazine"
+        ]
+      },
+      {
+        "representative_title": "Partners Group-owned Sunsure raising offshore financing for solar project - VCCircle",
+        "pickups": 1,
+        "date": "2025-11-12",
+        "outlets": [
+          "VCCircle"
         ]
       },
       {
@@ -424,6 +424,14 @@
         ]
       },
       {
+        "representative_title": "India\u2019s Oriana Power explores compact pumped storage for C&I customers, raises BESS target to 20 GWh by 2030 - ESS News",
+        "pickups": 1,
+        "date": "2025-12-08",
+        "outlets": [
+          "ESS News"
+        ]
+      },
+      {
         "representative_title": "US: Trina Storage to deliver 1 GWh BESS; Samsung SDI lands $1.36B battery deal; BayWa r.e. secures funding for solar+storage - ESS News",
         "pickups": 1,
         "date": "2025-12-12",
@@ -445,14 +453,6 @@
         "date": "2025-12-23",
         "outlets": [
           "Saur Energy"
-        ]
-      },
-      {
-        "representative_title": "India\u2019s Oriana Power explores compact pumped storage for C&I customers, raises BESS target to 20 GWh by 2030 - ESS News",
-        "pickups": 1,
-        "date": "2025-12-08",
-        "outlets": [
-          "ESS News"
         ]
       },
       {
@@ -672,19 +672,19 @@
         ]
       },
       {
-        "representative_title": "Sunsure Energy Signs PPAs with Daeseung Autoparts and Ilgahng Automotive - Energetica India Magazine",
-        "pickups": 1,
-        "date": "2026-03-07",
-        "outlets": [
-          "Energetica India Magazine"
-        ]
-      },
-      {
         "representative_title": "Sunsure Energy signs solar PPAs with Daeseung Group firms in Tamil Nadu - ET Auto",
         "pickups": 1,
         "date": "2026-03-08",
         "outlets": [
           "ET Auto"
+        ]
+      },
+      {
+        "representative_title": "LGE India Signs PPAs with Hinduja Renewables and Sunsure Energy to Procure 20.8 MWp Solar Power - Energetica India Magazine",
+        "pickups": 1,
+        "date": "2026-03-26",
+        "outlets": [
+          "Energetica India Magazine"
         ]
       },
       {
@@ -704,14 +704,6 @@
         ]
       },
       {
-        "representative_title": "LGE India Signs PPAs with Hinduja Renewables and Sunsure Energy to Procure 20.8 MWp Solar Power - Energetica India Magazine",
-        "pickups": 1,
-        "date": "2026-03-26",
-        "outlets": [
-          "Energetica India Magazine"
-        ]
-      },
-      {
         "representative_title": "Sunsure Energy, JAKSON Engineering ink solar PPA for green power supply - ET EnergyWorld",
         "pickups": 1,
         "date": "2026-03-20",
@@ -723,6 +715,14 @@
         "representative_title": "UltraTech Cement to Procure Captive Solar Power from Sunsure\u2019s 14 MW Project in Maharashtra - Energetica India Magazine",
         "pickups": 1,
         "date": "2026-03-12",
+        "outlets": [
+          "Energetica India Magazine"
+        ]
+      },
+      {
+        "representative_title": "Sunsure Energy Signs PPAs with Daeseung Autoparts and Ilgahng Automotive - Energetica India Magazine",
+        "pickups": 1,
+        "date": "2026-03-07",
         "outlets": [
           "Energetica India Magazine"
         ]
@@ -1504,19 +1504,19 @@
         ]
       },
       {
-        "representative_title": "SPR Auto Technologies to acquire minor stake in Sunsure Solarpark - Business Standard",
-        "pickups": 1,
-        "date": "2026-08-26",
-        "outlets": [
-          "Business Standard"
-        ]
-      },
-      {
         "representative_title": "Hinduja Group announces Rs 25 billion clean energy investment in Tamil Nadu - Renewable Watch",
         "pickups": 1,
         "date": "2026-08-17",
         "outlets": [
           "Renewable Watch"
+        ]
+      },
+      {
+        "representative_title": "Scatec completes 'Africa's largest' solar-plus-storage Obelisk project, adding 200 MWh of BESS - Energy Storage - ESS News",
+        "pickups": 1,
+        "date": "2026-08-13",
+        "outlets": [
+          "ESS News"
         ]
       },
       {
@@ -1528,17 +1528,25 @@
         ]
       },
       {
-        "representative_title": "EDF power solutions secures PPAs with NV Energy for 400 MW solar-plus-storage project - ESS News",
+        "representative_title": "Australia completes first solar-BESS hybrid dispatched as a single generator - ESS News",
         "pickups": 1,
-        "date": "2026-08-20",
+        "date": "2026-08-27",
         "outlets": [
           "ESS News"
         ]
       },
       {
-        "representative_title": "Australia completes first solar-BESS hybrid dispatched as a single generator - ESS News",
+        "representative_title": "SPR Auto Technologies to acquire minor stake in Sunsure Solarpark - Business Standard",
         "pickups": 1,
-        "date": "2026-08-27",
+        "date": "2026-08-26",
+        "outlets": [
+          "Business Standard"
+        ]
+      },
+      {
+        "representative_title": "EDF power solutions secures PPAs with NV Energy for 400 MW solar-plus-storage project - ESS News",
+        "pickups": 1,
+        "date": "2026-08-20",
         "outlets": [
           "ESS News"
         ]
@@ -1549,14 +1557,6 @@
         "date": "2026-08-26",
         "outlets": [
           "SolarQuarter"
-        ]
-      },
-      {
-        "representative_title": "Scatec completes 'Africa's largest' solar-plus-storage Obelisk project, adding 200 MWh of BESS - Energy Storage - ESS News",
-        "pickups": 1,
-        "date": "2026-08-13",
-        "outlets": [
-          "ESS News"
         ]
       },
       {
@@ -1624,6 +1624,14 @@
         ]
       },
       {
+        "representative_title": "From Rooftop Solar to Open Access: The Sunsure Energy Journey | Saur Energy Podcast - Saur Energy",
+        "pickups": 1,
+        "date": "2026-09-14",
+        "outlets": [
+          "Saur Energy"
+        ]
+      },
+      {
         "representative_title": "Sunsure Energy Signs Hybrid PPA With Kajaria Ceramics - Construction World",
         "pickups": 1,
         "date": "2026-09-09",
@@ -1632,11 +1640,11 @@
         ]
       },
       {
-        "representative_title": "From Rooftop Solar to Open Access: The Sunsure Energy Journey | Saur Energy Podcast - Saur Energy",
+        "representative_title": "Kajaria Ceramics to Procure Power from Sunsure\u2019s 20 MW Wind-Solar Project - Mercomindia.com",
         "pickups": 1,
-        "date": "2026-09-14",
+        "date": "2026-09-07",
         "outlets": [
-          "Saur Energy"
+          "Mercomindia.com"
         ]
       },
       {
@@ -1693,14 +1701,6 @@
         "date": "2026-09-07",
         "outlets": [
           "Shanghai Metals Market"
-        ]
-      },
-      {
-        "representative_title": "Kajaria Ceramics to Procure Power from Sunsure\u2019s 20 MW Wind-Solar Project - Mercomindia.com",
-        "pickups": 1,
-        "date": "2026-09-07",
-        "outlets": [
-          "Mercomindia.com"
         ]
       },
       {
@@ -1808,6 +1808,22 @@
         ]
       },
       {
+        "representative_title": "Top 15 Commercial Rooftop Solar Companies in India for 2027: Tata Power Solar, Roofsol, Mahindra Solarize, CleanMax and Fourth Partner Energy - GreentechLead",
+        "pickups": 1,
+        "date": "2026-11-14",
+        "outlets": [
+          "GreentechLead"
+        ]
+      },
+      {
+        "representative_title": "HoriZn Raises $7M to Scale Zinc Battery Energy Storage Tech - https://www.mvapulse.com/",
+        "pickups": 1,
+        "date": "2026-11-17",
+        "outlets": [
+          "https://www.mvapulse.com/"
+        ]
+      },
+      {
         "representative_title": "[SMM PV Flash] Amazon Plans US$7 Billion India Renewables Investment by 2030, Signs 934 MW of Wind and Solar - Shanghai Metals Market",
         "pickups": 1,
         "date": "2026-11-18",
@@ -1848,14 +1864,6 @@
         ]
       },
       {
-        "representative_title": "HoriZn Raises $7M to Scale Zinc Battery Energy Storage Tech - https://www.mvapulse.com/",
-        "pickups": 1,
-        "date": "2026-11-17",
-        "outlets": [
-          "https://www.mvapulse.com/"
-        ]
-      },
-      {
         "representative_title": "SECI Launches Rolling Empanelment Tender For Grid-Scale BESS Suppliers Across India - SolarQuarter",
         "pickups": 1,
         "date": "2026-11-18",
@@ -1869,14 +1877,6 @@
         "date": "2026-11-13",
         "outlets": [
           "ET Manufacturing"
-        ]
-      },
-      {
-        "representative_title": "Top 15 Commercial Rooftop Solar Companies in India for 2027: Tata Power Solar, Roofsol, Mahindra Solarize, CleanMax and Fourth Partner Energy - GreentechLead",
-        "pickups": 1,
-        "date": "2026-11-14",
-        "outlets": [
-          "GreentechLead"
         ]
       },
       {
@@ -1894,7 +1894,7 @@
     "articles": []
   },
   "features": {
-    "count": 299,
+    "count": 305,
     "articles": [
       {
         "title": "NVVN Issues 187.5 MW/750 MWh BESS Tender With Four-Hour Storage - Saur Energy",
@@ -1903,16 +1903,16 @@
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSVYwUHdBSlZ3SkNvOS1fOG5ibGZOWXIzeGZWT0pwNXlaWFBJQjJwVnRvTUd3amhTMmpGRGhJN1NCQkZoQlpzck5CM2hNTTZvY3dHcnhfNjgzVEwzYWVaRlVURC1xVHVhMExOM0JoN3pVQnhfeHc0X3ZQVEJGMmt6UnR6ZmhvWXZ0YjhtbFphSVhWRmxVRHdqM0k4ZlFwcXlvaFZId1lnbzhxZlRGNi1CeE8xdzF2UQ?oc=5"
       },
       {
-        "title": "Amazon Targets 65% Cut in Electricity Emissions Intensity by 2030 and Plans $7B India Renewables Investment - CarbonCredits.com",
-        "source": "CarbonCredits.com",
-        "date": "2026-11-19",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcWRDbm1BVTM1SW92QS13Wm1WeWd0VmtIZnN1djhXb3NnbmNIeWptRk93SUk2bUlPSEE1WVNKY1FrekJaV3ZUcXNHeGR3bFQtY1VPd3U5eUM2UFhKendaWDU5T0RjZ1ZSS29ralZiLUxsSVcyUGFLalpZdVZXMUpZcUZsT0RhRmRQY2FqQTZ2U0x6dWhwMEtqX1FiMmZkSnd1MGVnNElickoyUQ?oc=5"
-      },
-      {
         "title": "Tesla unveils Powercore medium-voltage power electronics platform - ESS News",
         "source": "ESS News",
         "date": "2026-11-19",
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObW00VXAwZ19NOE0zY3k1aFRzQWNvb2JHR0d3cndNMlJNSlQweEtMSnlhcDZmay1USnpDRTRZQUtnSU8yOGpua3ZYczJsQzVUbzM0Z1NmOWlRUVY2Z3BmZmk1WDhSaGpkTkI4WW01N0lqVEFwWU1pbDZEZWNzY0NDYmZEc29mLS1rMUxpUndhTC03QlR3TkxpUGtMQVFrOEtodXlXdA?oc=5"
+      },
+      {
+        "title": "Amazon Targets 65% Cut in Electricity Emissions Intensity by 2030 and Plans $7B India Renewables Investment - CarbonCredits.com",
+        "source": "CarbonCredits.com",
+        "date": "2026-11-19",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcWRDbm1BVTM1SW92QS13Wm1WeWd0VmtIZnN1djhXb3NnbmNIeWptRk93SUk2bUlPSEE1WVNKY1FrekJaV3ZUcXNHeGR3bFQtY1VPd3U5eUM2UFhKendaWDU5T0RjZ1ZSS29ralZiLUxsSVcyUGFLalpZdVZXMUpZcUZsT0RhRmRQY2FqQTZ2U0x6dWhwMEtqX1FiMmZkSnd1MGVnNElickoyUQ?oc=5"
       },
       {
         "title": "Power Electronics tops global utility-scale storage PCS market - ESS News",
@@ -1931,12 +1931,6 @@
         "source": "https://www.mvapulse.com/",
         "date": "2026-11-18",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYm4yN1V1UlQ3MWlqaTNxRmw5TFVSRTFxWUhBTVpVWFRxWG5HcFBLRHl3ZHlSSHc5ZTJNTDNUcDVyeXlzcmRRSjEtRGVOdFNETmU1QWNGeVBJdGJnWk03UWVIV0I0ZkhwMndQRW1IRFVYeHUxNUE0Nkx1LXB6VEEtcWxxaXB0UnlJSFlBclUyVQ?oc=5"
-      },
-      {
-        "title": "Amazon Renewable Energy: $7 Billion India Investment by 2030 - Construction Review",
-        "source": "Construction Review",
-        "date": "2026-11-18",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTm14MTBnSEtaVGFoT19QMGVDVzJwcmpIa29XcHdMSXZwUTRRbVUtVVhJdmVJUWpFd0Y2enNiWjEyd0tGYi04T3R6SFdoZmpZUko4MnJ0NW1qS1JVSG1tRWhxSmE4SVdtOEV3MzI4d3hfTzkzSDJLWlEzNExuN0xqQUJpZlQyVjJEZHowbGo4RHR6SXZjVmRzZ3dUYno?oc=5"
       },
       {
         "title": "Amazon to Invest $7 Bn in India Renewables by 2030, Adds 934 MW Wind-Solar Projects - Saur Energy",
@@ -1999,16 +1993,22 @@
         "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYjBBWHFFek43OU5aakExWXlZM25XZTN1TjZDeXB6Y3cwc1B4aHlpVXhiVFloN1FQQXFocy03eC03WU5KXzgxdnpCZjQzZDdmbTBZQUd4MmZOQ3lpUVhYVmVfSWdnNEJNb0ZGZFMzWDRZTzVzNl9vMzJfOTRjMUc5V0VkVEFBOHRKM1FGcWE4aE8xc2c1WXM1a3ozYjZBdEVUYXBNZ2J2N0xfc2N2eFNSSjNFZEgyNnMyT0s0YnJQeEszTTVVX2c5VjBneFl0VVR1QXNQMjFpakswcWPSAdsBQVVfeXFMUGIwQVhxRXpONzlOWmpBMVl5WTNuV2UzdU42Q3lwemN3MHNQeGh5aVV4YlRZaDdRUEFxaHMtN3gtN1lOSl84MXZ6QmY0M2Q3Zm0wWUFHeDJmTkN5aVFYWFZlX0lnZzRCTW9GRmRTM1g0WU81czZfbzMyXzk0YzFHOVdFZFRBQTh0SjNRRnFhOGhPMXNnNVlzNWt6M2I2QXRFVGFwTWdidjdMX3NjdnhTUkozRWRIMjZzMk9LNGJyUHhLM001VV9nOVYwZ3hZdFVUdUFzUDIxaWpLMHFj?oc=5"
       },
       {
+        "title": "India\u2019s Big Battery Gold Rush Pulls In Tile and Medicine Makers - Bloomberg.com",
+        "source": "Bloomberg.com",
+        "date": "2026-11-17",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMHdXazZvMWVoemczLUtrS3R6aW81SVY0V3h1ekVTMUJ4YXMxSWdabUwzX3oxM0pkSW4xR1U5T0JhRnU5X3FzNExKLTlMYUUzb05aRER4UjNBdHY5Qmw3UjlmQmpyMHZ1OGc1TTRoQTZPNmdIeHNROWxvTjJjeDlQcVdHQ3gyUHhDT2R0cDdJOENFVmlTT3Y4OXFtNFFkVjk3UXF3WlkxNGRMcHZMWUhUaDRKY3BDQQ?oc=5"
+      },
+      {
         "title": "Amazon\u2019s India Clean Energy Projects Could Power 3.5 Million Homes a Year: Where Are They? - NiftyTrader",
         "source": "NiftyTrader",
         "date": "2026-11-17",
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Tc0ZHTkIxTDZDNnZIUlVYOTNuSHUtU25YSEZzXzFHWkpIOTlUNWg4V1g3elpRTzlIcVpFS19DUVJFRHpUZ3QzaFdHUDUwRE9XdG9QMkVyT2hCVUVJQzNRNjBtcDZKWS12VGZWWk5UT3ZLdHhjQjFRbFRGZw?oc=5"
       },
       {
-        "title": "India\u2019s Big Battery Gold Rush Pulls In Tile and Medicine Makers - Bloomberg.com",
-        "source": "Bloomberg.com",
+        "title": "Amazon Renewable Energy: $7 Billion India Investment by 2030 - Construction Review",
+        "source": "Construction Review",
         "date": "2026-11-17",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMHdXazZvMWVoemczLUtrS3R6aW81SVY0V3h1ekVTMUJ4YXMxSWdabUwzX3oxM0pkSW4xR1U5T0JhRnU5X3FzNExKLTlMYUUzb05aRER4UjNBdHY5Qmw3UjlmQmpyMHZ1OGc1TTRoQTZPNmdIeHNROWxvTjJjeDlQcVdHQ3gyUHhDT2R0cDdJOENFVmlTT3Y4OXFtNFFkVjk3UXF3WlkxNGRMcHZMWUhUaDRKY3BDQQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTm14MTBnSEtaVGFoT19QMGVDVzJwcmpIa29XcHdMSXZwUTRRbVUtVVhJdmVJUWpFd0Y2enNiWjEyd0tGYi04T3R6SFdoZmpZUko4MnJ0NW1qS1JVSG1tRWhxSmE4SVdtOEV3MzI4d3hfTzkzSDJLWlEzNExuN0xqQUJpZlQyVjJEZHowbGo4RHR6SXZjVmRzZ3dUYno?oc=5"
       },
       {
         "title": "Amazon to invest $7 billion in renewable energy in India - Reuters",
@@ -2341,6 +2341,12 @@
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaDhRWk11YXNRSHhkcTNoTWMybEtDU2g1UVJkbi1nNldocXU4ZWpVX0F1dWpCa1B0YzJGdEVjel92THFZV1JTV2Z6ekRzX2g0dzZicU82cTlZVXRUZElmYkp4a2J6MW15YVVXNVFuRzFrZXRfdmljamZrNThYN2IyVzRIZFBlMWs5eW5ibDZ5YkEwX21m?oc=5"
       },
       {
+        "title": "Kajaria Ceramics to Invest Up to INR 12.15 Crore in Sunsure Solar Project for Captive Power - SolarQuarter",
+        "source": "SolarQuarter",
+        "date": "2026-09-07",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQenYxa09MZDVlYVBWdGo4aW9XQkdTa2hfVUNheWYybzZ5WmVkSlhtc3hsZ01lZ2E0Q3hqWWJad2NOMFRhVDhNanVCbHNOU3VGRFp4OV9RYXgzYUdKcXNCa3RBMGRPX2pzak1laGtvZkF3OXVWWlVpaHlqU2t5LTVCUzl4T0l0cENhcnhDeEFBbS10SC1fdHVmYkZXMWRrNjh4QTgtd2REeHhLTGRtam9PNkFXYmN4UnBHeXFXQ1llRTAwZ1RyQW9v?oc=5"
+      },
+      {
         "title": "UPERC Declines Transmission Land Compensation Claim, Cites Pending Civil Court Ownership Dispute In Uttar Pradesh - SolarQuarter",
         "source": "SolarQuarter",
         "date": "2026-09-07",
@@ -2351,12 +2357,6 @@
         "source": "ESS News",
         "date": "2026-09-07",
         "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQV09JLUo2ZlJxVm15OUJQSFplRGJTekpGNDZNRzhVRk1vQzl0N1I0MGVwNWIyS2w1MzF3azYwaFBKeHVIaU9URDJVMkZWREhMTW04eXE2dnJyZlRiUGk5N2N0Mm9ray0yMmhZOG54SkNhcHFFNEwyOXlRMmJ3N3dRbEVKNjVGb2ZvQnRyU3NZY0xoOFlQUnkzQjB2RHh1azdkWWNESHRHVFVJVjlta25vT0F5ZGdKX3dGN3RudTJCd0JRZUE2RjRsX2FMWklVQQ?oc=5"
-      },
-      {
-        "title": "Kajaria Ceramics to Invest Up to INR 12.15 Crore in Sunsure Solar Project for Captive Power - SolarQuarter",
-        "source": "SolarQuarter",
-        "date": "2026-09-07",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQenYxa09MZDVlYVBWdGo4aW9XQkdTa2hfVUNheWYybzZ5WmVkSlhtc3hsZ01lZ2E0Q3hqWWJad2NOMFRhVDhNanVCbHNOU3VGRFp4OV9RYXgzYUdKcXNCa3RBMGRPX2pzak1laGtvZkF3OXVWWlVpaHlqU2t5LTVCUzl4T0l0cENhcnhDeEFBbS10SC1fdHVmYkZXMWRrNjh4QTgtd2REeHhLTGRtam9PNkFXYmN4UnBHeXFXQ1llRTAwZ1RyQW9v?oc=5"
       },
       {
         "title": "SUNSURE ENERGY",
@@ -2441,6 +2441,12 @@
         "source": "Yahoo Finance",
         "date": "2026-08-21",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcjF2Zk1FaHlvTlIwZHpXZThTSlR0VnhHTTU4YjN0NjkzUF9LRkkyeWVKbUJ5Y1F5T0VnTnJhQ1lGeVRGSTRaRGUzamxXZ3c4cmw5T3dzMkxrdXd5YUtrS0dlNFlVbUZYMWxhZ3JuZGM3NnRWT1FIQ3E3OFpKV1lQVHZXbU11NlY5UmhxZ0JlbW5TRl9HcVRyeFhmNHQ?oc=5"
+      },
+      {
+        "title": "OX2 starts building 200 MWh solar-plus-storage project in Australia - ESS News",
+        "source": "ESS News",
+        "date": "2026-08-21",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUW9ma1pvNnBUbGVsUE5sQ3NkMTFfdlBMbUVFMGRfaTk3OUNHN25PNjBVT0xYaUczSFdneHFQNkNzdGtxai1DWk9JVHplem1fTFZrdTF3TFcwT2RUMmhKVnE3VUltVlFlSXRKY29wOTJlYmpwMFZxb1k5bVRudGxaNGFtNllmb0luYVVxQUVoMGppX1kxRVJjd1hLMDU1eVktMlhoQ1JYdw?oc=5"
       },
       {
         "title": "NLC India Tenders for 1,500 Acres Land in Tamil Nadu - https://www.mvapulse.com/",
@@ -2983,6 +2989,12 @@
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSzRkNlpvVE81T1N3MHV0cmplcm5ZaTQ4bklpdm4tVHdFS2NBY3hVQjBGYXdSMWJiZkNHM2MtYmw0VHFnQWZaekhtdnBtVkZtTGlqclU1YjFINUo1RHFHcjdyMGw2T1NYeVItN1dwaWtJZ01kZnV5ZUxUQ2ItSlM5TlVSOF9VOVZFcTlqY0pTY0N2VnEwLXNSdEpqajdUdw?oc=5"
       },
       {
+        "title": "How an undersized power conversion system actually affects BESS output - ESS News",
+        "source": "ESS News",
+        "date": "2026-04-14",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZkJKWE1QMEhjWUlIZXJWUE1sZ2s0U2xyUV9QQWVJSk5wc3NIWEJXazFZQndTal8wMlFvcTZ1T0h5cU9HYzlYRVVZNXBES3V2SVFFVkZhQkt5ZmJucEVHbUQzTmxGcmh3YzRtWEJ0c0xOcnV1MVJ3N0RycjEtR2ttZ1hXWXJuaWg5T002RTFKMFNtOFRPSEd3TWJuX0duN3NJS3JjMGJ0MHpLdDQ?oc=5"
+      },
+      {
         "title": "LG Electronics India shares rally 8% as shareholder lock-in period ends; what investors need to know - Upstox",
         "source": "Upstox",
         "date": "2026-04-14",
@@ -2999,6 +3011,12 @@
         "source": "https://www.mvapulse.com/",
         "date": "2026-04-08",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQelNfbHNtaGtNT3g1Y1QyYm5XMDQ0TTZWdmJlTld2NHdSSF9NUm5RUFZ5RXVlMmdJNEUzQTA1MS1UUDdEbm5jSVcwZVdiclJTbWRta0wwTG1Fa1NIbDBNc1kzaXdJUDFDQUp6aV9FS1Z2bklVZ0dMRGkyNlYyNnE0SVpISmVQSG9hMGtiZzhFQy1BY0k?oc=5"
+      },
+      {
+        "title": "Utility-scale sodium-ion arrives in Romania: Renalfa plans 3.6 GWh dual-chemistry BESS - ESS News",
+        "source": "ESS News",
+        "date": "2026-04-08",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaVZyREVpcVdjRTNkRkFKOFJ4T296T3dwdzJMRUZ1dWVXRUVBR3Y0MmtTMngzQXU5TGlldUF5NE5IUVBxV3ZxVnJRSWlURV9VN2xmRV8zTmJKdmdSd2VtNUFtbzhjVEJCSExtTTZWYng5R19aRE5uSjhoUU81STQzVDE4TkNYOEx1WTJRNVJoUVVVOHRmVFJkZFdVelphdlg2YlVWQVcxeWI3OWFkbmNfVnhuNEJrQ3lCZGlaZTMwZw?oc=5"
       },
       {
         "title": "Brazil greenlights co-located solar and storage for the first time - ESS News",
@@ -3343,6 +3361,12 @@
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeGFwTTB1RlhaZDVoYUYzaFhCTUFoa2JTWnJuT09VSUljeWlQZ2tsdmJRNmVlTE1xTzZkS1FKR1g3ek9lVVhUQjc2M0hJcFV1WVhndXhoMTVnOUtyaG9FbjBCbkhaRXhiVE1RbjIyTG41Z25xYmN3cUtYLVRlelJoT3BvdDg2YmpaMzRTNFBlZExQRDVpN1ZIR0VlVUY?oc=5"
       },
       {
+        "title": "Trina Storage\u2019s Elementa 2 Pro passes large-scale fire safety and propagation tests - Energy Storage - ESS News",
+        "source": "ESS News",
+        "date": "2026-01-22",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZTVtOXNVUWFVVWJBc096T3I2aWs0Q05ycGJObC1HRXBtLUZURnFNSENaOXpfUlJtM1R2anliQmthWlZKQ1Y2S2JwdDY4c0xxNnpQYkVQaWdwTnFZZUlKT2p1Zjc4LUJwZ1gydERGdkpKZ3lVUjhLTm9UeW84bGtMalZUWWtxSmctbEg4S1RDWjhMV1k0a2o2QnhSaG1JZU44dE83MExZWEpGbXdvM2tmSGJPbU1tN2I2ZFh3?oc=5"
+      },
+      {
         "title": "Acquisitions in Australia: CleanPeak buys up storage projects, Engie buys out Eku Energy at Hazelwood BESS - ESS News",
         "source": "ESS News",
         "date": "2026-01-22",
@@ -3493,6 +3517,12 @@
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOY1BGOWsxSjdwTE5HMllpYTBXdEhqVGVESmtFelpVV0pqWi03RmxFZmtJM0JqdHU5Szl6VzczUjhyVGdTUTBQVnNyNzk4ejNaWjlHaS1tS0d3aF9nVnNnbzZzMVFJOE1IMDczZFZXX3djVDRndHNfYklnQzQ0a0xBbHJkOEdRbEM0MjB3b28zYTJYTDJkNGdSVA?oc=5"
       },
       {
+        "title": "Hithium pushes into long-duration storage and AI data centres with 1,300Ah cell, 6.9 MW/55.2 MWh system, and lithium-sodium hybrid - Energy Storage - ESS News",
+        "source": "ESS News",
+        "date": "2025-12-15",
+        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPemloRndza0lVZHB0NzJteHVDMzJEY3BGN3FpbTBobTBSSUVON21JVU91aDNleE9fWUFwb2o4Q0xTRTZILXJ2eWhnTTNua3dKOUJ6Znk3dzVOOVdPa3p2c1VZUUJweFBYc21abk4wUTBadU80WDFtZEJxR25CZXVkVXJxMEZ0QWFwYTl5TVRqM3JRVDZLYTljb2VFQkZtbUZCaVBncFBPSHdSRFpwaW1jN0FJRW5JQUUyVUNVSDhfaFp0NWFnTk9aeWNLOThpcjBNT0ZXM2xZZWx5aXZoSm9IakZvWThFXy1KUlhtZTY4VzF2cUtEVzZPZXhTUjN5dTF4b0E?oc=5"
+      },
+      {
         "title": "India sees dramatic plunge in battery storage costs, Ministry reports - ESS News",
         "source": "ESS News",
         "date": "2025-12-15",
@@ -3581,6 +3611,12 @@
         "source": "ESS News",
         "date": "2025-12-02",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUzR4bmRvMWdnUzhURkFRaEppQ2Q0Y25BSjVJQXZuMGNMdjVQQk5zVkRxV0pYU0MxQVdkOGpydzhvOGdTOEJzcm9TdENyN1JoQ2NyQ0VJbU1WZ1lVTlo4cEd1OGd6WVJ0elZSX3JXX0tlLW9NRExFcHBSQWRkUENlaVRQYTVJWUJWVWZ1VlFNVUJUODhxSTViX21iMU5WVXQwemtYbGp6eXFmM3ltSGExdFBKZWhCWmV1?oc=5"
+      },
+      {
+        "title": "Canadian Solar consolidates US manufacturing under parent, including solar and storage - ESS News",
+        "source": "ESS News",
+        "date": "2025-12-01",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUlU1bUl2bGRmbGtmNTRhVGl5SG1RVEVtN3J3UGFOWDhSV3lpbjJoVEg2ZHFWQUtnVGRZcnBlT3lfRW9OTndSUF8tU1lxckJWQS1QcEpMOUJVb2hLcjlOSEtYbDVGQ00wZzZ2cGk5QW02Sl9vY3dUU2xwSlpYU0tWaXNzUXdzd1REQUUxRGpRT2VtcmpRdUJWOEpLbjNXQVRnaFhSallTbFFGdEZnejFZMjRnMWFlcUNmLWdQNHNzaw?oc=5"
       },
       {
         "title": "Canadian Solar consolidates US manufacturing under parent, including solar and storage - ESS News",
